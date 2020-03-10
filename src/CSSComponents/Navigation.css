@@ -1,0 +1,84 @@
+.Navbar {
+  display: flex;
+  border-bottom: 1px #a1a1a1 solid;
+  justify-content: space-between;
+}
+
+.Navbar__Title__Toggle {
+  display: flex;
+}
+
+.Navbar__Title,
+.Navbar__Toggle {
+  padding: 8px;
+  /* border: 1px blue solid; */
+  text-align: center;
+}
+
+.Navbar__Title {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 3px 2px 4px #ca7919;
+  padding-left: 40px;
+}
+
+.Navbar__Title:hover {
+  text-shadow: none;
+  cursor: default;
+  transition: text-shadow 1s ease;
+  color: #ca7919;
+}
+
+.Navbar__Toggle {
+  display: none;
+  padding-top: 21.5px;
+  padding-right: 40px;
+}
+
+.Navbar__Head {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  /* border: 1px red solid; */
+  padding: 0 30px 0 0;
+  margin: 0;
+}
+
+.Navbar__Link {
+  padding: 10px;
+  padding-top: 20px;
+  /* border: 1px yellow solid; */
+}
+
+.Navbar__Link a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar__Link a:hover {
+  color: #ca7919;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Title__Toggle {
+    justify-content: space-between;
+  }
+
+  .Navbar__Link {
+    display: none;
+  }
+
+  .Navbar__Toggle {
+    display: initial;
+  }
+}
