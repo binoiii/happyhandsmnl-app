@@ -1,0 +1,95 @@
+/**** SELECT FONT ****/
+
+.Select__cont {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  position: relative;
+}
+
+.Select__cont .Selected__cont {
+  display: flex;
+  width: 300px;
+  border: 1px #a1a1a1 solid;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #ffff;
+  position: relative;
+}
+
+.Select__cont .Selected__cont:hover {
+  cursor: pointer;
+  border-color: #ca7919;
+  box-shadow: 0px 0px 5px #ca7919;
+  transition: all 0.2s ease-out;
+}
+
+.Select__cont .Selected__cont .Selected {
+  color: grey;
+  padding-left: 15px;
+  align-self: center;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Selected__cont .Selected::after {
+  content: "";
+  background: url("./img/arrow_down.svg");
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 265px;
+}
+
+.Selected__cont .Selected.active {
+  color: black;
+}
+
+.Select__cont .Option__cont {
+  background: white;
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  border: 1px #a1a1a1 solid;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  overflow-y: scroll;
+  z-index: 1;
+  height: 0;
+  opacity: 0;
+}
+
+.Select__cont .Option__cont.active {
+  opacity: 1;
+  height: 150px;
+}
+
+.Option__cont .Option {
+  padding: 10px;
+}
+
+.Option__cont .Option:first-child {
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.Option__cont .Option:last-child {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.Option__cont .Option:hover {
+  color: #ca7919;
+  transition: color 0.2s ease-out;
+}
+
+.Option input {
+  display: none;
+}
+
+.Option label {
+  font-size: 19px;
+}

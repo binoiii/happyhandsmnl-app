@@ -1,0 +1,114 @@
+/* MODAL */
+
+.Modal__cont {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* IMG */
+
+.Modal__cont .Image__cont {
+  position: relative;
+  max-width: 70%;
+}
+
+.Image__cont img {
+  display: block;
+  width: 100%;
+}
+
+/* CONTROLS */
+
+/* CONTROLS Prev & Next Button */
+
+.Controls__cont .PN__cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.PN__cont .Prev__cont,
+.PN__cont .Next__cont {
+  position: absolute;
+  top: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  transform: translateY(-50%);
+  background-color: #dededec6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.PN__cont .Prev__cont {
+  left: 0;
+}
+
+.PN__cont .Next__cont {
+  right: 0;
+}
+
+.Prev__cont .Prev__item,
+.Next__cont .Next__item {
+  background: url("./img/next.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.Prev__cont .Prev__item {
+  transform: rotate(180deg);
+}
+
+/* CONTROLS Close Button  */
+
+.Controls__cont .Close__cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem 0.75rem 0 0;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+.Controls__cont .Close__item {
+  width: 2rem;
+  height: 2rem;
+  background: url("./img/close1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+}
+
+/* CONTROLS Imgage Guide */
+
+.Controls__cont .ImgDots__cont {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.ImgDots__cont .ImgDots__item {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.ImgDots__cont .ImgDots__itemActive {
+  background-color: #ca7919;
+}

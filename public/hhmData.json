@@ -1,0 +1,21 @@
+{
+  "main": {
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/happyhandsmnl",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/happyhandsmnl/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "messager",
+        "url": "https://www.viber.com/en/",
+        "className": "fab fa-viber"
+      }
+    ]
+  }
+}

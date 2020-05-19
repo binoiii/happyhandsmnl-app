@@ -11,3 +11,45 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+@font-face {
+  font-family: "Bernadette";
+  src: local("Bernadette"), url(./Fonts/bernadette.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Baybayin";
+  src: local("Baybayin"), url(./Fonts/baybayin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Modernist Milk";
+  src: local("modernist_milk"),
+    url(./Fonts/modernist_milk.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "riztteen";
+  src: local("riztteen"), url(./Fonts/riztteen.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("bebas_neue"), url(./Fonts/bebas_neue.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Damion";
+  src: local("damion"), url(./Fonts/damion.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Citrica";
+  src: local("citrica"), url(./Fonts/citrica.ttf) format("truetype");
+}
+
+/* @font-face {
+  font-family: "Shorelines Script";
+  src: local("shorelines_script"),
+    url(./Fonts/shorelines_script.otf) format("truetype");
+} */

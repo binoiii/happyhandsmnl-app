@@ -1,15 +1,28 @@
-import React from "react";
-import Navigation from "./Components/Navigation.js";
-import About from "./Components/About.js";
-import Products from "./Components/Products.js";
-import Home from "./Components/Home.js";
+import React, { useState, useEffect } from "react";
+import Navigation from "./Components/Navigation//Navigation";
+import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
+import Products from "./Components/Products/Products";
+import Personalize from "./Components/Personalize/Personalize";
 
 function App() {
+  const [hhData, sethhData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const setData = await fetch("/hhmData.json").then((res) => res.json());
+      sethhData(setData);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
       <Navigation />
-      <Home />
+      <Home data={hhData.main} />
       <Products />
+      <Personalize />
       <About />
     </div>
   );
