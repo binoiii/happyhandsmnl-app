@@ -38,7 +38,7 @@ function Products() {
   };
 
   const exitModal = (e) => {
-    e.target === e.currentTarget && setModal(false);
+    (e.target === e.currentTarget || e.keyCode === 27) && setModal(false);
   };
 
   return (

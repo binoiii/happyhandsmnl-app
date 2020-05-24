@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Modal.css";
 
 import Prod1 from "../img/product1.jpg";
@@ -7,30 +7,56 @@ import Prod3 from "../img/product3.jpg";
 
 const imgItem = [Prod1, Prod2, Prod3];
 
-const Modal = ({ exitModal, prodName, prodImg }) => {
+const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("keydown", (e) => {
+      handleKeyDownEsc(e);
+      handleKeyDownPrev(e);
+    });
+    return () => {
+      window.removeEventListener("keydown", handleKeyDownEsc);
+      window.removeEventListener("keydown", handleKeyDownPrev);
+      console.log("cleaning");
+    };
+  });
+
+  const handleKeyDownEsc = (e) => {
+    console.log(e);
+    e.preventDefault();
+    exitModal(e);
+  };
+
+  const handleKeyDownPrev = (e) => {
+    e.preventDefault();
+    handlePrev(e);
+  };
 
   const handleNext = (e) => {
     if (imageIndex < imgItem.length - 1) {
       setImageIndex((prevIndex) => prevIndex + 1);
-      e.target.parentElement.parentElement.nextElementSibling.children[
-        imageIndex
-      ].className = "ImgDots__item";
-      e.target.parentElement.parentElement.nextElementSibling.children[
-        imageIndex + 1
-      ].className = "ImgDots__item ImgDots__itemActive";
+      // e.target.parentElement.parentElement.nextElementSibling.children[
+      //   imageIndex
+      // ].className = "ImgDots__item";
+      // e.target.parentElement.parentElement.nextElementSibling.children[
+      //   imageIndex + 1
+      // ].className = "ImgDots__item ImgDots__itemActive";
     }
   };
 
   const handlePrev = (e) => {
     if (imageIndex > 0) {
       setImageIndex((prevIndex) => prevIndex - 1);
-      e.target.parentElement.parentElement.nextElementSibling.children[
-        imageIndex - 1
-      ].className = "ImgDots__item ImgDots__itemActive";
-      e.target.parentElement.parentElement.nextElementSibling.children[
-        imageIndex
-      ].className = "ImgDots__item";
+      if (imageIndex > 0 && e.keyCode === 37) {
+        setImageIndex((prevIndex) => prevIndex - 1);
+      }
+      // e.target.parentElement.parentElement.nextElementSibling.children[
+      //   imageIndex - 1
+      // ].className = "ImgDots__item ImgDots__itemActive";
+      // e.target.parentElement.parentElement.nextElementSibling.children[
+      //   imageIndex
+      // ].className = "ImgDots__item";
     }
   };
 
