@@ -11,10 +11,9 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("keydown", (e) => {
-      handleKeyDownEsc(e);
-      handleKeyDownPrev(e);
-    });
+    window.addEventListener("keydown", handleKeyDownEsc);
+    window.addEventListener("keydown", handleKeyDownPrev);
+
     return () => {
       window.removeEventListener("keydown", handleKeyDownEsc);
       window.removeEventListener("keydown", handleKeyDownPrev);
@@ -23,7 +22,6 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
   });
 
   const handleKeyDownEsc = (e) => {
-    console.log(e);
     e.preventDefault();
     exitModal(e);
   };
@@ -46,17 +44,19 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
   };
 
   const handlePrev = (e) => {
-    if (imageIndex > 0) {
+    if (imageIndex > 0 && e.target.className === "Prev__Item") {
+      console.log("test");
       setImageIndex((prevIndex) => prevIndex - 1);
-      if (imageIndex > 0 && e.keyCode === 37) {
-        setImageIndex((prevIndex) => prevIndex - 1);
-      }
-      // e.target.parentElement.parentElement.nextElementSibling.children[
-      //   imageIndex - 1
-      // ].className = "ImgDots__item ImgDots__itemActive";
-      // e.target.parentElement.parentElement.nextElementSibling.children[
-      //   imageIndex
-      // ].className = "ImgDots__item";
+    }
+    //   // e.target.parentElement.parentElement.nextElementSibling.children[
+    //   //   imageIndex - 1
+    //   // ].className = "ImgDots__item ImgDots__itemActive";
+    //   // e.target.parentElement.parentElement.nextElementSibling.children[
+    //   //   imageIndex
+    //   // ].className = "ImgDots__item";
+    // }
+    if (imageIndex > 0 && e.keyCode === 37) {
+      setImageIndex((prevIndex) => prevIndex - 1);
     }
   };
 
