@@ -31,8 +31,6 @@ const Personalize = () => {
     fontSize: fontSizeValue,
   };
 
-  console.log(fontValue);
-
   return (
     <div id="personalize" className="Personalize__cont">
       <div className="InputSelect_cont">

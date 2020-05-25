@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Dot from "./Dot/Dot";
 import "./Modal.css";
 
 import Prod1 from "../img/product1.jpg";
@@ -7,17 +8,18 @@ import Prod3 from "../img/product3.jpg";
 
 const imgItem = [Prod1, Prod2, Prod3];
 
-const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
+const Modal = ({ prodImages, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDownEsc);
     window.addEventListener("keydown", handleKeyDownPrev);
+    window.addEventListener("keydown", handleKeyDownNext);
 
     return () => {
       window.removeEventListener("keydown", handleKeyDownEsc);
       window.removeEventListener("keydown", handleKeyDownPrev);
-      console.log("cleaning");
+      window.removeEventListener("keydown", handleKeyDownNext);
     };
   });
 
@@ -28,34 +30,26 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
 
   const handleKeyDownPrev = (e) => {
     e.preventDefault();
-    handlePrev(e);
-  };
-
-  const handleNext = (e) => {
-    if (imageIndex < imgItem.length - 1) {
-      setImageIndex((prevIndex) => prevIndex + 1);
-      // e.target.parentElement.parentElement.nextElementSibling.children[
-      //   imageIndex
-      // ].className = "ImgDots__item";
-      // e.target.parentElement.parentElement.nextElementSibling.children[
-      //   imageIndex + 1
-      // ].className = "ImgDots__item ImgDots__itemActive";
-    }
-  };
-
-  const handlePrev = (e) => {
-    if (imageIndex > 0 && e.target.className === "Prev__Item") {
-      console.log("test");
+    if (imageIndex > 0 && e.keyCode === 37) {
       setImageIndex((prevIndex) => prevIndex - 1);
     }
-    //   // e.target.parentElement.parentElement.nextElementSibling.children[
-    //   //   imageIndex - 1
-    //   // ].className = "ImgDots__item ImgDots__itemActive";
-    //   // e.target.parentElement.parentElement.nextElementSibling.children[
-    //   //   imageIndex
-    //   // ].className = "ImgDots__item";
-    // }
-    if (imageIndex > 0 && e.keyCode === 37) {
+  };
+
+  const handleKeyDownNext = (e) => {
+    e.preventDefault();
+    if (imageIndex < imgItem.length - 1 && e.keyCode === 39) {
+      setImageIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (imageIndex < imgItem.length - 1) {
+      setImageIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (imageIndex > 0) {
       setImageIndex((prevIndex) => prevIndex - 1);
     }
   };
@@ -63,7 +57,7 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
   return (
     <div className="Modal__cont" onClick={exitModal}>
       <div className="Image__cont">
-        <img src={imgItem[imageIndex]} alt="next" />
+        <img src={prodImages[imageIndex]} alt="next" />
         <div className="Controls__cont">
           <div className="PN__cont">
             {/* Previous Controller */}
@@ -80,17 +74,14 @@ const Modal = ({ prodName, prodImg, exitModalViaCont, exitModal }) => {
               </div>
             )}
           </div>
-          {/* {Image Dots} */}
-          <div className="ImgDots__cont">
-            <span className="ImgDots__item ImgDots__itemActive"></span>
-            <span className="ImgDots__item"></span>
-            <span className="ImgDots__item"></span>
-          </div>
 
           {/* {Close Button}  */}
           <div className="Close__cont">
             <div className="Close__item" onClick={exitModal}></div>
           </div>
+
+          {/* {Image Dots} */}
+          <Dot imageIndex={imageIndex} />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-/* MODAL */
+/* Modal Container  */
 
 .Modal__cont {
   position: fixed;
@@ -13,7 +13,7 @@
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* IMG */
+/* Img */
 
 .Modal__cont .Image__cont {
   position: relative;
@@ -25,9 +25,7 @@
   width: 100%;
 }
 
-/* CONTROLS */
-
-/* CONTROLS Prev & Next Button */
+/*  Prev & Next Controller*/
 
 .Controls__cont .PN__cont {
   position: absolute;
@@ -71,7 +69,7 @@
   transform: rotate(180deg);
 }
 
-/* CONTROLS Close Button  */
+/* Close Button  */
 
 .Controls__cont .Close__cont {
   position: absolute;
@@ -82,6 +80,8 @@
   font-family: "Montserrat";
 }
 
+/* Image Dots */
+
 .Controls__cont .Close__item {
   width: 2rem;
   height: 2rem;
@@ -89,26 +89,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40% 40%;
-}
-
-/* CONTROLS Imgage Guide */
-
-.Controls__cont .ImgDots__cont {
-  position: absolute;
-  bottom: -2rem;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
-.ImgDots__cont .ImgDots__item {
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 0 0.5rem 0 0.5rem;
-}
-
-.ImgDots__cont .ImgDots__itemActive {
-  background-color: #ca7919;
 }
