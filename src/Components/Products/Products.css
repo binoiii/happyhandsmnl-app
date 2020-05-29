@@ -44,12 +44,9 @@
 /* Grid Label Title */
 
 .Gridlabels__cont .GridLabelsItem__cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  display: table;
   width: 100%;
+  height: 100%;
   background-color: rgba(21, 21, 21, 0.475);
   opacity: 0;
   transition: opacity 0.2s ease-out;
@@ -59,10 +56,14 @@
   opacity: 1;
 }
 
-.GridLabelsItem__cont p {
-  margin: 0;
+.GridLabelsItem__cont div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   font-family: "Montserrat";
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: white;
 }
+
+/* Media Querries  */

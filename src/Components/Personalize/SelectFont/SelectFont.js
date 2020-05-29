@@ -42,7 +42,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
       <div
         className={(selectOptions && "Option__cont active") || "Option__cont"}
       >
-        {fontSelections.map((font, index) => {
+        {fontSelections.map((font) => {
           return (
             <div className="Option" key={font}>
               <input type="radio" name="fontStyles" readOnly />

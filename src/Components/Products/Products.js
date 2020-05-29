@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "./Modal/Modal";
 import "./Products.css";
 
+/* Direct Import for Local Environment */
 import Prod1 from "./img/product1.jpg";
 import Prod2 from "./img/product2.jpg";
 import Prod3 from "./img/product3.jpg";
@@ -16,26 +17,19 @@ import Prod11 from "./img/product11.jpg";
 import Prod12 from "./img/product12.jpg";
 
 const imgCont = [
-  { prodName: "chopping  board", prodImgCont: [Prod1, Prod2, Prod3] },
-  // ,
-  // { prodName: "bamboo notebook", prodImg: Prod2 },
-  // { prodName: "product 3", prodImg: Prod3 },
-  // { prodName: "product 4", prodImg: Prod4 },
-  // { prodName: "product 5", prodImg: Prod5 },
-  // { prodName: "product 6", prodImg: Prod6 },
-  // { prodName: "product 7", prodImg: Prod7 },
-  // { prodName: "product 8", prodImg: Prod8 },
-  // { prodName: "product 9", prodImg: Prod9 },
-  // { prodName: "product 10", prodImg: Prod10 },
-  // { prodName: "product 11", prodImg: Prod11 },
-  // { prodName: "product 12", prodImg: Prod12 },
+  { index: 0, prodName: "chopping  board", prodImgCont: [Prod1, Prod2, Prod3] },
+  { index: 1, prodName: "paddle brush", prodImgCont: [Prod4, Prod5, Prod6] },
+  { index: 2, prodName: "bambaunan", prodImgCont: [Prod7, Prod8, Prod9] },
+  { index: 3, prodName: "pacakages", prodImgCont: [Prod10, Prod11, Prod12] },
 ];
 
 function Products() {
   const [isModal, setModal] = useState(false);
+  const [prodCount, setProdCount] = useState(null);
 
-  const handleModal = () => {
+  const handleModal = (e) => {
     setModal(!isModal);
+    setProdCount(e.target.className);
   };
 
   const exitModal = (e) => {
@@ -46,17 +40,15 @@ function Products() {
     <div id="products" className="Prod__Wrap">
       <div className="Grid__cont">
         {/* Grid Items */}
-        {imgCont.map(({ prodName, prodImgCont }) => (
-          <div className="Grid__box" onClick={handleModal}>
+        {imgCont.map(({ index, prodName, prodImgCont }) => (
+          <div className="Grid__box" key={index}>
             <img src={prodImgCont[0]} alt={prodName} />
 
             {/* Grid Label */}
-            <div className="Gridlabels__cont">
+            <div className="Gridlabels__cont" id={index}>
               <div className="GridLabelsItem__cont">
-                <p>{prodName}</p>
-                <div className="HL__cont">
-                  {/* <div className="Heart">H E A R T</div>
-                  <div className="Ddd">. . .</div> */}
+                <div className={index} onClick={handleModal}>
+                  {prodName}
                 </div>
               </div>
             </div>
@@ -67,7 +59,10 @@ function Products() {
       {/* Modal */}
       <div>
         {isModal && (
-          <Modal exitModal={exitModal} prodImages={imgCont[0].prodImgCont} />
+          <Modal
+            exitModal={exitModal}
+            prodImages={imgCont[prodCount].prodImgCont}
+          />
         )}
       </div>
     </div>

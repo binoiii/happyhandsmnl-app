@@ -91,5 +91,8 @@
 }
 
 .Option label {
+  display: inline-block;
   font-size: 19px;
+  width: 100%;
+  cursor: pointer;
 }

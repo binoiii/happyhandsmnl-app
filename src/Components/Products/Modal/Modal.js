@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import Dot from "./Dot/Dot";
 import "./Modal.css";
 
-import Prod1 from "../img/product1.jpg";
-import Prod2 from "../img/product2.jpg";
-import Prod3 from "../img/product3.jpg";
-
-const imgItem = [Prod1, Prod2, Prod3];
-
 const Modal = ({ prodImages, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -23,6 +17,8 @@ const Modal = ({ prodImages, exitModal }) => {
     };
   });
 
+  const imageIndexNext = imageIndex < prodImages.length - 1;
+
   const handleKeyDownEsc = (e) => {
     e.preventDefault();
     exitModal(e);
@@ -37,13 +33,13 @@ const Modal = ({ prodImages, exitModal }) => {
 
   const handleKeyDownNext = (e) => {
     e.preventDefault();
-    if (imageIndex < imgItem.length - 1 && e.keyCode === 39) {
+    if (imageIndexNext && e.keyCode === 39) {
       setImageIndex((prevIndex) => prevIndex + 1);
     }
   };
 
   const handleNext = () => {
-    if (imageIndex < imgItem.length - 1) {
+    if (imageIndexNext) {
       setImageIndex((prevIndex) => prevIndex + 1);
     }
   };
@@ -68,7 +64,7 @@ const Modal = ({ prodImages, exitModal }) => {
             )}
 
             {/* Next Controller */}
-            {imageIndex < imgItem.length - 1 && (
+            {imageIndexNext && (
               <div className="Next__cont" onClick={handleNext}>
                 <div className="Next__item"></div>
               </div>
