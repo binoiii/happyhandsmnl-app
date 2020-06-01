@@ -48,6 +48,11 @@ body {
   src: local("citrica"), url(./Fonts/citrica.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Moon";
+  src: local("moon"), url(./Fonts/moon.otf) format("truetype");
+}
+
 /* @font-face {
   font-family: "Shorelines Script";
   src: local("shorelines_script"),

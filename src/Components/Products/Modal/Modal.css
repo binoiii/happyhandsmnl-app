@@ -37,30 +37,34 @@
 
 .PN__cont .Prev__cont,
 .PN__cont .Next__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
-  width: 2.75rem;
-  height: 2.75rem;
-  transform: translateY(-50%);
-  background-color: #dededec6;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.79);
   border-radius: 50%;
   cursor: pointer;
+  transform: translateY(-50%);
 }
 
 .PN__cont .Prev__cont {
-  left: 0;
+  left: -3rem;
 }
 
 .PN__cont .Next__cont {
-  right: 0;
+  right: -3rem;
 }
 
 .Prev__cont .Prev__item,
 .Next__cont .Next__item {
-  background: url("./img/next.svg");
+  color: #ca7919;
+  background: url(./img/next.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50% 50%;
+  background-size: 40% 40%;
   width: 100%;
   height: 100%;
 }
@@ -75,18 +79,30 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.79);
+  border-radius: 50%;
   margin: 0.5rem 0.5rem 0 0;
   cursor: pointer;
-  font-family: "Montserrat";
 }
 
 .Controls__cont .Close__item {
-  width: 2rem;
-  height: 2rem;
-  background: url("./img/close1.svg");
-  background-position: center;
+  background: url(./img/close1.svg);
+  background-size: 30% 30%;
   background-repeat: no-repeat;
-  background-size: 40% 40%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  /* font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: #878787; */
+}
+
+.Controls__cont .Close__item:hover {
+  color: #000000;
+  transition: color 0.3s ease-out;
 }
 
 /* Media Queries */
@@ -94,16 +110,16 @@
 @media (max-width: 850px) {
   .PN__cont .Prev__cont,
   .PN__cont .Next__cont {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }
 
 @media (max-width: 550px) {
   .PN__cont .Prev__cont,
   .PN__cont .Next__cont {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .Controls__cont .Close__cont {
