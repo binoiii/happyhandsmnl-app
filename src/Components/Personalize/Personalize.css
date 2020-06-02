@@ -1,29 +1,11 @@
 .Personalize__cont * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 .Personalize__cont {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   height: 100vh;
-}
-
-.InputSelect_cont {
-  display: flex;
-  width: 628px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .InputSelect_cont {
-    flex-direction: column;
-    align-items: center;
-    height: 130px;
-    margin-top: 30px;
-  }
 }

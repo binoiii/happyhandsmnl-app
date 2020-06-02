@@ -1,4 +1,4 @@
-/**** SELECT FONT ****/
+/* Select Font */
 
 .Select__cont {
   display: flex;
@@ -8,44 +8,44 @@
 }
 
 .Select__cont .Selected__cont {
+  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 300px;
-  border: 1px #a1a1a1 solid;
-  border-radius: 5px;
   height: 50px;
   background-color: #ffff;
-  position: relative;
+  border: 1px #a1a1a1 solid;
+  border-radius: 0.3rem;
+  padding: 0 8px 0 15px;
 }
 
 .Select__cont .Selected__cont:hover {
-  cursor: pointer;
   border-color: #ca7919;
   box-shadow: 0px 0px 5px #ca7919;
   transition: all 0.2s ease-out;
+  cursor: pointer;
 }
 
 .Select__cont .Selected__cont .Selected {
   color: grey;
-  padding-left: 15px;
-  align-self: center;
-  font-size: 19px;
   font-family: "Montserrat", sans-serif;
+  font-size: 19px;
 }
 
-.Selected__cont .Selected::after {
-  content: "";
-  background: url("./img/arrow_down.svg");
+.Selected__cont span {
+  background: url(./img/arrow_down.svg);
   background-size: 70% 70%;
+  background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
   height: 32px;
   width: 32px;
-  left: 265px;
 }
-
 .Selected__cont .Selected.active {
   color: black;
 }
+
+/* Font Options  */
 
 .Select__cont .Option__cont {
   background: white;
@@ -53,7 +53,7 @@
   top: 55px;
   width: 100%;
   border: 1px #a1a1a1 solid;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   text-align: center;
   transition: all 0.2s ease-out;
   overflow-y: scroll;
@@ -95,4 +95,24 @@
   font-size: 19px;
   width: 100%;
   cursor: pointer;
+}
+
+/* Media Query */
+
+@media (max-width: 320px) {
+  .Select__cont {
+    width: 250px;
+  }
+
+  .Select__cont .Selected__cont {
+    width: 250px;
+  }
+
+  .Select__cont .Selected__cont .Selected {
+    font-size: 15px;
+  }
+
+  .Option label {
+    font-size: 15px;
+  }
 }

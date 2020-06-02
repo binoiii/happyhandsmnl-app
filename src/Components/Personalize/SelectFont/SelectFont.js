@@ -37,6 +37,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     <div className="Select__cont">
       <div className="Selected__cont" onClick={handleSelect}>
         <div className={selectActive}>{selectedText}</div>
+        <span></span>
       </div>
 
       <div

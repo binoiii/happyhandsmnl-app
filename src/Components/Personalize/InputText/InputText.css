@@ -1,11 +1,10 @@
-/**** INPUT TEXT ****/
+/* Input Text */
 
-.InputText__cont {
+.Personalize__cont .InputSelect_cont {
   display: flex;
-}
-
-.InputText_self {
-  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .InputText__cont input {
@@ -16,7 +15,8 @@
   text-align: center;
   color: black;
   border: 1px solid #a1a1a1;
-  border-radius: 5px;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
 
 .InputText__cont input:hover {
@@ -31,9 +31,16 @@
   box-shadow: 0px 0px 5px #ca7919;
 }
 
-@media (max-width: 768px) {
-  .InputText__cont {
-    display: flex;
-    flex-direction: row;
+/* Media Query */
+
+@media (max-width: 320px) {
+  .Personalize__cont .InputSelect_cont {
+    margin-bottom: 1rem;
+  }
+
+  .InputText__cont input {
+    width: 250px;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
   }
 }

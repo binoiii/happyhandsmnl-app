@@ -26,25 +26,3 @@ const OutputText = ({
   );
 };
 export default OutputText;
-
-// import React, { useRef, useEffect } from "react";
-// import "./OutputFont.css";
-
-// const OutputFont = ({ fontValue, userText }) => {
-//   const canvasRef = useRef(null);
-
-//   const draw = () => {
-//     const canvas = canvasRef.current;
-//     const ctx = canvas.getContext("2d");
-
-//     ctx.font = `50px ${fontValue}`;
-//     ctx.fillStyle = "black";
-//     ctx.fillText(userText, 50, 50);
-//   };
-
-//   useEffect(draw);
-
-//   return <canvas ref={canvasRef} width="300px" height="200px"></canvas>;
-// };
-
-// export default OutputFont;

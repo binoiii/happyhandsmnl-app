@@ -1,7 +1,8 @@
-/**** OUTPUT TEXT ****/
+/* Output Text */
 
 .OutputText__cont {
   position: relative;
+  margin-bottom: 4rem;
 }
 
 .OutputText__cont .Output__cont {
@@ -12,7 +13,7 @@
   width: 628px;
   height: 50vh;
   border: 1px solid #a1a1a1;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-size: 100px;
   padding-bottom: 30px;
   overflow: auto;
@@ -27,6 +28,8 @@
   word-break: break-word;
 }
 
+/* Slider Input */
+
 .OutputText__cont .Slider__cont {
   position: absolute;
   bottom: 0;
@@ -38,6 +41,8 @@
   height: 30px;
   width: 100px;
 }
+
+/* Media Query */
 
 @media (max-width: 768px) {
   .OutputText__cont .Output__cont {
