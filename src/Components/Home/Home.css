@@ -1,41 +1,133 @@
-.Home__Wrap {
-  padding-top: 240px;
-  text-align: center;
+/* Home Container */
+
+.Home__cont {
+  /* display: grid; */
   height: 100vh;
-  width: 100%;
-  border: 1px black;
-  box-sizing: border-box;
 }
 
-.Home__Wrap h1 {
-  font: italic 50px "Sacramento", cursive;
-  margin: 0;
+/* Home Main Container */
+
+.Home__cont .HomeMain__cont {
+  display: grid;
+  grid-template-areas: "HomeLeft__cont HomeRight__cont";
+  height: inherit;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
 
-.Home__Wrap .social {
-  padding: 0;
-  margin: 20px 0;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-  /* border: 1px solid red; */
+/* Left Home Container */
+
+.HomeMain__cont .HomeLeft__cont {
+  display: grid;
+  grid-area: HomeLeft__cont;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "ecofriendly"
+    "ecofriendly"
+    "personalized"
+    "personalized"
+    "economical"
+    "economical"
+    "makethe"
+    "makethe"
+    "makethe"
+    "socials";
+  justify-items: end;
+  align-items: end;
+  background-color: #ca7919;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.15rem;
+  color: #ffffff;
 }
 
-.Home__Wrap .social {
-  margin: 0;
-  padding: 0;
+.HomeLeft__cont .ecofriendly {
+  grid-area: ecofriendly;
+  font-size: 2rem;
 }
 
-.Home__Wrap .social li {
-  padding: 0 10px;
-  display: inline-block;
-  font-size: 20px;
+.HomeLeft__cont .personalized {
+  grid-area: personalized;
+  font-size: 2rem;
 }
 
-.Home__Wrap .social li a {
-  color: black;
+.HomeLeft__cont .economical {
+  grid-area: economical;
+  font-size: 2rem;
 }
-.Home__Wrap .social li a:hover {
+
+.HomeLeft__cont .makethe {
+  grid-area: makethe;
+  font-size: 6.7rem;
+  text-shadow: 1px 2px 3px #e6e6e6;
+}
+
+.HomeLeft__cont .socials {
+  grid-area: socials;
+  font-family: "Sacramento", cursive;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/* Right Home Container */
+.HomeMain__cont .HomeRight__cont {
+  grid-area: HomeRight__cont;
+}
+
+.HomeMain__cont .HomeRight__cont {
+  display: grid;
+  grid-area: HomeRight__cont;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "ecofriendly"
+    "ecofriendly"
+    "personalized"
+    "personalized"
+    "economical"
+    "economical"
+    "switch"
+    "switch"
+    "switch"
+    "socials";
+  justify-items: start;
+  align-items: end;
+  background-color: #ffffff;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.15rem;
   color: #ca7919;
-  text-shadow: 0px 1px 2px #ca7919;
-  transform: scale(2);
-  transition: all 0.3s ease;
 }
+
+.HomeRight__cont .ecofriendly {
+  grid-area: ecofriendly;
+  font-size: 2rem;
+}
+
+.HomeRight__cont .personalized {
+  grid-area: personalized;
+  width: 500px;
+}
+
+.HomeRight__cont .economical {
+  grid-area: economical;
+  font-size: 2rem;
+}
+
+.HomeRight__cont .switch {
+  grid-area: switch;
+  font-size: 6.7rem;
+  text-shadow: 1px 2px 4px #a1a1a1;
+}
+
+.HomeRight__cont .socials {
+  grid-area: socials;
+  font-family: "Sacramento", cursive;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/* Social Links Container */
+
+.Home__cont .SocialLinks_cont {
+  grid-area: SocialLinks_cont;
+}
+
+/* Media Queries */
