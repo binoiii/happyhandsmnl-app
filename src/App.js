@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <Navigation />
       <Home data={hhData.main} />
-      <Products />
       <Personalize />
+      <Products />
       <About />
     </div>
   );
