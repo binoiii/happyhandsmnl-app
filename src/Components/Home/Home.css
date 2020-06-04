@@ -1,13 +1,12 @@
 .Home__cont {
   /* display: grid; */
   height: 100vh;
-  background: url("./img/12.jpg");
+  background: url("./img/123.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .Home__cont h1 {
-  margin: 5rem;
   font-family: "Damion";
 }

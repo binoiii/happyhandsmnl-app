@@ -8,7 +8,19 @@ import economical from "./img/economical.png";
 const Home = (props) => {
   return (
     <div className="Home__cont">
-      <h1>Make the Switch</h1>
+      <div className="HomeMain__cont">
+        <div className="HhStatement">
+          <h1>Make the Switch</h1>
+        </div>
+        <div className="HhSubStatement">
+          <div>eco-friendly . </div>
+          <div>personalized . </div>
+          <div>affordable</div>
+        </div>
+        <div className="Shop__cont">
+          <a>shop now!</a>
+        </div>
+      </div>
     </div>
   );
 };
