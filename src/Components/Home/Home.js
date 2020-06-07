@@ -2,23 +2,22 @@ import React from "react";
 import SocialLinks from "./SocialLinks/SocialLinks";
 import "./Home.css";
 
-import personalized from "./img/personalized.png";
-import economical from "./img/economical.png";
-
 const Home = (props) => {
   return (
-    <div className="Home__cont">
+    <div id="home" className="Home__cont">
       <div className="HomeMain__cont">
         <div className="HhStatement">
-          <h1>Make the Switch</h1>
+          <div>Make the Switch</div>
         </div>
         <div className="HhSubStatement">
-          <div>eco-friendly . </div>
-          <div>personalized . </div>
+          <div>eco-friendly</div>
+          <div>&nbsp;.&nbsp;</div>
+          <div>personalized</div>
+          <div>&nbsp;.&nbsp;</div>
           <div>affordable</div>
         </div>
         <div className="Shop__cont">
-          <a>shop now!</a>
+          <a>Shop Now</a>
         </div>
       </div>
     </div>
