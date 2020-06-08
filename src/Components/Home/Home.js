@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SocialLinks from "./SocialLinks/SocialLinks";
 import "./Home.css";
 
 const Home = (props) => {
+  useEffect(
+    FB.api("/happyhandsmnl/likes", function (response) {
+      if (response && !response.error) {
+        console.log(response);
+      }
+    }),
+    []
+  );
+
   return (
     <div id="home" className="Home__cont">
       <div className="HomeMain__cont">
@@ -11,9 +20,9 @@ const Home = (props) => {
         </div>
         <div className="HhSubStatement">
           <div>eco-friendly</div>
-          <div>&nbsp;.&nbsp;</div>
+          <div className="HhSubStatement__inactive">&nbsp;.&nbsp;</div>
           <div>personalized</div>
-          <div>&nbsp;.&nbsp;</div>
+          <div className="HhSubStatement__inactive">&nbsp;.&nbsp;</div>
           <div>affordable</div>
         </div>
         <div className="Shop__cont">
