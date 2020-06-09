@@ -1,29 +1,30 @@
 /* Social Links */
+.SocialLinks_cont {
+  /* align-self: flex-end; */
+}
 
-.Home__Wrap .social {
-  padding: 0;
-  margin: 20px 0;
+.SocialLinks_cont .social {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   /* border: 1px solid red; */
 }
 
-.Home__Wrap .social {
+.SocialLinks_cont .social {
   margin: 0;
   padding: 0;
 }
 
-.Home__Wrap .social li {
+.SocialLinks_cont .social li {
   padding: 0 10px;
   display: inline-block;
   font-size: 20px;
 }
 
-.Home__Wrap .social li a {
-  color: black;
+.SocialLinks_cont .social li a {
+  color: #ffffff;
 }
-.Home__Wrap .social li a:hover {
+.SocialLinks_cont .social li a:hover {
+  display: block;
   color: #ca7919;
-  text-shadow: 0px 1px 2px #ca7919;
-  transform: scale(2);
+  transform: scale(1.5);
   transition: all 0.3s ease;
 }

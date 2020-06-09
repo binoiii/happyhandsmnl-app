@@ -3,10 +3,9 @@ import "./SocialLinks.css";
 
 const SocialLinks = ({ props }) => (
   <div className="SocialLinks_cont">
-    social_links
     <ul className="social">
       {/* Social Links */}
-      {/* 
+
       {props.data &&
         props.data.social.map((entry) => (
           <li key={entry.name}>
@@ -14,7 +13,7 @@ const SocialLinks = ({ props }) => (
               <i className={entry.className} />
             </a>
           </li>
-        ))} */}
+        ))}
     </ul>
   </div>
 );
