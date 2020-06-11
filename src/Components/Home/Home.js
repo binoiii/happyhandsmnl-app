@@ -7,7 +7,7 @@ const Home = (props) => {
     <div id="home" className="Home__cont">
       <div className="HomeMain__cont">
         <div className="HhStatement">
-          <div>Make the Switch</div>
+          <div>MAKE THE SWITCH</div>
         </div>
         <div className="HhSubStatement">
           <div>eco-friendly</div>
@@ -17,18 +17,18 @@ const Home = (props) => {
           <div>affordable</div>
         </div>
         <div className="Shop__cont">
-          <a href="//">Shop Now</a>
+          <a href="//">SHOP NOW</a>
         </div>
-        <div className="SocialLinks_cont">
-          <SocialLinks props={props} />
-        </div>
+      </div>
+      <div className="SocialLinks_cont">
+        <SocialLinks props={props} />
       </div>
     </div>
   );
 };
 
 // function Home(props) {
-//   return (
+// return (
 //     <div id="home" className="Home__cont">
 //       <div className="HomeMain__cont">
 //         <div className="HomeLeft__cont">

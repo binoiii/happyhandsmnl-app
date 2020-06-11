@@ -11,6 +11,10 @@ const SocialLinks = ({ props }) => (
           <li key={entry.name}>
             <a href={entry.url} target="_blank" rel="noopener noreferrer">
               <i className={entry.className} />
+              <div className="Count__cont">
+                <div>Followers</div>
+                <div>5,9998</div>
+              </div>
             </a>
           </li>
         ))}

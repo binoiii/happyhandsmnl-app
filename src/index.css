@@ -53,6 +53,11 @@ body {
   src: local("moon"), url(./Fonts/moon.otf) format("truetype");
 }
 
+@font-face {
+  font-family: "Wensley";
+  src: local("wensley"), url(./Fonts/wensley.ttf) format("truetype");
+}
+
 /* @font-face {
   font-family: "Shorelines Script";
   src: local("shorelines_script"),

@@ -25,9 +25,10 @@
 .Nav__logo a {
   text-decoration: none;
   color: black;
-  font-family: "Damion";
+  font-family: "Sacramento";
   font-size: 25px;
   font-weight: 0;
+  font-style: italic;
   text-shadow: 1px 0.5px 4px #ca7919;
 }
 
