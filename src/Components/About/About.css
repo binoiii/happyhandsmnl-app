@@ -1,4 +1,30 @@
-.About__Wrap {
-  height: 100vh;
-  box-sizing: border-box;
+.About__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.About__main .About__title,
+.Crafted__cont .Crafted__title {
+  margin: 2rem 0;
+  font-family: "Sacramento";
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #ca7919;
+}
+
+.About__main .About__content {
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+/* Words to Highligth */
+
+.About__content span {
+  font-style: italic;
+  color: #ca7919;
 }

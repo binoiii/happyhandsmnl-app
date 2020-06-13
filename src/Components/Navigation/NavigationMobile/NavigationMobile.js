@@ -23,20 +23,6 @@ const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
         <li>
           <Link
             activeClass="active"
-            to="products"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={300}
-            href="#products"
-            onClick={toggleNavLinks}
-          >
-            products
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
             to="personalize"
             spy={true}
             smooth={true}
@@ -48,6 +34,21 @@ const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
             personalize
           </Link>
         </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="products"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={300}
+            href="#products"
+            onClick={toggleNavLinks}
+          >
+            products
+          </Link>
+        </li>
+
         <li>
           <Link
             activeClass="active"

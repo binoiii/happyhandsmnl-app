@@ -6,7 +6,6 @@
 
 .SocialLinks_cont .social {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-  /* border: 1px solid red; */
 }
 
 .SocialLinks_cont .social {
@@ -28,22 +27,32 @@
 }
 .SocialLinks_cont .social li a:hover {
   display: block;
-  color: #ca7919;
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: all 0.3s ease;
 }
 
-/* Social Facebook */
+/* Social Followers */
 
-.SocialLinks_cont .Count__cont {
-  /* position: absolute;
-  top: 0.9rem;
-  left: 1.4rem; */
+.SocialLinks_cont .Followers__cont {
   border: 1px solid #ffffff;
   border-radius: 0.2rem;
-  padding: 0.1rem 0.3rem;
+  box-shadow: -1px 1px 10px #828282;
+  padding: 0.3rem 0.3rem;
   font-size: 0.5rem;
   font-family: "Montserrat";
   text-align: center;
   color: #ffffff;
+}
+
+/* Media Queries Width */
+
+@media (max-width: 440px) {
+  .SocialLinks_cont {
+    margin-bottom: 0.8rem;
+  }
+
+  .SocialLinks_cont .social li {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
 }

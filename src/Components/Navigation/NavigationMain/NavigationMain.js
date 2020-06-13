@@ -27,19 +27,6 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
           <li>
             <Link
               activeClass="active"
-              to="products"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={300}
-              href="#products"
-            >
-              products
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
               to="personalize"
               spy={true}
               smooth={true}
@@ -50,6 +37,20 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               personalize
             </Link>
           </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="products"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              href="#products"
+            >
+              products
+            </Link>
+          </li>
+
           <li>
             <Link
               activeClass="active"

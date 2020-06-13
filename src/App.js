@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "./Components/Navigation//Navigation";
 import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-import Products from "./Components/Products/Products";
 import Personalize from "./Components/Personalize/Personalize";
+import Products from "./Components/Products/Products";
+import About from "./Components/About/About";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [hhData, sethhData] = useState({});
@@ -24,6 +25,7 @@ function App() {
       <Personalize />
       <Products />
       <About />
+      <Footer />
     </div>
   );
 }

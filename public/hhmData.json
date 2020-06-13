@@ -10,11 +10,6 @@
         "name": "instagram",
         "url": "https://www.instagram.com/happyhandsmnl/",
         "className": "fa fa-instagram"
-      },
-      {
-        "name": "messager",
-        "url": "https://www.viber.com/en/",
-        "className": "fab fa-viber"
       }
     ]
   }

@@ -6,9 +6,10 @@
 
 .Prod__Wrap .Grid__cont {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  margin: 0 7rem;
   cursor: pointer;
-  grid-gap: 3px;
 }
 
 /* Grid Items */

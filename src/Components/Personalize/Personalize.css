@@ -7,5 +7,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url("./img/PERSONALIZE_BG.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
   height: 100vh;
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+  .Personalize__cont {
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
 }
