@@ -3,20 +3,20 @@ import NavigationMain from "./NavigationMain/NavigationMain.js";
 import NavigationMobile from "./NavigationMobile/NavigationMobile.js";
 import Backdrop from "./Backdrop/Backdrop.js";
 
-const Navigation = (props) => {
-  const [isMenuOpen, setisMenuOpen] = useState(false);
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setisMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const toggleNavLinks = () => {
-    setisMenuOpen(false);
+    setIsMenuOpen(false);
   };
 
   return (
     <div>
-      {isMenuOpen && <Backdrop backDropToggle={toggleMenu} />}
+      {isMenuOpen && <Backdrop toggleMenu={toggleMenu} />}
       <NavigationMobile
         toggleNavLinks={toggleNavLinks}
         isMenuOpen={isMenuOpen}

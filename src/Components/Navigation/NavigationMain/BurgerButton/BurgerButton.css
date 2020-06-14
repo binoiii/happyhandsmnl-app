@@ -1,10 +1,10 @@
-.BB_head * {
+.BurgerButton__cont * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.BB_head {
+.BurgerButton__cont {
   width: 18px;
   height: 12px;
   background: transparent;
@@ -12,11 +12,11 @@
   cursor: pointer;
 }
 
-.BB_head:focus {
+.BurgerButton__cont:focus {
   outline: none;
 }
 
-.BB_head .BB_line {
+.BurgerButton__cont .BurgerButtonLine {
   border-radius: 10px;
   width: 18px;
   height: 2px;
@@ -24,30 +24,30 @@
   transition: 0.2s ease-out;
 }
 
-.BB_head .one {
+.BurgerButton__cont .one {
   transform: translateY(-3px);
 }
 
-.BB_head .three {
+.BurgerButton__cont .three {
   transform: translateY(3px);
 }
 
-.BB_head.change .one {
+.BurgerButton__cont.change .one {
   transform: translateY(1px) rotate(45deg);
   width: 14px;
 }
 
-.BB_head.change .two {
+.BurgerButton__cont.change .two {
   opacity: 0;
 }
 
-.BB_head.change .three {
+.BurgerButton__cont.change .three {
   transform: translateY(-3px) rotate(-45deg);
   width: 14px;
 }
 
 @media (min-width: 768px) {
-  .BB_head {
+  .BurgerButton__cont {
     display: none;
   }
 }

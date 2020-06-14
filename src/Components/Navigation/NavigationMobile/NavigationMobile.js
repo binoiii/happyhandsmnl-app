@@ -4,8 +4,10 @@ import { Link } from "react-scroll";
 
 const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
   return (
-    <nav className={(isMenuOpen && "NavMob__cont open") || "NavMob__cont"}>
-      <ul className="NavMob__head__links">
+    <nav
+      className={(isMenuOpen && "NavMobile__cont open") || "NavMobile__cont"}
+    >
+      <ul className="NavMobileLinks__cont">
         <li>
           <Link
             activeClass="active"

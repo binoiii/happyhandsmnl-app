@@ -5,12 +5,12 @@ import { Link } from "react-scroll";
 
 const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
   return (
-    <div className="Nav__head">
+    <div className="NavMain__cont">
       <nav className="Nav__cont">
-        <div className="Nav__logo">
+        <div className="NavLogo__cont">
           <a href="/">happyhandsmnl</a>
         </div>
-        <ul className="Nav__head__links">
+        <ul className="NavMainLinks__cont">
           <li>
             <Link
               activeClass="active"

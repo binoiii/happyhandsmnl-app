@@ -4,12 +4,14 @@ import "./BurgerButton.css";
 const BurgerButton = ({ isMenuOpen, toggleMenu }) => {
   return (
     <button
-      className={(isMenuOpen && "BB_head change") || "BB_head"}
+      className={
+        (isMenuOpen && "BurgerButton__cont change") || "BurgerButton__cont"
+      }
       onClick={toggleMenu}
     >
-      <div className="BB_line one"></div>
-      <div className="BB_line two"></div>
-      <div className="BB_line three"></div>
+      <div className="BurgerButtonLine one"></div>
+      <div className="BurgerButtonLine two"></div>
+      <div className="BurgerButtonLine three"></div>
     </button>
   );
 };
