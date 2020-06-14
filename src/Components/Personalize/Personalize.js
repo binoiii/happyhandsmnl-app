@@ -34,7 +34,11 @@ const Personalize = () => {
   return (
     <div id="personalize" className="Personalize__cont">
       <div className="InputSelect_cont">
-        <InputText handleUserText={handleUserText} spellCheck="false" />
+        <InputText
+          handleUserText={handleUserText}
+          userText={userText}
+          spellCheck="false"
+        />
         <SelectFont handleFontValue={handleFontValue} fontValue={fontValue} />
       </div>
       <OutputText

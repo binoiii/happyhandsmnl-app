@@ -4,10 +4,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url("./img/test.jpg");
-  background-size: contain;
+  background: url("./img/HOME_BG.jpg");
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 /* HH Main Container */
@@ -21,22 +21,30 @@
 
 .HomeMain__cont .HhStatement {
   margin-top: 7rem;
+
   text-align: center;
+  text-shadow: -1px 1px 10px #828282;
   font-family: "Montserrat";
   font-size: 4rem;
   letter-spacing: 0.2rem;
   color: #ffffff;
+
+  user-select: none;
 }
 
 /* HH Substatement */
 .HomeMain__cont .HhSubStatement {
   display: flex;
-  margin: -0.5rem 0 4rem 0;
+  margin: 0.7rem 0 2rem 0;
+
+  text-shadow: -1px 1px 10px #828282;
   font-family: "Sacramento";
   font-size: 1.9rem;
   font-style: italic;
   letter-spacing: 0.2rem;
   color: #ffffff;
+
+  user-select: none;
 }
 
 /* Shop Now */
@@ -78,14 +86,6 @@
 }
 
 /* Media Queries Width */
-
-@media (max-width: 1024px) {
-  .Home__cont {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-}
 
 @media (max-width: 760px) {
   .HomeMain__cont .HhStatement {
