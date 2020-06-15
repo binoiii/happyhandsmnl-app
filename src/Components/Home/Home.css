@@ -33,7 +33,7 @@
 }
 
 /* HH Substatement */
-.HomeMain__cont .HhSubStatement {
+.HomeMain__cont .HhSubStatement__cont {
   display: flex;
   margin: 0.7rem 0 2rem 0;
 
@@ -92,7 +92,7 @@
     font-size: 5rem;
   }
 
-  .HomeMain__cont .HhSubStatement {
+  .HomeMain__cont .HhSubStatement__cont {
     font-size: 1.5rem;
   }
 
@@ -106,7 +106,7 @@
     font-size: 3.8rem;
   }
 
-  .HomeMain__cont .HhSubStatement {
+  .HomeMain__cont .HhSubStatement__cont {
     flex-direction: column;
     margin: 1px 0 1px 0;
     text-align: center;
@@ -128,7 +128,7 @@
     font-size: 3rem;
   }
 
-  .HomeMain__cont .HhSubStatement {
+  .HomeMain__cont .HhSubStatement__cont {
     flex-direction: column;
     margin: 1px 0 1px 0;
     text-align: center;
@@ -147,7 +147,7 @@
     font-size: 2.5rem;
   }
 
-  .HomeMain__cont .HhSubStatement {
+  .HomeMain__cont .HhSubStatement__cont {
     flex-direction: column;
     margin: 1px 0 1px 0;
     text-align: center;
