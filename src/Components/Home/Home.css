@@ -1,5 +1,3 @@
-/* Home Container */
-
 .Home__cont {
   height: 100vh;
   display: flex;
@@ -10,16 +8,14 @@
   background-repeat: no-repeat;
 }
 
-/* HH Main Container */
 .Home__cont .HomeMain__cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
 }
-/* HH Statement */
 
-.HomeMain__cont .HhStatement {
+.HomeMain__cont .HhStatement__cont {
   margin-top: 7rem;
 
   text-align: center;
@@ -32,11 +28,9 @@
   user-select: none;
 }
 
-/* HH Substatement */
 .HomeMain__cont .HhSubStatement__cont {
   display: flex;
   margin: 0.7rem 0 2rem 0;
-
   text-shadow: -1px 1px 10px #828282;
   font-family: "Sacramento";
   font-size: 1.9rem;
@@ -46,8 +40,6 @@
 
   user-select: none;
 }
-
-/* Shop Now */
 
 .HomeMain__cont .Shop__cont {
   position: relative;
@@ -60,6 +52,16 @@
   font-size: 1rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+
+.HomeMain__cont .Shop__cont:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out;
+}
+
+.ShopNow__cont a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* .HomeMain__cont .Shop__cont::after {
@@ -75,20 +77,8 @@
     -3px 3px 5px 2px rgba(0, 0, 0, 0.4); */
 /* border-radius: 0.5rem; */
 
-.HomeMain__cont .Shop__cont:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-out;
-}
-
-.Shop__cont a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* Media Queries Width */
-
 @media (max-width: 760px) {
-  .HomeMain__cont .HhStatement {
+  .HomeMain__cont .HhStatement__cont {
     font-size: 5rem;
   }
 
@@ -102,7 +92,7 @@
 }
 
 @media (max-width: 550px) {
-  .HomeMain__cont .HhStatement {
+  .HomeMain__cont .HhStatement__cont {
     font-size: 3.8rem;
   }
 
@@ -123,7 +113,7 @@
 }
 
 @media (max-width: 440px) {
-  .HomeMain__cont .HhStatement {
+  .HomeMain__cont .HhStatement__cont {
     text-align: center;
     font-size: 3rem;
   }
@@ -142,7 +132,7 @@
 }
 
 @media (max-width: 320px) {
-  .HomeMain__cont .HhStatement {
+  .HomeMain__cont .HhStatement__cont {
     text-align: center;
     font-size: 2.5rem;
   }
@@ -155,10 +145,8 @@
   }
 }
 
-/* Media Queries Height */
-
 @media (max-height: 670px) {
-  .HomeMain__cont .HhStatement {
+  .HomeMain__cont .HhStatement__cont {
     margin-top: 6rem;
   }
 }

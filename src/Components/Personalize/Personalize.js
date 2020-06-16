@@ -3,7 +3,6 @@ import InputText from "./InputText/InputText";
 import SelectFont from "./SelectFont/SelectFont";
 import OutputText from "./OutputText/OutputText";
 import "./Personalize.css";
-// import OutputFont from "./OutputFont/OutputFont.js";
 
 const Personalize = () => {
   const [userText, setuserText] = useState("");

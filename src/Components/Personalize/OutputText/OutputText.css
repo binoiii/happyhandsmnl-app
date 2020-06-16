@@ -1,5 +1,3 @@
-/* Output Text */
-
 .OutputText__cont {
   position: relative;
   margin-bottom: 4rem;
@@ -17,18 +15,12 @@
   font-size: 100px;
   padding-bottom: 30px;
   overflow: auto;
-  /* background: url("./img/wood_bg.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 
 .Output__cont div {
-  /* text-shadow: 1.5px 1.5px 2px #aa6411; */
   text-align: center;
   word-break: break-word;
 }
-
-/* Slider Input */
 
 .OutputText__cont .Slider__cont {
   position: absolute;
@@ -42,7 +34,95 @@
   width: 100px;
 }
 
-/* Media Query */
+input[type="range"] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #ca7919;
+  border-radius: 3px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 1px solid #a1a1a1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ca7919;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #ca7919;
+  border-radius: 3px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 1px solid #a1a1a1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ca7919;
+  border: 0px solid #000000;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ca7919;
+  border: 0px solid #000000;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 1px solid #a1a1a1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ca7919;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ca7919;
+}
 
 @media (max-width: 768px) {
   .OutputText__cont .Output__cont {

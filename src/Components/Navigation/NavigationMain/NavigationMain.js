@@ -8,7 +8,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
     <div className="NavMain__cont">
       <nav className="Nav__cont">
         <div className="NavLogo__cont">
-          <a href="/">happyhandsmnl</a>
+          <span>happyhandsmnl</span>
         </div>
         <ul className="NavMainLinks__cont">
           <li>

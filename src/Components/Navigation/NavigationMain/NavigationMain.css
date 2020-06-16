@@ -22,8 +22,7 @@
   padding: 0 40px;
 }
 
-.NavLogo__cont a {
-  text-decoration: none;
+.NavLogo__cont span {
   font-family: "Sacramento";
   font-size: 25px;
   font-weight: 0;
@@ -32,12 +31,11 @@
   color: black;
 }
 
-.NavLogo__cont a:hover {
-  text-decoration: none;
+.NavLogo__cont span:hover {
   text-shadow: none;
   transition: all 0.3s ease-out;
   color: #ca7919;
-  cursor: pointer;
+  cursor: default;
 }
 
 .NavMainLinks__cont li {
