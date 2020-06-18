@@ -10,6 +10,11 @@ const Personalize = () => {
   const [sliderValue, setSliderValue] = useState("100");
   const [fontSizeValue, setFontSizeValue] = useState("100px");
 
+  const outputStyle = {
+    fontFamily: fontValue,
+    fontSize: fontSizeValue,
+  };
+
   const handleUserText = (e) => {
     setuserText(e.target.value);
   };
@@ -19,20 +24,15 @@ const Personalize = () => {
   };
 
   const handleSliderValue = (e) => {
-    const fcontSize = e.target.value;
-    const fontSizePx = fcontSize + "px";
-    setSliderValue(fcontSize);
+    const fontSize = e.target.value;
+    const fontSizePx = fontSize + "px";
+    setSliderValue(fontSize);
     setFontSizeValue(fontSizePx);
-  };
-
-  const outputStyle = {
-    fontFamily: fontValue,
-    fontSize: fontSizeValue,
   };
 
   return (
     <div id="personalize" className="Personalize__cont">
-      <div className="InputSelect_cont">
+      <div className="InputTextSelectFont__cont">
         <InputText
           handleUserText={handleUserText}
           userText={userText}

@@ -1,5 +1,3 @@
-/* Select Font */
-
 .Select__cont {
   display: flex;
   flex-direction: column;
@@ -44,8 +42,6 @@
 .Selected__cont .Selected.active {
   color: black;
 }
-
-/* Font Options  */
 
 .Select__cont .Option__cont {
   background: white;
@@ -96,8 +92,6 @@
   width: 100%;
   cursor: pointer;
 }
-
-/* Media Query */
 
 @media (max-width: 320px) {
   .Select__cont {

@@ -8,8 +8,8 @@ const InputText = ({ userText, handleUserText }) => {
         type="text"
         value={userText}
         onChange={handleUserText}
-        className="InputText_self"
         placeholder="TYPE YOUR TEXT"
+        spellcheck="false"
       />
     </div>
   );

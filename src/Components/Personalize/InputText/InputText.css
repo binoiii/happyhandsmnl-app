@@ -1,6 +1,4 @@
-/* Input Text */
-
-.Personalize__cont .InputSelect_cont {
+.Personalize__cont .InputTextSelectFont__cont {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,10 +29,8 @@
   box-shadow: 0px 0px 5px #ca7919;
 }
 
-/* Media Query */
-
 @media (max-width: 320px) {
-  .Personalize__cont .InputSelect_cont {
+  .Personalize__cont .InputTextSelectFont__cont {
     margin-bottom: 1rem;
   }
 

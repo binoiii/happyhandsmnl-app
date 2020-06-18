@@ -17,12 +17,12 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     handleFontValue(e);
   };
 
-  const selectedText =
-    fontValue !== "Montserrat" ? fontValue : "CHOOSE YOUR FONT";
+  const [currentFont, isActiveClass] =
+    fontValue !== "Montserrat"
+      ? [fontValue, "Selected active"]
+      : ["CHOOSE YOUR FONT", "Selected"];
 
-  const selectActive =
-    fontValue !== "Montserrat" ? "Selected active" : "Selected";
-
+  // To be added on backend
   const fontSelections = [
     "Baybayin",
     "Bernadette",
@@ -36,7 +36,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
   return (
     <div className="Select__cont">
       <div className="Selected__cont" onClick={handleSelect}>
-        <div className={selectActive}>{selectedText}</div>
+        <div className={isActiveClass}>{currentFont}</div>
         <span></span>
       </div>
 
