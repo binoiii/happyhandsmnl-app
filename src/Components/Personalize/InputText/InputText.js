@@ -9,7 +9,7 @@ const InputText = ({ userText, handleUserText }) => {
         value={userText}
         onChange={handleUserText}
         placeholder="TYPE YOUR TEXT"
-        spellcheck="false"
+        spellCheck="false"
       />
     </div>
   );

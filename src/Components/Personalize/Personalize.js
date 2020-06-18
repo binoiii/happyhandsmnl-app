@@ -6,39 +6,36 @@ import "./Personalize.css";
 
 const Personalize = () => {
   const [userText, setuserText] = useState("");
-  const [fontValue, setfontValue] = useState("Montserrat");
   const [sliderValue, setSliderValue] = useState("100");
-  const [fontSizeValue, setFontSizeValue] = useState("100px");
-
-  const outputStyle = {
-    fontFamily: fontValue,
-    fontSize: fontSizeValue,
-  };
+  const [outputStyle, setOutputStyle] = useState({
+    fontFamily: "Montserrat",
+    fontSize: "100px",
+  });
 
   const handleUserText = (e) => {
     setuserText(e.target.value);
   };
 
   const handleFontValue = (e) => {
-    setfontValue(e.target.innerText);
+    const fontStyle = e.target.innerText;
+    setOutputStyle({ ...outputStyle, fontFamily: fontStyle });
   };
 
   const handleSliderValue = (e) => {
-    const fontSize = e.target.value;
-    const fontSizePx = fontSize + "px";
-    setSliderValue(fontSize);
-    setFontSizeValue(fontSizePx);
+    const fontSizeUser = e.target.value;
+    const fontSizePx = fontSizeUser + "px";
+    setSliderValue(fontSizeUser);
+    setOutputStyle({ ...outputStyle, fontSize: fontSizePx });
   };
 
   return (
     <div id="personalize" className="Personalize__cont">
       <div className="InputTextSelectFont__cont">
-        <InputText
-          handleUserText={handleUserText}
-          userText={userText}
-          spellCheck="false"
+        <InputText handleUserText={handleUserText} userText={userText} />
+        <SelectFont
+          handleFontValue={handleFontValue}
+          fontValue={outputStyle.fontFamily}
         />
-        <SelectFont handleFontValue={handleFontValue} fontValue={fontValue} />
       </div>
       <OutputText
         outputStyle={outputStyle}
