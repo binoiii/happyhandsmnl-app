@@ -39,12 +39,10 @@ function Products() {
   return (
     <div id="products" className="Prod__Wrap">
       <div className="Grid__cont">
-        {/* Grid Items */}
         {imgCont.map(({ index, prodName, prodImgCont }) => (
           <div className="Grid__box" key={index}>
             <img src={prodImgCont[0]} alt={prodName} />
 
-            {/* Grid Label */}
             <div className="Gridlabels__cont" id={index}>
               <div className="GridLabelsItem__cont">
                 <div className={index} onClick={handleModal}>
@@ -56,7 +54,6 @@ function Products() {
         ))}
       </div>
 
-      {/* Modal */}
       <div>
         {isModal && (
           <Modal

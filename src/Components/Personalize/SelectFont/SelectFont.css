@@ -18,11 +18,21 @@
   padding: 0 8px 0 15px;
 }
 
-.Select__cont .Selected__cont:hover {
+.Select__cont .Selected__cont:focus {
   border-color: #ca7919;
   box-shadow: 0px 0px 5px #ca7919;
+}
+
+.Select__cont .Selected__cont:hover {
+  border-color: #ca7919;
+
   transition: all 0.2s ease-out;
   cursor: pointer;
+}
+
+.Select__cont .Selected__cont:focus {
+  border-color: #ca7919;
+  outline: #ca7919;
 }
 
 .Select__cont .Selected__cont .Selected {

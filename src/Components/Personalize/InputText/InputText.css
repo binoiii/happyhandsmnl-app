@@ -8,13 +8,14 @@
 .InputText__cont input {
   width: 300px;
   height: 50px;
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: black;
   border: 1px solid #a1a1a1;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+
+  color: black;
 }
 
 .InputText__cont input:hover {

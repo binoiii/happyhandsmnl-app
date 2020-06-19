@@ -15,6 +15,7 @@ const OutputText = ({
       <div className="Slider__cont">
         <input
           type="range"
+          name="slider"
           min="50"
           max="150"
           step="1"

@@ -26,6 +26,7 @@ const Home = (props) => {
             offset={-70}
             duration={300}
             href="#products"
+            tabIndex="5"
           >
             <div className="Shop__cont">SHOP NOW</div>
           </Link>

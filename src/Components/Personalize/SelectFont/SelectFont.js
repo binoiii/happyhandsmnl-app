@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SelectFont.css";
 
 const SelectFont = ({ handleFontValue, fontValue }) => {
@@ -17,7 +17,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     handleFontValue(e);
   };
 
-  const [currentFont, isActiveClass] =
+  const [currentFont, selectedFont] =
     fontValue !== "Montserrat"
       ? [fontValue, "Selected active"]
       : ["CHOOSE YOUR FONT", "Selected"];
@@ -35,8 +35,8 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
 
   return (
     <div className="Select__cont">
-      <div className="Selected__cont" onClick={handleSelect}>
-        <div className={isActiveClass}>{currentFont}</div>
+      <div className="Selected__cont" onClick={handleSelect} tabIndex="8">
+        <div className={selectedFont}>{currentFont}</div>
         <span></span>
       </div>
 

@@ -7,7 +7,12 @@ const SocialLinks = ({ props }) => (
       {props.data &&
         props.data.social.map((entry) => (
           <li key={entry.name}>
-            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+            <a
+              href={entry.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex="6"
+            >
               <i className={entry.className} />
               <div className="Followers__cont">
                 <div>Followers</div>

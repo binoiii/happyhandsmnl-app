@@ -20,6 +20,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#home"
+              tabIndex="1"
             >
               home
             </Link>
@@ -33,6 +34,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#personalize"
+              tabIndex="2"
             >
               personalize
             </Link>
@@ -46,6 +48,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#products"
+              tabIndex="3"
             >
               products
             </Link>
@@ -60,6 +63,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#about"
+              tabIndex="4"
             >
               about
             </Link>

@@ -56,14 +56,12 @@ const Modal = ({ prodImages, exitModal }) => {
         <img src={prodImages[imageIndex]} alt="next" />
         <div className="Controls__cont">
           <div className="PN__cont">
-            {/* Previous Controller */}
             {imageIndex > 0 && (
               <div className="Prev__cont" onClick={handlePrev}>
                 <div className="Prev__item"></div>
               </div>
             )}
 
-            {/* Next Controller */}
             {imageIndexNext && (
               <div className="Next__cont" onClick={handleNext}>
                 <div className="Next__item"></div>
@@ -71,12 +69,10 @@ const Modal = ({ prodImages, exitModal }) => {
             )}
           </div>
 
-          {/* {Close Button}  */}
           <div className="Close__cont">
             <div className="Close__item" onClick={exitModal}></div>
           </div>
 
-          {/* {Image Dots} */}
           <Dot imageIndex={imageIndex} />
         </div>
       </div>
