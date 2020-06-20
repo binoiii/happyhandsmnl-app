@@ -6,14 +6,14 @@ const Modal = ({ prodImages, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyDownEsc);
-    window.addEventListener("keydown", handleKeyDownPrev);
-    window.addEventListener("keydown", handleKeyDownNext);
+    document.addEventListener("keydown", handleKeyDownEsc);
+    document.addEventListener("keydown", handleKeyDownPrev);
+    document.addEventListener("keydown", handleKeyDownNext);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDownEsc);
-      window.removeEventListener("keydown", handleKeyDownPrev);
-      window.removeEventListener("keydown", handleKeyDownNext);
+      document.removeEventListener("keydown", handleKeyDownEsc);
+      document.removeEventListener("keydown", handleKeyDownPrev);
+      document.removeEventListener("keydown", handleKeyDownNext);
     };
   });
 
@@ -26,14 +26,16 @@ const Modal = ({ prodImages, exitModal }) => {
 
   const handleKeyDownPrev = (e) => {
     e.preventDefault();
-    if (imageIndex > 0 && e.keyCode === 37) {
+    const key = e.key || e.keyCode;
+    if (imageIndex > 0 && (key === "ArrowLeft" || key === 37)) {
       setImageIndex((prevIndex) => prevIndex - 1);
     }
   };
 
   const handleKeyDownNext = (e) => {
     e.preventDefault();
-    if (imageIndexNext && e.keyCode === 39) {
+    const key = e.key || e.keyCode;
+    if ((imageIndexNext && key === "ArrowRight") || key === 39) {
       setImageIndex((prevIndex) => prevIndex + 1);
     }
   };

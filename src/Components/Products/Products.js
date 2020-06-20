@@ -33,7 +33,9 @@ function Products() {
   };
 
   const exitModal = (e) => {
-    (e.target === e.currentTarget || e.keyCode === 27) && setModal(false);
+    const key = e.key || e.keyCode;
+    (e.target === e.currentTarget || key === "Escape" || key === 27) &&
+      setModal(false);
   };
 
   return (
