@@ -16,8 +16,8 @@ const Personalize = () => {
     setuserText(e.target.value);
   };
 
-  const handleFontValue = (e) => {
-    const fontStyle = e.target.innerText;
+  const handleFontValue = (selectedFont) => {
+    const fontStyle = selectedFont;
     setOutputStyle({ ...outputStyle, fontFamily: fontStyle });
   };
 

@@ -18,20 +18,22 @@
   padding: 0 8px 0 15px;
 }
 
-.Select__cont .Selected__cont:focus {
-  border-color: #ca7919;
-  box-shadow: 0px 0px 5px #ca7919;
-}
-
 .Select__cont .Selected__cont:hover {
   border-color: #ca7919;
-
+  box-shadow: 0px 0px 5px #ca7919;
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
 
 .Select__cont .Selected__cont:focus {
   border-color: #ca7919;
+  box-shadow: 0px 0px 5px #ca7919;
+  outline: #ca7919;
+}
+
+.Select__cont .Selected__cont.active {
+  border-color: #ca7919;
+  box-shadow: 0px 0px 5px #ca7919;
   outline: #ca7919;
 }
 
@@ -39,6 +41,10 @@
   color: grey;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
+}
+
+.Selected__cont .Selected.active {
+  color: black;
 }
 
 .Selected__cont span {
@@ -49,8 +55,9 @@
   height: 32px;
   width: 32px;
 }
-.Selected__cont .Selected.active {
-  color: black;
+
+.Select__cont .Option__cont:focus {
+  outline: none;
 }
 
 .Select__cont .Option__cont {
@@ -88,6 +95,12 @@
 }
 
 .Option__cont .Option:hover {
+  color: #ca7919;
+  transition: color 0.2s ease-out;
+}
+
+.Option__cont .Option.active {
+  outline: none;
   color: #ca7919;
   transition: color 0.2s ease-out;
 }

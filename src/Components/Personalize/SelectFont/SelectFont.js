@@ -3,6 +3,7 @@ import "./SelectFont.css";
 
 const SelectFont = ({ handleFontValue, fontValue }) => {
   const [isOptionsAvailable, setOptionsAvailable] = useState(false);
+  const [optionPosition, setOptionPosition] = useState(0);
 
   const toggleFontOptions = () => {
     setOptionsAvailable(!isOptionsAvailable);
@@ -12,42 +13,49 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     setOptionsAvailable(false);
   };
 
-  const fontSelected = (e) => {
+  const onFontSelected = (e) => {
     exitFontOptions();
-    handleFontValue(e);
+    handleFontValue(e.target.innerText);
   };
 
-  const handleOptionsKeyDownPress = (e) => {
+  const handleSelectContainerKeyDown = (e) => {
     const key = e.key || e.keyCode;
 
-    console.log(key, 1);
-
-    if (key !== "Tab" || key !== 9) {
-      e.preventDefault();
-      console.log(key);
-    }
-
-    if (!isOptionsAvailable && (key === "ArrowDown" || key === 40)) {
+    if (key === "Escape" || key === 27) {
       toggleFontOptions();
     }
 
-    if (key === "ArrowUp" || key === 38) {
-      toggleFontOptions();
+    if (key === "Tab" || key === 9) {
+      !isOptionsAvailable && toggleFontOptions();
     }
+  };
+
+  const navigateOptionsKeyDown = (e) => {
+    const key = e.key || e.keyCode;
 
     if (key === "Escape" || key === 27) {
-      exitFontOptionsKeyDown(e);
+      isOptionsAvailable && toggleFontOptions();
     }
-  };
 
-  const exitFontOptionsKeyDown = (e) => {
-    if (isOptionsAvailable) {
-      toggleFontOptions();
+    if (key === "Tab" || key === 9) {
+      isOptionsAvailable && toggleFontOptions();
     }
-  };
 
-  const toggleSelectFont = (e) => {
-    console.log(e.keyCode, e.key);
+    if (key === "Enter" || key === 13) {
+      exitFontOptions();
+      handleFontValue(e.target.children[optionPosition].innerText);
+    }
+
+    if (
+      (key === "ArrowDown" || key === 38) &&
+      optionPosition < fontSelections.length - 1
+    ) {
+      setOptionPosition((previousPostion) => previousPostion + 1);
+    }
+
+    if ((key === "ArrowUp" || key === 40) && optionPosition > 0) {
+      setOptionPosition((previousPostion) => previousPostion - 1);
+    }
   };
 
   const [currentFont, selectedFont] =
@@ -57,21 +65,23 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
 
   // To be added on backend
   const fontSelections = [
-    "Baybayin",
-    "Bernadette",
-    "Modernist  Milk",
-    "riztteen",
-    "Bebas Neue",
-    "Damion",
-    "Citrica",
+    { id: "0", fontName: "Baybayin" },
+    { id: "1", fontName: "Bernadette" },
+    { id: "2", fontName: "Modernist Milk" },
+    { id: "3", fontName: "riztteen" },
+    { id: "4", fontName: "Bebas Neue" },
+    { id: "5", fontName: "Damion" },
+    { id: "6", fontName: "Citrica" },
   ];
 
   return (
     <div className="Select__cont">
       <div
-        className="Selected__cont"
+        className={
+          (isOptionsAvailable && "Selected__cont active") || "Selected__cont"
+        }
         onClick={toggleFontOptions}
-        onKeyDown={handleOptionsKeyDownPress}
+        onKeyDown={handleSelectContainerKeyDown}
         tabIndex="8"
       >
         <div className={selectedFont}>{currentFont}</div>
@@ -82,22 +92,23 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
         className={
           (isOptionsAvailable && "Option__cont active") || "Option__cont"
         }
+        onKeyDown={navigateOptionsKeyDown}
+        tabIndex="0"
       >
-        {fontSelections.map((font) => {
+        {fontSelections.map(({ id, fontName, tabIndex }, i) => {
           return (
             <div
-              className="Option"
-              key={font}
-              onKeyDown={toggleSelectFont}
-              tabIndex="9"
+              className={i === optionPosition ? "Option active" : "Option"}
+              key={id}
+              tabIndex="-1"
             >
               <input type="radio" name="fontStyles" readOnly />
               <label
-                style={{ fontFamily: font }}
+                style={{ fontFamily: fontName }}
                 htmlFor="fontStyles"
-                onClick={fontSelected}
+                onClick={onFontSelected}
               >
-                {font}
+                {fontName}
               </label>
             </div>
           );
