@@ -1,19 +1,15 @@
-/* Modal Container */
-
 .Modal__cont {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 4;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
+  z-index: 4;
 }
-
-/* Img */
 
 .Modal__cont .Image__cont {
   position: relative;
@@ -22,7 +18,7 @@
 
 .Image__cont img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /*  Prev & Next Controller */

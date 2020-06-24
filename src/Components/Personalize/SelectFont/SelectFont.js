@@ -42,8 +42,8 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     }
 
     if (key === "Enter" || key === 13) {
-      exitFontOptions();
       handleFontValue(e.target.children[optionPosition].innerText);
+      exitFontOptions();
     }
 
     if (
@@ -63,7 +63,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
       ? [fontValue, "Selected active"]
       : ["CHOOSE YOUR FONT", "Selected"];
 
-  // To be added on backend
+  // TO BE ADDED IN THE BACKEND
   const fontSelections = [
     { id: "0", fontName: "Baybayin" },
     { id: "1", fontName: "Bernadette" },
@@ -95,7 +95,7 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
         onKeyDown={navigateOptionsKeyDown}
         tabIndex="0"
       >
-        {fontSelections.map(({ id, fontName, tabIndex }, i) => {
+        {fontSelections.map(({ id, fontName }, i) => {
           return (
             <div
               className={i === optionPosition ? "Option active" : "Option"}

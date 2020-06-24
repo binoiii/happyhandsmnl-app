@@ -27,6 +27,7 @@ const Modal = ({ prodImages, exitModal }) => {
   const handleKeyDownPrev = (e) => {
     e.preventDefault();
     const key = e.key || e.keyCode;
+
     if (imageIndex > 0 && (key === "ArrowLeft" || key === 37)) {
       setImageIndex((prevIndex) => prevIndex - 1);
     }
@@ -35,6 +36,7 @@ const Modal = ({ prodImages, exitModal }) => {
   const handleKeyDownNext = (e) => {
     e.preventDefault();
     const key = e.key || e.keyCode;
+
     if ((imageIndexNext && key === "ArrowRight") || key === 39) {
       setImageIndex((prevIndex) => prevIndex + 1);
     }

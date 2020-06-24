@@ -56,6 +56,7 @@
 }
 
 .NavMainLinks__cont .active {
+  outline: none;
   color: #ca7919;
 }
 
