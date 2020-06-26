@@ -25,6 +25,10 @@ const imgCont = [
   { index: 5, prodName: "paddle brush", prodImgCont: [Prod4, Prod5, Prod6] },
   { index: 6, prodName: "bambaunan", prodImgCont: [Prod7, Prod8, Prod9] },
   { index: 7, prodName: "pacakages", prodImgCont: [Prod10, Prod11, Prod12] },
+  { index: 8, prodName: "chopping  board", prodImgCont: [Prod1, Prod2, Prod3] },
+  { index: 9, prodName: "paddle brush", prodImgCont: [Prod4, Prod5, Prod6] },
+  { index: 10, prodName: "bambaunan", prodImgCont: [Prod7, Prod8, Prod9] },
+  { index: 11, prodName: "pacakages", prodImgCont: [Prod10, Prod11, Prod12] },
 ];
 
 function Products() {
