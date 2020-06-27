@@ -55,6 +55,11 @@
   color: black;
 }
 
+.NavMainLinks__cont a:focus {
+  outline: none;
+  color: #ca7919;
+}
+
 .NavMainLinks__cont .active {
   outline: none;
   color: #ca7919;

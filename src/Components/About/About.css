@@ -17,8 +17,8 @@
 .Crafted__cont .Crafted__title {
   font-family: "Sacramento";
   font-style: italic;
-  font-size: 2.2rem;
-  margin: 2rem 0 0.5rem 0;
+  font-size: 2rem;
+  margin-top: 2rem;
   color: #ca7919;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .About__contents div:nth-child(odd) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-family: "Montserrat";
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -46,16 +46,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /* background-color: #f5f5f5; */
-  padding: 2rem 0 3rem 0;
-  margin-bottom: 1rem;
+  margin: 2rem 0 3rem 0;
 }
 
 .Mission__cont,
 .Vision__cont {
-  margin-bottom: 3rem;
   width: 320px;
-  margin: 0 3rem;
+  margin: 0 3rem 3rem;
 }
 
 .Mission__title,
@@ -92,10 +89,37 @@
 
 .Logo__box img {
   display: block;
-  max-width: 50px;
+  max-width: 40px;
   padding: 20px;
 }
 
 .Logo__box {
   grid-area: "Logo";
+}
+
+@media (max-width: 620px) {
+  .MissionVision__cont {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 0 0;
+  }
+
+  .Mission__cont,
+  .Vision__cont {
+    margin: 0 0 4rem 0;
+  }
+
+  .Crafted__cont .Crafted__title {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .About__contents div:nth-child(odd) {
+    font-size: 1rem;
+  }
+
+  .About__contents div:nth-child(even) {
+    font-size: 0.8rem;
+  }
 }
