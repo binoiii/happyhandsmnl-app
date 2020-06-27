@@ -11,7 +11,7 @@ const About = () => {
         <div className="About__contents">
           <div>wide variety of souvenir items</div>
           <div>heart and happy hands crafted</div>
-          <div>high quality and personalized products </div>
+          <div>high quality and personalized</div>
           <div>DTI &nbsp;REGISTERED - EST 2018</div>
         </div>
       </div>
