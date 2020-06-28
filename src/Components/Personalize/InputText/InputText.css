@@ -30,6 +30,18 @@
   box-shadow: 0px 0px 5px #ca7919;
 }
 
+.InputText__cont input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.InputText__cont input:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.InputText__cont input::placeholder {
+  color: #a1a1a1;
+}
+
 @media (max-width: 320px) {
   .Personalize__cont .InputTextSelectFont__cont {
     margin-bottom: 1rem;

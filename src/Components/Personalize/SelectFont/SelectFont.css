@@ -38,7 +38,7 @@
 }
 
 .Select__cont .Selected__cont .Selected {
-  color: grey;
+  color: #a1a1a1;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
 }
@@ -99,8 +99,11 @@
   transition: color 0.2s ease-out;
 }
 
-.Option__cont .Option.active {
+.Option__cont .Option:focus {
   outline: none;
+}
+
+.Option__cont .Option.active {
   color: #ca7919;
   transition: color 0.2s ease-out;
 }
