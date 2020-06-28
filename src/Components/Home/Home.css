@@ -31,7 +31,7 @@
 .HomeMain__cont .HhSubStatement__cont {
   display: flex;
   margin: 0.7rem 0 2rem 0;
-  text-shadow: -1px 1px 10px #828282;
+  text-shadow: -1px 3px 10px #565656;
   font-family: "Sacramento";
   font-size: 1.9rem;
   font-style: italic;
@@ -60,6 +60,7 @@
 }
 
 .ShopNow__cont a {
+  text-shadow: -1px 2px 5px #565656;
   text-decoration: none;
   color: #ffffff;
 }

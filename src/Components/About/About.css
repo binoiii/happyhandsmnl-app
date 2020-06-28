@@ -36,8 +36,7 @@
 .About__contents div:nth-child(even) {
   margin-bottom: 3rem;
   font-family: "Montserrat";
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: #878787;
 }
@@ -66,7 +65,7 @@
 .Mission_content,
 .Vision_content {
   font-family: "Montserrat";
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   line-height: 1.5rem;
   color: #5e5e5e;
@@ -116,10 +115,15 @@
 
 @media (max-width: 450px) {
   .About__contents div:nth-child(odd) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .About__contents div:nth-child(even) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .Mission_content,
+  .Vision_content {
+    font-size: 0.9rem;
   }
 }

@@ -117,6 +117,8 @@
   font-size: 19px;
   width: 100%;
   cursor: pointer;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .Option label:active {
