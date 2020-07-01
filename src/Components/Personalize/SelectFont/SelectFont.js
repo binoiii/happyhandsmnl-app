@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./SelectFont.css";
 
-const SelectFont = ({ handleFontValue, fontValue }) => {
+const SelectFont = ({ handleFontValue, fontValue, fontSelections }) => {
   const [isOptionsAvailable, setOptionsAvailable] = useState(false);
-  const [optionPosition, setOptionPosition] = useState(0);
 
   const toggleFontOptions = () => {
     setOptionsAvailable(!isOptionsAvailable);
@@ -37,24 +36,9 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
       isOptionsAvailable && toggleFontOptions();
     }
 
-    if (key === "Tab" || key === 9) {
-      isOptionsAvailable && toggleFontOptions();
-    }
-
     if (key === "Enter" || key === 13) {
-      handleFontValue(e.target.children[optionPosition].innerText);
+      handleFontValue(e.target.innerText);
       exitFontOptions();
-    }
-
-    if (
-      (key === "ArrowDown" || key === 38) &&
-      optionPosition < fontSelections.length - 1
-    ) {
-      setOptionPosition((previousPostion) => previousPostion + 1);
-    }
-
-    if ((key === "ArrowUp" || key === 40) && optionPosition > 0) {
-      setOptionPosition((previousPostion) => previousPostion - 1);
     }
   };
 
@@ -62,17 +46,6 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
     fontValue !== "Montserrat"
       ? [fontValue, "Selected active"]
       : ["CHOOSE YOUR FONT", "Selected"];
-
-  // TO BE ADDED IN THE BACKEND
-  const fontSelections = [
-    { id: "0", fontName: "Baybayin" },
-    { id: "1", fontName: "Bernadette" },
-    { id: "2", fontName: "Modernist Milk" },
-    { id: "3", fontName: "riztteen" },
-    { id: "4", fontName: "Bebas Neue" },
-    { id: "5", fontName: "Damion" },
-    { id: "6", fontName: "Citrica" },
-  ];
 
   return (
     <div className="Select__cont">
@@ -93,20 +66,19 @@ const SelectFont = ({ handleFontValue, fontValue }) => {
           (isOptionsAvailable && "Option__cont active") || "Option__cont"
         }
         onKeyDown={navigateOptionsKeyDown}
-        tabIndex="0"
       >
-        {fontSelections.map(({ id, fontName }, i) => {
+        {fontSelections.map(({ id, fontName }) => {
           return (
             <div
-              className={i === optionPosition ? "Option active" : "Option"}
+              className={fontValue === fontName ? "Option active" : "Option"}
               key={id}
-              tabIndex="-1"
             >
               <input type="radio" name="fontStyles" readOnly />
               <label
-                style={{ fontFamily: fontName }}
                 htmlFor="fontStyles"
+                style={{ fontFamily: fontName }}
                 onClick={onFontSelected}
+                tabIndex="9"
               >
                 {fontName}
               </label>

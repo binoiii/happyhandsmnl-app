@@ -85,12 +85,12 @@
 }
 
 .Option__cont .Option:first-child {
-  padding-top: 20px;
+  padding-top: 2rem;
   cursor: pointer;
 }
 
 .Option__cont .Option:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
   cursor: pointer;
 }
 
@@ -114,8 +114,8 @@
 
 .Option label {
   display: inline-block;
-  font-size: 19px;
   width: 100%;
+  font-size: 19px;
   cursor: pointer;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -123,6 +123,11 @@
 
 .Option label:active {
   color: #ca7919;
+}
+
+.Option label:focus {
+  color: #ca7919;
+  outline: none;
 }
 
 @media (max-width: 320px) {

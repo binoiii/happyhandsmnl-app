@@ -28,6 +28,17 @@ const Personalize = () => {
     setOutputStyle({ ...outputStyle, fontSize: fontSizePx });
   };
 
+  //TO BE FETCHED
+  const fontSelections = [
+    { id: "1", fontName: "Baybayin" },
+    { id: "2", fontName: "Bernadette" },
+    { id: "3", fontName: "Modernist Milk" },
+    { id: "4", fontName: "riztteen" },
+    { id: "5", fontName: "Bebas Neue" },
+    { id: "6", fontName: "Damion" },
+    { id: "7", fontName: "Citrica" },
+  ];
+
   return (
     <div id="personalize" className="Personalize__cont">
       <div className="InputTextSelectFont__cont">
@@ -35,6 +46,7 @@ const Personalize = () => {
         <SelectFont
           handleFontValue={handleFontValue}
           fontValue={outputStyle.fontFamily}
+          fontSelections={fontSelections}
         />
       </div>
       <OutputText
