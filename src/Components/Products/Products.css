@@ -1,7 +1,9 @@
 .Prod__Wrap {
   height: 100%;
   display: flex;
-  margin: 5rem 0;
+  justify-content: center;
+  margin: 2rem 0;
+  padding-top: 3rem;
 }
 
 .Prod__Wrap .Grid__cont {
@@ -64,6 +66,13 @@
   .Prod__Wrap .Grid__cont {
     grid-gap: 1rem;
     margin: 0 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .Prod__Wrap {
+    margin-top: 1rem;
+    padding-top: 2rem;
   }
 }
 

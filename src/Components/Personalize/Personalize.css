@@ -12,5 +12,11 @@
   background-repeat: no-repeat;
   background-position: left;
   height: 100vh;
-  margin: 10rem 0 10rem;
+  margin: 7rem 0 7rem;
+}
+
+@media (max-width: 620px) {
+  .Personalize__cont {
+    margin-bottom: 1rem;
+  }
 }
