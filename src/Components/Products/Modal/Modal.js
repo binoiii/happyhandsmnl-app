@@ -72,11 +72,9 @@ const Modal = ({ prodImages, exitModal }) => {
               </div>
             )}
           </div>
-
           <div className="Close__cont">
             <div className="Close__item" onClick={exitModal}></div>
           </div>
-
           <Dot imageIndex={imageIndex} />
         </div>
       </div>
