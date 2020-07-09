@@ -3,6 +3,7 @@ import Modal from "./Modal/Modal";
 import "./Products.css";
 
 /* Direct Import for Local Environment */
+
 import Prod1_1 from "./img/Products/1_Bambaunan/Bambaunan1.jpg";
 import Prod1_2 from "./img/Products/1_Bambaunan/Bambaunan2.jpg";
 import Prod1_3 from "./img/Products/1_Bambaunan/Bambaunan3.jpg";
