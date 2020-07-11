@@ -91,9 +91,16 @@
 .Logo__box img {
   grid-area: "logo";
   display: block;
-  max-width: 65px;
+  max-width: 90px;
 }
 
+@media (max-width: 800px) {
+  .Logo__box img {
+    grid-area: "logo";
+    display: block;
+    max-width: 80px;
+  }
+}
 @media (max-width: 620px) {
   .MissionVision__cont {
     flex-direction: column;
@@ -111,7 +118,6 @@
   }
 
   .Logo__cont {
-    display: grid;
     grid-template-areas:
       "logo logo logo"
       "logo logo logo"
@@ -119,14 +125,7 @@
       "logo logo logo"
       "logo logo logo"
       "logo logo logo";
-    grid-gap: 1rem;
     margin: 0 0.5rem;
-  }
-
-  .Logo__box img {
-    grid-area: "logo";
-    display: block;
-    max-width: 55px;
   }
 }
 

@@ -25,7 +25,6 @@
 .NavLogo__cont span {
   font-family: "Sacramento";
   font-size: 25px;
-  font-weight: 0;
   font-style: italic;
   text-shadow: 1px 0.5px 4px #ca7919;
   color: black;
@@ -49,7 +48,6 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: black;
