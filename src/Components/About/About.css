@@ -46,13 +46,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .Mission__cont,
 .Vision__cont {
   width: 320px;
-  margin: 0 3rem 3rem;
+  margin: 0 3rem;
 }
 
 .Mission__title,
@@ -73,28 +73,25 @@
 }
 
 .Crafted__cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  margin: 2rem;
 }
 
 .Logo__cont {
   display: grid;
   grid-template-areas:
-    "Logo Logo Logo Logo"
-    "Logo Logo Logo Logo"
-    "Logo Logo Logo Logo"
-    "Logo Logo Logo Logo";
+    "logo logo logo logo logo logo"
+    "logo logo logo logo logo logo"
+    "logo logo logo logo logo logo";
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 2rem 0;
 }
 
 .Logo__box img {
+  grid-area: "logo";
   display: block;
-  max-width: 40px;
-  padding: 20px;
-}
-
-.Logo__box {
-  grid-area: "Logo";
+  max-width: 65px;
 }
 
 @media (max-width: 620px) {
@@ -111,6 +108,25 @@
 
   .Crafted__cont .Crafted__title {
     margin: 0 0 0.5rem 0;
+  }
+
+  .Logo__cont {
+    display: grid;
+    grid-template-areas:
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo";
+    grid-gap: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .Logo__box img {
+    grid-area: "logo";
+    display: block;
+    max-width: 55px;
   }
 }
 
