@@ -23,6 +23,7 @@ const Dot = ({ imageIndex }) => {
       <span className="ImgDots__item Active"></span>
       <span className="ImgDots__item"></span>
       <span className="ImgDots__item"></span>
+      <span className="ImgDots__item"></span>
     </div>
   );
 };
