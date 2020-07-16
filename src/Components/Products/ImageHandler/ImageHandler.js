@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImageHandler.css";
 
 const ImageHandler = ({ prodName, prodImgCont, index, handleModal }) => {
   return (

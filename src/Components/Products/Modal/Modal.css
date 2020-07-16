@@ -17,6 +17,7 @@
 }
 
 .Image__cont img {
+  background: red;
   display: block;
   max-width: 100%;
 }

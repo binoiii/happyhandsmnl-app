@@ -1,6 +1,6 @@
 import React, { useState, lazy, Suspense } from "react";
 import Modal from "./Modal/Modal";
-import ImageLoader from "./ImageLoader/ImageLoader";
+import ImageHandler from "./ImageHandler/ImageHandler";
 import "./Products.css";
 
 import Flask1 from "./img/Products/Flask/Flask1.jpg";
@@ -132,9 +132,6 @@ import CoinPurse1 from "./img/Products/CoinPurse/CoinPurse1.jpg";
 import CoinPurse2 from "./img/Products/CoinPurse/CoinPurse2.jpg";
 import CoinPurse3 from "./img/Products/CoinPurse/CoinPurse3.jpg";
 import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
-
-// import ImageHandler from "./ImageHandler/ImageHandler";
-const ImageHandler = lazy(() => import("./ImageHandler/ImageHandler"));
 
 const imgCont = [
   {
@@ -333,14 +330,12 @@ function Products() {
     <div id="products" className="Prod__Wrap">
       <div className="Grid__cont">
         {imgCont.map(({ prodName, prodImgCont }, index) => (
-          <Suspense key={index} fallback={<ImageLoader />}>
-            <ImageHandler
-              prodName={prodName}
-              prodImgCont={prodImgCont}
-              handleModal={handleModal}
-              index={index}
-            />
-          </Suspense>
+          <ImageHandler
+            prodName={prodName}
+            prodImgCont={prodImgCont}
+            handleModal={handleModal}
+            index={index}
+          />
         ))}
       </div>
 

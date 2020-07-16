@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import Dot from "./Dot/Dot";
+import ImageLoader from "./ImageLoader/ImageLoader";
 import "./Modal.css";
+
+const ImageHolder = lazy(() => import("./ImageHolder/ImageHolder"));
 
 const Modal = ({ prodImages, exitModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -57,7 +60,9 @@ const Modal = ({ prodImages, exitModal }) => {
   return (
     <div className="Modal__cont" onClick={exitModal}>
       <div className="Image__cont">
-        <img src={prodImages[imageIndex]} alt="next" />
+        <Suspense fallback={ImageLoader}>
+          <ImageHolder prodImages={prodImages} imageIndex={imageIndex} />
+        </Suspense>
         <div className="Controls__cont">
           <div className="PN__cont">
             {imageIndex > 0 && (
