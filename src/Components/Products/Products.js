@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { useState } from "react";
 import Modal from "./Modal/Modal";
 import ImageHandler from "./ImageHandler/ImageHandler";
 import "./Products.css";
