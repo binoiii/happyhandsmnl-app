@@ -10,9 +10,8 @@
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: none;
+  background-color: #a7a7a7;
   border-radius: 50%;
-  border: solid 0.05rem #ca7919;
   margin: 0 0.5rem 0 0.5rem;
 }
 
