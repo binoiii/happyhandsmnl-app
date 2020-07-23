@@ -331,6 +331,7 @@ function Products() {
       <div className="Grid__cont">
         {imgCont.map(({ prodName, prodImgCont }, index) => (
           <ImageHandler
+            key={index}
             prodName={prodName}
             prodImgCont={prodImgCont}
             handleModal={handleModal}
@@ -344,6 +345,7 @@ function Products() {
           <Modal
             exitModal={exitModal}
             prodImages={imgCont[productCount].prodImgCont}
+            prodName={imgCont[productCount].prodName}
           />
         )}
       </div>

@@ -1,8 +1,6 @@
-/* Dot Items */
-
 .ImgDots__cont {
   position: absolute;
-  bottom: -2rem;
+  bottom: 0.5rem;
   left: 50%;
   transform: translatex(-50%);
   z-index: 10;
@@ -12,8 +10,9 @@
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #ffffff;
+  background-color: none;
   border-radius: 50%;
+  border: solid 0.05rem #ca7919;
   margin: 0 0.5rem 0 0.5rem;
 }
 

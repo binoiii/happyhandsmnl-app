@@ -1,0 +1,118 @@
+.slideshow-image {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slideshow-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s ease-out;
+}
+
+.Modal__cont .Image__cont {
+  display: grid;
+  grid-template-columns: minmax(250px, 720px);
+}
+
+.Controls__cont .PN__cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.PN__cont .Prev__cont,
+.PN__cont .Next__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.79);
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.Prev__cont .Prev__item,
+.Next__cont .Next__item {
+  color: #ca7919;
+  background: url(./img/next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  width: 100%;
+  height: 100%;
+}
+.PN__cont .Prev__cont {
+  left: 0.5rem;
+}
+
+.PN__cont .Next__cont {
+  right: 0.5rem;
+}
+
+.Prev__cont .Prev__item {
+  transform: rotate(180deg);
+}
+
+.Controls__cont .Close__cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.79);
+  border-radius: 50%;
+  margin: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+}
+
+.Controls__cont .Close__item {
+  background: url(./img/close1.svg);
+  background-size: 30% 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  /* font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: #878787; */
+}
+
+.Controls__cont .Close__item:hover {
+  color: #000000;
+  transition: color 0.3s ease-out;
+}
+
+/* Media Queries */
+
+@media (max-width: 450px) {
+  .PN__cont .Prev__cont,
+  .PN__cont .Next__cont {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .PN__cont .Prev__cont {
+    left: 0.7rem;
+  }
+
+  .PN__cont .Next__cont {
+    right: 0.7rem;
+  }
+
+  .Controls__cont .Close__cont {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.79);
+    border-radius: 50%;
+    margin: 0.3rem 0.7rem 0 0;
+    cursor: pointer;
+  }
+}

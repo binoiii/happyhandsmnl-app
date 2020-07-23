@@ -1,7 +1,7 @@
 .Grid__cont .Grid__box {
   position: relative;
   transition: transform 0.2s;
-  background-color: #ca7919;
+  background-color: #ca7a19;
 }
 
 .Grid__box img {
