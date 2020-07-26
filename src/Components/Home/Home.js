@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks/SocialLinks";
 import { Link } from "react-scroll";
 import "./Home.css";
 
-const Home = (props) => {
+const Home = ({ hhData }) => {
   return (
     <div id="home" className="Home__cont">
       <div className="HomeMain__cont">
@@ -33,7 +33,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="SocialLinks__cont">
-        <SocialLinks props={props} />
+        <SocialLinks hhData={hhData} />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .SocialLinks__cont {
   align-self: center;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .SocialLinks__cont .social {
@@ -16,7 +16,7 @@
   margin: 0 1.5rem 0 1.5rem;
   display: inline-block;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .SocialLinks__cont .social li a {
@@ -30,24 +30,13 @@
   transition: all 0.3s ease;
 }
 
-.SocialLinks__cont .Followers__cont {
-  border: 1px solid #ffffff;
-  border-radius: 0.2rem;
-  box-shadow: -1px 1px 10px #828282;
-  padding: 0.3rem 0.3rem;
-  font-size: 0.5rem;
-  font-family: "Montserrat";
-  text-align: center;
-  color: #ffffff;
-}
-
 @media (max-width: 440px) {
   .SocialLinks__cont {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .SocialLinks__cont .social li {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-bottom: 0;
   }
 }

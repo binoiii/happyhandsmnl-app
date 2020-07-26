@@ -11,8 +11,9 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const setData = await fetch("/hhmData.json").then((res) => res.json());
-      sethhData(setData);
+      const response = await fetch("/hhmData.json");
+      const data = await response.json();
+      sethhData(data.main);
     };
 
     fetchData();
@@ -21,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Home data={hhData.main} />
+      <Home hhData={hhData} />
       <Personalize />
       <Products />
       <About />
