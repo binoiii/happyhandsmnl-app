@@ -1,7 +1,14 @@
+.Modal__cont .Image__cont {
+  display: grid;
+  grid-template-columns: minmax(250px, 720px);
+}
+
 .slideshow-image {
   position: relative;
   display: flex;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
   background-color: #ca7a1970;
 }
 
@@ -9,12 +16,8 @@
   display: block;
   flex-shrink: 0;
   width: 100%;
+  height: 100%;
   transition: transform 0.2s ease-out;
-}
-
-.Modal__cont .Image__cont {
-  display: grid;
-  grid-template-columns: minmax(250px, 720px);
 }
 
 .Controls__cont .PN__cont {

@@ -12,7 +12,7 @@ body {
     monospace;
 } */
 
-/* @font-face {
+@font-face {
   font-family: "Bernadette";
   src: local("Bernadette"), url(./Fonts/bernadette.ttf) format("truetype");
 }
@@ -56,7 +56,7 @@ body {
 @font-face {
   font-family: "Wensley";
   src: local("wensley"), url(./Fonts/wensley.ttf) format("truetype");
-} */
+}
 
 /* @font-face {
   font-family: "Shorelines Script";

@@ -21,7 +21,6 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
       document.removeEventListener("touchmove", handleTouchMove);
     };
   });
-
   const imageIndexNext = imageIndex < prodImages.length - 1;
   let xTouchStart = null;
   let yTouchStart = null;
@@ -48,9 +47,11 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
     const yDiff = yTouchStart - yTouchEnd;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      if (xDiff < 0 && imageIndex > 0) {
-        setImageIndex((prevIndex) => prevIndex - 1);
-        setTranslateX((prevTranslateX) => prevTranslateX + 100);
+      if (xDiff < 0) {
+        if (imageIndex > 0) {
+          setImageIndex((prevIndex) => prevIndex - 1);
+          setTranslateX((prevTranslateX) => prevTranslateX + 100);
+        }
       } else {
         if (imageIndexNext) {
           setImageIndex((prevIndex) => prevIndex + 1);
