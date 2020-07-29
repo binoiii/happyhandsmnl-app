@@ -10,19 +10,54 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
     document.addEventListener("keydown", handleKeyDownEsc);
     document.addEventListener("keydown", handleKeyDownPrev);
     document.addEventListener("keydown", handleKeyDownNext);
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
 
     return () => {
       document.removeEventListener("keydown", handleKeyDownEsc);
       document.removeEventListener("keydown", handleKeyDownPrev);
       document.removeEventListener("keydown", handleKeyDownNext);
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
     };
   });
 
   const imageIndexNext = imageIndex < prodImages.length - 1;
+  let xTouchStart = null;
+  let yTouchStart = null;
 
   const handleKeyDownEsc = (e) => {
     e.preventDefault();
     exitModal(e);
+  };
+
+  const handleTouchStart = (e) => {
+    xTouchStart = e.touches[0].clientX;
+    yTouchStart = e.touches[0].clientY;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!xTouchStart || !yTouchStart) {
+      return;
+    }
+
+    const xTouchEnd = e.touches[0].clientX;
+    const yTouchEnd = e.touches[0].clientY;
+
+    const xDiff = xTouchStart - xTouchEnd;
+    const yDiff = yTouchStart - yTouchEnd;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff < 0 && imageIndex > 0) {
+        setImageIndex((prevIndex) => prevIndex - 1);
+        setTranslateX((prevTranslateX) => prevTranslateX + 100);
+      } else {
+        if (imageIndexNext) {
+          setImageIndex((prevIndex) => prevIndex + 1);
+          setTranslateX((prevTranslateX) => prevTranslateX - 100);
+        }
+      }
+    }
   };
 
   const handleKeyDownPrev = (e) => {
