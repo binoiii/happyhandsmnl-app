@@ -50,7 +50,13 @@
   </body>
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <form
+    name="contact"
+    netlify
+    netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
+    hidden
+  >
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
