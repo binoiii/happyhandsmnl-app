@@ -5,10 +5,13 @@ const ImageHandler = ({ prodName, prodImgCont, index, handleModal }) => {
   return (
     <div className="Grid__box">
       <img src={prodImgCont[0]} alt={prodName} />
+      <div className="Prod__name">
+        <span>{prodName}</span>
+      </div>
       <div className="Gridlabels__cont">
         <div className="GridLabelsItem__cont">
           <div className={index} onClick={handleModal}>
-            {prodName}
+            <span>. . .</span>
           </div>
         </div>
       </div>

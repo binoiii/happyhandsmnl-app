@@ -164,7 +164,7 @@ const imgCont = [
   },
 
   {
-    prodName: "bamboo-chopping board",
+    prodName: "chopping board",
     prodImgCont: [
       ChoppingBoard1,
       ChoppingBoard2,

@@ -7,7 +7,20 @@
   color: #a0a0a0;
 }
 
-.Footer__cont span {
+.Footer__cont .FaqCollab_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.333rem 0.5rem 0.333rem;
+}
+
+.Footer__cont p {
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.CopyRights__cont span {
   font-family: "Sacramento";
   font-style: italic;
   font-size: 1rem;

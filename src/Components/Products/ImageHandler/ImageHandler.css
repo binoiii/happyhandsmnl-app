@@ -1,16 +1,36 @@
 .Grid__cont .Grid__box {
   position: relative;
+  align-items: center;
   transition: transform 0.2s;
-  background-color: #ca7a19;
+  border: 1px solid #d7d5d5;
 }
 
 .Grid__box img {
   display: block;
+  background-color: #ca7a19;
   width: 100%;
 }
 
 .Grid__box:hover img {
   filter: blur(2px);
+}
+
+.Prod__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  height: 2.5rem;
+  background-color: #ffffff;
+}
+
+.Prod__name span {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: #ca7a19;
+  font-weight: bold;
 }
 
 .Grid__box .Gridlabels__cont {
@@ -43,4 +63,16 @@
   font-size: 1.1rem;
   font-family: "Montserrat";
   color: white;
+}
+
+@media (max-width: 420px) {
+  .Prod__name {
+    height: 2rem;
+    margin: 0.8rem 0;
+  }
+
+  .Prod__name span {
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+  }
 }

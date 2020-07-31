@@ -10,3 +10,25 @@
   background: rgba(0, 0, 0, 0.9);
   z-index: 4;
 }
+
+.Image__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 5rem;
+  background-color: white;
+}
+
+.Image__description span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Montserrat";
+  color: #7e7e7e;
+}
+
+.Image__description :nth-child(even) {
+  margin-top: 0.3rem;
+}
