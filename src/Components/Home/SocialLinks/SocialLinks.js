@@ -1,7 +1,7 @@
 import React from "react";
 import "./SocialLinks.css";
 
-const SocialLinks = ({ hhData }) => {
+const SocialLinks = ({ hhData, handleContactForm }) => {
   return (
     <div className="SocialLinks_cont">
       <ul className="social">
@@ -9,7 +9,8 @@ const SocialLinks = ({ hhData }) => {
           hhData.social.map((entry) => (
             <li key={entry.name}>
               <a
-                href={entry.url}
+                onClick={entry.name === "email" ? handleContactForm : null}
+                href={entry.name === "email" ? "" : entry.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 tabIndex="6"

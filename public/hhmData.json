@@ -13,7 +13,7 @@
       },
       {
         "name": "email",
-        "url": "www.happyhandsmnl@gmail.com",
+        "url": "mailto:www.happyhandsmnl@gmail.com",
         "className": "fa fa-envelope-o"
       }
     ]
