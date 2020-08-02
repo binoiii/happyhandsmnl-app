@@ -112,24 +112,27 @@
 }
 
 .Buttons__cont * {
-  padding: 0.5rem;
-  margin: 0 0.5rem 2rem 0;
   font-family: "Montserrat";
   font-size: 1.2rem;
 }
 
 .Buttons__cont .Status__cont {
   margin: 0 auto;
+  padding: 0.5rem 0;
   border: 1px solid #ffffff;
   color: #a1a1a1;
 }
 
 .Buttons__cont button {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
   width: 30%;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 
 .Buttons__cont [type|="submit"] {
+  margin-right: 0.5rem;
   border: 1px #ca7919 solid;
   background-color: #ca7919;
   color: #ffffff;
@@ -183,7 +186,7 @@
     font-size: 0.9rem;
   }
 
-  .Contact__cont .Buttons__cont {
+  .Buttons__cont * {
     font-size: 0.9rem;
   }
 }

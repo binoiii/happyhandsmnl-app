@@ -41,17 +41,15 @@ const ContactForm = ({ exitContactForm }) => {
         if (response.ok) {
           setIsSubmitted(true);
           setIsSent(true);
-          console.log("Email sent");
         } else {
           setIsSubmitted(false);
           setIsSent(false);
-          console.log("Not sent");
         }
       })
       .catch((error) => {
         setIsSubmitted(false);
         setIsSent(false);
-        console.log(error);
+        alert(error);
       });
 
     setIsSubmitted(true);
@@ -100,8 +98,8 @@ const ContactForm = ({ exitContactForm }) => {
           </button>
           <div className="Status__cont">
             <span>
-              {isSent === true && "Email Sent"}
-              {isSent === false && "Email Not Sent"}
+              {isSent === true && "Sent"}
+              {isSent === false && "Not Sent"}
             </span>
           </div>
         </div>
