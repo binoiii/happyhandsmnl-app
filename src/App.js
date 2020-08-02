@@ -31,12 +31,13 @@ function App() {
     const type = e.target.innerText;
 
     if (e.target === e.currentTarget || key === "Escape" || key === 27) {
-      if (type === "Cancel")
+      if (type === "Cancel") {
         if (window.confirm("Are you sure to cancel?")) {
           setContactForm(false);
-        } else if (type === "Back") {
-          setContactForm(false);
         }
+      } else {
+        setContactForm(false);
+      }
     }
   };
 
