@@ -67,6 +67,7 @@ const ContactForm = ({ exitContactForm }) => {
             name="name"
             value={userData.name}
             onChange={handleChange}
+            disabled={isSent}
             placeholder="Name"
             required
           />
@@ -76,7 +77,7 @@ const ContactForm = ({ exitContactForm }) => {
             value={userData.email}
             onChange={handleChange}
             placeholder="Email Address"
-            disabled={isSubmitted}
+            disabled={isSent}
             required
           />
         </div>
@@ -87,7 +88,7 @@ const ContactForm = ({ exitContactForm }) => {
             value={userData.message}
             onChange={handleChange}
             placeholder="Send us your thoughts"
-            disabled={isSubmitted}
+            disabled={isSent}
             required
           />
         </div>
