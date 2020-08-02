@@ -33,6 +33,7 @@ function App() {
     if (e.target === e.currentTarget || key === "Escape" || key === 27) {
       if (isSent) {
         setContactForm(false);
+        setIsSent(null);
       } else {
         if (window.confirm("Are you sure to cancel?")) {
           setContactForm(false);
