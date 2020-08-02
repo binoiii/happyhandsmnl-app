@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   const [hhData, sethhData] = useState({});
   const [isContactForm, setContactForm] = useState(false);
+  const [isSent, setIsSent] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,15 +29,14 @@ function App() {
 
   const exitContactForm = (e) => {
     const key = e.key || e.keyCode;
-    const type = e.target.innerText;
 
     if (e.target === e.currentTarget || key === "Escape" || key === 27) {
-      if (type === "Cancel") {
+      if (isSent) {
+        setContactForm(false);
+      } else {
         if (window.confirm("Are you sure to cancel?")) {
           setContactForm(false);
         }
-      } else {
-        setContactForm(false);
       }
     }
   };
@@ -49,7 +49,13 @@ function App() {
         handleContactForm={handleContactForm}
         exitContactForm={exitContactForm}
       />
-      {isContactForm && <ContactForm exitContactForm={exitContactForm} />}
+      {isContactForm && (
+        <ContactForm
+          exitContactForm={exitContactForm}
+          isSent={isSent}
+          setIsSent={setIsSent}
+        />
+      )}
       <Personalize />
       <Products />
       <About />

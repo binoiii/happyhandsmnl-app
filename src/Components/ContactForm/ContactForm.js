@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ContactForm.css";
-const ContactForm = ({ exitContactForm }) => {
+const ContactForm = ({ exitContactForm, isSent, setIsSent }) => {
   const [userData, setUserData] = useState({
     name: "",
     email: "",
@@ -8,7 +8,6 @@ const ContactForm = ({ exitContactForm }) => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSent, setIsSent] = useState(null);
 
   useEffect(() => {
     document.addEventListener("keydown", exitContactForm);
@@ -72,7 +71,7 @@ const ContactForm = ({ exitContactForm }) => {
             required
           />
           <input
-            type="text"
+            type="email"
             name="email"
             value={userData.email}
             onChange={handleChange}
