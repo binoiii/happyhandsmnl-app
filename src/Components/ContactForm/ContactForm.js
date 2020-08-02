@@ -7,6 +7,9 @@ const ContactForm = ({ exitContactForm }) => {
     message: "",
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSent, setIsSent] = useState(null);
+
   useEffect(() => {
     document.addEventListener("keydown", exitContactForm);
     return () => {
@@ -33,7 +36,25 @@ const ContactForm = ({ exitContactForm }) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...userData }),
-    }).catch((error) => alert(error));
+    })
+      .then((response) => {
+        if (response.ok) {
+          setIsSubmitted(true);
+          setIsSent(true);
+          console.log("Email sent");
+        } else {
+          setIsSubmitted(false);
+          setIsSent(false);
+          console.log("Not sent");
+        }
+      })
+      .catch((error) => {
+        setIsSubmitted(false);
+        setIsSent(false);
+        console.log(error);
+      });
+
+    setIsSubmitted(true);
 
     e.preventDefault();
   };
@@ -68,10 +89,18 @@ const ContactForm = ({ exitContactForm }) => {
           />
         </div>
         <div className="Buttons__cont">
-          <button type="submit">Send</button>
+          <button type="submit" disabled={isSubmitted}>
+            Send
+          </button>
           <button type="button" onClick={exitContactForm}>
             Cancel
           </button>
+          <div className="Status__cont">
+            <span>
+              {isSent === true && "Email Sent"}
+              {isSent === false && "Email Not Sent"}
+            </span>
+          </div>
         </div>
       </form>
     </div>

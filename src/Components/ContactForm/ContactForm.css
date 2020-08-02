@@ -70,10 +70,6 @@
   box-shadow: 0px 0px 5px #ca7919;
 }
 
-.NameEmail__cont input:webkit-internal-autofill-selected {
-  background-color: #ffffff !important;
-}
-
 .Message_cont textarea {
   width: 100%;
   height: 200px;
@@ -112,19 +108,29 @@
 
 .Buttons__cont {
   display: flex;
+  justify-content: flex-start;
+}
+
+.Buttons__cont * {
+  padding: 0.5rem;
+  margin: 0 0.5rem 2rem 0;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+}
+
+.Buttons__cont .Status__cont {
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  color: #a1a1a1;
 }
 
 .Buttons__cont button {
-  padding: 0.5rem;
-  margin: 0 auto 1rem auto;
-  border-radius: 0.3rem;
-  font-family: "Montserrat";
-  font-size: 1.2rem;
   width: 30%;
+  cursor: pointer;
 }
 
 .Buttons__cont [type|="submit"] {
-  border: 1px #ffffff solid;
+  border: 1px #ca7919 solid;
   background-color: #ca7919;
   color: #ffffff;
 }
@@ -133,6 +139,20 @@
   outline: none;
   border-color: #ca7919;
   box-shadow: 0px 0px 5px #ca7919;
+}
+
+.Buttons__cont [type|="submit"]:hover {
+  border-color: #747474;
+  box-shadow: 0px 0px 5px #000000;
+  transition: all 0.2s ease-out;
+}
+
+.Buttons__cont [type|="submit"]:disabled {
+  border: 1px #cdcdcd solid;
+  background-color: #ffffff;
+  box-shadow: none;
+  color: #cdcdcd;
+  cursor: default;
 }
 
 .Buttons__cont [type|="button"] {
@@ -147,6 +167,12 @@
   box-shadow: 0px 0px 5px #ca7919;
 }
 
+.Buttons__cont [type|="button"]:hover {
+  border-color: #ca7919;
+  box-shadow: 0px 0px 5px #ca7919;
+  transition: all 0.2s ease-out;
+}
+
 @media (max-width: 768px) {
   .NameEmail__cont input {
     width: 42%;
@@ -157,31 +183,17 @@
     font-size: 0.9rem;
   }
 
-  .Contact__cont button {
+  .Contact__cont .Buttons__cont {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
-  .Contact__cont h3 {
-    font-size: 2rem;
-  }
-
-  .NameEmail__cont input {
-    font-size: 0.7rem;
-  }
-
-  .Message_cont textarea {
-    font-size: 0.7rem;
-  }
-
-  .Contact__cont button {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 420px) {
   .Contact__cont form {
     width: 80%;
+  }
+
+  .Contact__cont h3 {
+    font-size: 2rem;
   }
 }

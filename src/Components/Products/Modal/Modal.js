@@ -16,11 +16,11 @@ const Modal = ({ exitModal, prodImages, prodName }) => {
             prodImages={prodImages}
             prodName={prodName}
           />
+          <div className="Image__description">
+            <span>450ml / 500ml</span>
+            <span>heat insulated</span>
+          </div>
         </Suspense>
-        <div className="Image__description">
-          <span>450ml / 500ml</span>
-          <span>heat insulated</span>
-        </div>
       </div>
     </div>
   );
