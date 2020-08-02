@@ -76,6 +76,7 @@ const ContactForm = ({ exitContactForm }) => {
             value={userData.email}
             onChange={handleChange}
             placeholder="Email Address"
+            disabled={isSubmitted}
             required
           />
         </div>
@@ -86,16 +87,32 @@ const ContactForm = ({ exitContactForm }) => {
             value={userData.message}
             onChange={handleChange}
             placeholder="Send us your thoughts"
+            disabled={isSubmitted}
             required
           />
         </div>
         <div className="Buttons__cont">
-          <button type="submit" disabled={isSubmitted}>
+          <button type="submit" disabled={isSubmitted} className="Send__cont">
             Send
           </button>
-          <button type="button" onClick={exitContactForm}>
-            Cancel
-          </button>
+          {isSent === true && (
+            <button
+              type="button"
+              onClick={exitContactForm}
+              className="Back__cont"
+            >
+              Back
+            </button>
+          )}
+          {(isSent === null || isSent === false) && (
+            <button
+              type="button"
+              onClick={exitContactForm}
+              className="Cancel__cont"
+            >
+              Cancel
+            </button>
+          )}
           <div className="Status__cont">
             <span>
               {isSent === true && "Sent"}

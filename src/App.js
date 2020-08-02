@@ -28,11 +28,15 @@ function App() {
 
   const exitContactForm = (e) => {
     const key = e.key || e.keyCode;
+    const type = e.target.innerText;
 
     if (e.target === e.currentTarget || key === "Escape" || key === 27) {
-      if (window.confirm("Are you sure to cancel?")) {
-        setContactForm(false);
-      }
+      if (type === "Cancel")
+        if (window.confirm("Are you sure to cancel?")) {
+          setContactForm(false);
+        } else if (type === "Back") {
+          setContactForm(false);
+        }
     }
   };
 
