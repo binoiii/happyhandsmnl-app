@@ -23,12 +23,11 @@
 .Image__description span {
   display: block;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-family: "Montserrat";
   color: #7e7e7e;
 }
 
 .Image__description :nth-child(even) {
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
 }

@@ -2,22 +2,32 @@
   width: 100%;
   padding-bottom: 0.5rem;
   text-align: center;
+  color: #a1a1a1;
   font-family: "Montserrat";
   font-size: 0.8rem;
-  color: #a0a0a0;
 }
 
 .Footer__cont .FaqCollab_cont {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  margin: 0 0.333rem 0.5rem 0.333rem;
+  margin-bottom: 0.9rem;
 }
 
-.Footer__cont p {
+.FaqCollab_cont p {
   margin: 0;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.FaqCollab_cont p:hover {
+  color: #ca7919;
+  transition: 0.3s ease-out;
+}
+
+.CopyRights__cont {
+  letter-spacing: 0.05rem;
 }
 
 .CopyRights__cont span {

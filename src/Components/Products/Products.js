@@ -135,8 +135,9 @@ import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 
 const imgCont = [
   {
-    prodName: "flask",
+    prodName: "flask set",
     prodImgCont: [Flask1, Flask2, Flask3, Flask4],
+    prodDescription: ["GENTLEMEN'S FAVORITE", "FREE BOX ENGRAVE"],
   },
 
   {
@@ -147,6 +148,7 @@ const imgCont = [
       BambooTumbler3,
       BambooTumbler4,
     ],
+    prodDescription: ["350ML / 450ML", "10-12 HOURS FOR HOT / COLD"],
   },
   {
     prodName: "bambootensils",
@@ -161,6 +163,7 @@ const imgCont = [
   {
     prodName: "bamboo notebook",
     prodImgCont: [BambooNB1, BambooNB2, BambooNB3, BambooNB4],
+    prodDescription: ["70 LEAVES", "CRUMPLE-FREE NOTEBOOK"],
   },
 
   {
@@ -171,6 +174,7 @@ const imgCont = [
       ChoppingBoard3,
       ChoppingBoard4,
     ],
+    prodDescription: ['11" x 7" x 0.5"', "DURABLE"],
   },
 
   {
@@ -346,6 +350,7 @@ function Products() {
             exitModal={exitModal}
             prodImages={imgCont[productCount].prodImgCont}
             prodName={imgCont[productCount].prodName}
+            prodDescription={imgCont[productCount].prodDescription}
           />
         )}
       </div>

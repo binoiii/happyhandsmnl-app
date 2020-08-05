@@ -6,7 +6,7 @@ import Loader from "./Loader/Loader";
 
 const ImageHolder = lazy(() => import("./ImageHolder/ImageHolder"));
 
-const Modal = ({ exitModal, prodImages, prodName }) => {
+const Modal = ({ exitModal, prodImages, prodName, prodDescription }) => {
   return (
     <div className="Modal__cont" onClick={exitModal}>
       <div className="Image__cont">
@@ -17,8 +17,9 @@ const Modal = ({ exitModal, prodImages, prodName }) => {
             prodName={prodName}
           />
           <div className="Image__description">
-            <span>450ml / 500ml</span>
-            <span>heat insulated</span>
+            {prodDescription.map((desc) => (
+              <span>{desc}</span>
+            ))}
           </div>
         </Suspense>
       </div>
