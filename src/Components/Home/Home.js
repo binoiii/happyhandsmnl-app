@@ -1,9 +1,8 @@
 import React from "react";
-import SocialLinks from "./SocialLinks/SocialLinks";
 import { Link } from "react-scroll";
 import "./Home.css";
 
-const Home = ({ hhData, handleContactForm }) => {
+const Home = () => {
   return (
     <div id="home" className="Home__cont">
       <div className="HomeMain__cont">
@@ -31,9 +30,6 @@ const Home = ({ hhData, handleContactForm }) => {
             <div className="Shop__cont">SHOP NOW</div>
           </Link>
         </div>
-      </div>
-      <div className="SocialLinks__cont">
-        <SocialLinks hhData={hhData} handleContactForm={handleContactForm} />
       </div>
     </div>
   );

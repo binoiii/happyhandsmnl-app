@@ -1,18 +1,19 @@
-.Personalize__cont * {
-  box-sizing: border-box;
-}
-
 .Personalize__cont {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url("./img/PERSONALIZE_BG.jpg");
+  /* background: url("./img/PERSONALIZE_BG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
-  height: 100vh;
-  margin: 7rem 0 7rem;
+  background-position: left; */
+}
+
+.Personalize__cont .InputTextSelectFont__cont {
+  display: flex;
+  justify-content: space-between;
+  width: 628px;
+  margin: 2rem 0 1.5rem 0;
 }
 
 @media (max-width: 620px) {

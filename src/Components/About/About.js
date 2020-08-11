@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
       <div className="Crafted__cont">
-        <div className="Crafted__title">crafted with</div>
+        <div className="Crafted__title">Crafted with</div>
         <div className="Logo__cont">
           {partnerGallery.map(({ id, image, name }) => (
             <div className="Logo__box" key={id}>

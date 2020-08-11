@@ -3,8 +3,9 @@ import "./SocialLinks.css";
 
 const SocialLinks = ({ hhData, handleContactForm }) => {
   return (
-    <div className="SocialLinks_cont">
-      <ul className="social">
+    <div className="SocialLinks__cont">
+      <div className="Brand__mobile">happyhandsmnl</div>
+      <ul className="Social">
         {hhData.social &&
           hhData.social.map((entry) => (
             <li key={entry.name}>

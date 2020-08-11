@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "./Components/Navigation//Navigation";
 import Home from "./Components/Home/Home";
+import SocialLinks from "./Components/SocialLinks/SocialLinks";
 import ContactForm from "./Components/ContactForm/ContactForm";
-import Personalize from "./Components/Personalize/Personalize";
 import Products from "./Components/Products/Products";
+import HowToOrder from "./Components/HowToOrder/HowToOrder";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 
@@ -45,11 +46,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Home
-        hhData={hhData}
-        handleContactForm={handleContactForm}
-        exitContactForm={exitContactForm}
-      />
+      <Home />
       {isContactForm && (
         <ContactForm
           exitContactForm={exitContactForm}
@@ -57,8 +54,13 @@ function App() {
           setIsSent={setIsSent}
         />
       )}
-      <Personalize />
+      <SocialLinks
+        hhData={hhData}
+        handleContactForm={handleContactForm}
+        exitContactForm={exitContactForm}
+      />
       <Products />
+      <HowToOrder />
       <About />
       <Footer handleContactForm={handleContactForm} />
     </div>

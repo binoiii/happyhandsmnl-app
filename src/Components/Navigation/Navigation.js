@@ -1,27 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import NavigationMain from "./NavigationMain/NavigationMain.js";
-import NavigationMobile from "./NavigationMobile/NavigationMobile.js";
-import Backdrop from "./Backdrop/Backdrop.js";
+// import NavigationMobile from "./NavigationMobile/NavigationMobile.js";
+// import Backdrop from "./Backdrop/Backdrop.js";
 
 const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
-  const toggleNavLinks = () => {
-    setIsMenuOpen(false);
-  };
+  // const toggleNavLinks = () => {
+  //   setIsMenuOpen(false);
+  // };
 
   return (
     <div>
-      {isMenuOpen && <Backdrop toggleMenu={toggleMenu} />}
+      {/* {isMenuOpen && <Backdrop toggleMenu={toggleMenu} />}
       <NavigationMobile
         toggleNavLinks={toggleNavLinks}
         isMenuOpen={isMenuOpen}
-      />
-      <NavigationMain toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      /> */}
+      {/* <NavigationMain toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} /> */}
+      <NavigationMain />
     </div>
   );
 };

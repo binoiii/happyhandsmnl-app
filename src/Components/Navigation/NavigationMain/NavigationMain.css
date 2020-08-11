@@ -9,9 +9,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  background-color: white;
-  z-index: 3;
+  height: 60px;
+  border-bottom: 1px #a1a1a1 solid;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .Nav__cont {
@@ -22,18 +23,18 @@
   padding: 0 40px;
 }
 
-.NavLogo__cont span {
+.NavLogo__cont .Brand__web {
   font-family: "Sacramento";
   font-size: 25px;
   font-style: italic;
   text-shadow: 1px 0.5px 4px #ca7919;
-  color: black;
+  color: #000000;
 }
 
-.NavLogo__cont span:hover {
+.NavLogo__cont .Brand__web:hover {
   text-shadow: none;
   transition: all 0.3s ease-out;
-  color: #ca7919;
+  color: #eaa653;
   cursor: default;
 }
 
@@ -46,37 +47,50 @@
 .NavMainLinks__cont a {
   display: inline-block;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
+  color: #eaa653;
 }
 
 .NavMainLinks__cont a:focus {
   outline: none;
-  color: #ca7919;
+  color: #eaa653;
 }
 
 .NavMainLinks__cont .active {
   outline: none;
-  color: #ca7919;
+  color: #eaa653;
 }
 
 .NavMainLinks__cont a:hover {
   transform: scale(1.1);
-  transition: transform 0.5s ease;
+  color: #ca7919;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
-  .NavMainLinks__cont {
+@media (max-width: 768px) {
+  .NavMain__cont {
+    top: auto;
+    bottom: 0;
+    border-top: 1px #a1a1a1 solid;
+  }
+
+  .Nav__cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  .NavLogo__cont .Brand__web {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .NavMain__cont {
-    border-bottom: 1px #a1a1a1 solid;
+
   }
-}
+} */

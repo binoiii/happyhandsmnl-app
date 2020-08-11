@@ -1,0 +1,20 @@
+.HowToOrder__cont * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.HowToOrder__cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.HowToOrder__cont .HowToOrder__title {
+  font-family: "Sacramento";
+  font-style: italic;
+  font-size: 2rem;
+  color: #ca7919;
+}

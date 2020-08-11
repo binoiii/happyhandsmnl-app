@@ -1,0 +1,81 @@
+.StepProgress__cont .Step__cont {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 1rem auto 0 auto;
+  list-style-type: none;
+}
+
+.Step__cont .Step {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  border: 1px #a1a1a1 solid;
+  border-radius: 50%;
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  color: #a1a1a1;
+  text-align: center;
+  line-height: 1.5rem;
+  transition: background-color 0.4s ease-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Step__cont .Step.active {
+  background-color: #ca7919;
+  border: 1px #ca7919 solid;
+  color: #ffffff;
+  transition: background-color 0.4s ease-out;
+}
+
+.Step__cont .Step::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  left: 1.4rem;
+  width: 9rem;
+  height: 0.13rem;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  background-color: #a1a1a1;
+  cursor: default;
+}
+
+.Step__cont .Step.active::before {
+  background-color: #ca7919;
+}
+
+.Step__cont .Step:last-child::before {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .StepProgress__cont .Step__cont {
+    width: 20rem;
+  }
+
+  .Step__cont .Step::before {
+    left: 1.4rem;
+    width: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .StepProgress__cont .Step__cont {
+    width: 18rem;
+  }
+
+  .Step__cont .Step {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.5rem;
+    line-height: 1.3rem;
+  }
+
+  .Step__cont .Step::before {
+    left: 1.2rem;
+    width: 5rem;
+  }
+}

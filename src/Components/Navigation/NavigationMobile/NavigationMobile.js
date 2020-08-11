@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavigationMobile.css";
+// import "./NavigationMobile.css";
 import { Link } from "react-scroll";
 
 const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
@@ -25,20 +25,6 @@ const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
         <li>
           <Link
             activeClass="active"
-            to="personalize"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={300}
-            href="#personalize"
-            onClick={toggleNavLinks}
-          >
-            personalize
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
             to="products"
             spy={true}
             smooth={true}
@@ -50,7 +36,20 @@ const NavigationMobile = ({ isMenuOpen, toggleNavLinks }) => {
             products
           </Link>
         </li>
-
+        <li>
+          <Link
+            activeClass="active"
+            to="how-to-order"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={300}
+            href="how-to-order"
+            onClick={toggleNavLinks}
+          >
+            how to order
+          </Link>
+        </li>
         <li>
           <Link
             activeClass="active"

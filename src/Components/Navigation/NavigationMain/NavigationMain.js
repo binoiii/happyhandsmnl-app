@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavigationMain.css";
-import BurgerButton from "./BurgerButton/BurgerButton.js";
+// import BurgerButton from "./BurgerButton/BurgerButton.js";
 import { Link } from "react-scroll";
 
 const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
@@ -8,7 +8,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
     <div className="NavMain__cont">
       <nav className="Nav__cont">
         <div className="NavLogo__cont">
-          <span>happyhandsmnl</span>
+          <span className="Brand__web">happyhandsmnl</span>
         </div>
         <ul className="NavMainLinks__cont">
           <li>
@@ -22,21 +22,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               href="#home"
               tabIndex="1"
             >
-              home
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="personalize"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={300}
-              href="#personalize"
-              tabIndex="2"
-            >
-              personalize
+              <i className="fi-xwluxl-home-wide"></i>
             </Link>
           </li>
           <li>
@@ -50,10 +36,23 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               href="#products"
               tabIndex="3"
             >
-              products
+              <i className="fi-xwluhl-shopping-cart-wide"></i>
             </Link>
           </li>
-
+          <li>
+            <Link
+              activeClass="active"
+              to="how-to-order"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              href="#how-to-order"
+              tabIndex="2"
+            >
+              <i className="fi-xwluxl-question-mark-alt-wide"></i>
+            </Link>
+          </li>
           <li>
             <Link
               activeClass="active"
@@ -65,11 +64,11 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               href="#about"
               tabIndex="4"
             >
-              about
+              <i className="fi-cnldxl-exclamation-mark"></i>
             </Link>
           </li>
         </ul>
-        <BurgerButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        {/* <BurgerButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} /> */}
       </nav>
     </div>
   );
