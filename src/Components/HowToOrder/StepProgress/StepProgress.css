@@ -79,3 +79,9 @@
     width: 5rem;
   }
 }
+
+@media (max-width: 320px) {
+  .StepProgress__cont .Step__cont {
+    margin-top: -0.01rem;
+  }
+}

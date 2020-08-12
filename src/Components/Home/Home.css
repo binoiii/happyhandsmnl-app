@@ -126,6 +126,7 @@
 
 @media (max-width: 320px) {
   .HomeMain__cont .HhStatement__cont {
+    margin-top: 6rem;
     text-align: center;
     font-size: 2.5rem;
   }

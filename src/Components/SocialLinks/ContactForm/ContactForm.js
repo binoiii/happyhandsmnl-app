@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ContactForm.css";
+
 const ContactForm = ({ exitContactForm, isSent, setIsSent }) => {
   const [userData, setUserData] = useState({
     name: "",

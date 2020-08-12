@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 9rem;
 }
 
 .About__main {
@@ -19,7 +18,7 @@
   font-family: "Sacramento";
   font-style: italic;
   font-size: 2rem;
-  margin-top: 2rem;
+  padding-top: 1rem;
   color: #ca7919;
 }
 
@@ -94,7 +93,15 @@
   max-width: 90px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .About__cont {
+    margin-top: 5rem;
+  }
+
+  .About__main .About__title {
+    padding-top: 0rem;
+  }
+
   .Logo__box img {
     grid-area: "logo";
     display: block;

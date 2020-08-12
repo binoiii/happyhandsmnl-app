@@ -40,7 +40,6 @@
 
   .InputText__cont input {
     width: 250px;
-    margin-bottom: 0.5rem;
     font-size: 15px;
   }
 }

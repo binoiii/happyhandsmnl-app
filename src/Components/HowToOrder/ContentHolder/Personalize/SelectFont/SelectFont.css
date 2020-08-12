@@ -130,6 +130,12 @@
   outline: none;
 }
 
+@media (max-width: 768px) {
+  .InputTextSelectFont__cont .Select__cont {
+    margin-top: 0.5rem;
+  }
+}
+
 @media (max-width: 320px) {
   .Select__cont {
     width: 250px;

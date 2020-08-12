@@ -16,8 +16,23 @@
   margin: 2rem 0 1.5rem 0;
 }
 
-@media (max-width: 620px) {
-  .Personalize__cont {
-    margin-bottom: 1rem;
+@media (max-width: 768px) {
+  .Personalize__cont .InputTextSelectFont__cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .Personalize__cont .InputTextSelectFont__cont {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .Personalize__cont .InputTextSelectFont__cont {
+    margin: 1rem 0 0.5rem 0;
   }
 }

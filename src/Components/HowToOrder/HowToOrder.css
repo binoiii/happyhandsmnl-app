@@ -19,3 +19,10 @@
   font-size: 2rem;
   color: #ca7919;
 }
+
+@media (max-width: 768px) {
+  .HowToOrder__cont {
+    margin-top: 5rem;
+    padding-top: 0rem;
+  }
+}
