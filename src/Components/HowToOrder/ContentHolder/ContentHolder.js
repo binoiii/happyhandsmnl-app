@@ -14,17 +14,17 @@ const ContentHolder = ({ stepCount }) => {
     {
       step: 2,
       procedure: "provide product information",
-      content: <Personalize />,
+      content: <h1>test</h1>,
     },
     {
       step: 3,
       procedure: "identify payment scheme",
-      content: <Personalize />,
+      content: <h1>tes2</h1>,
     },
     {
       step: 4,
       procedure: "Choose your Product and Pont",
-      content: <Personalize />,
+      content: <h1>test3</h1>,
     },
   ];
 

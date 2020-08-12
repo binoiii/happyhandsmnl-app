@@ -13,6 +13,10 @@
   transition: transform 0.2s ease-out;
 }
 
+.Content h1 {
+  text-align: center;
+}
+
 .Content .Content__title {
   font-family: "Montserrat";
   color: #ca7919;

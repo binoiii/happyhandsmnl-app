@@ -34,7 +34,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#products"
-              tabIndex="3"
+              tabIndex="2"
             >
               <i className="fi-xwluhl-shopping-cart-wide"></i>
             </Link>
@@ -48,7 +48,7 @@ const NavigationMain = ({ isMenuOpen, toggleMenu }) => {
               offset={-70}
               duration={300}
               href="#how-to-order"
-              tabIndex="2"
+              tabIndex="3"
             >
               <i className="fi-xwluxl-question-mark-alt-wide"></i>
             </Link>

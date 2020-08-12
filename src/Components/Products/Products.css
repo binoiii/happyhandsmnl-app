@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  margin: 2rem 0;
-  padding: 3rem 0 2rem 0;
+  margin-top: 7rem;
+  padding-top: 3rem;
 }
 
 .Prod__Wrap .Grid__cont {
@@ -29,10 +29,10 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .Prod__Wrap {
-    margin-top: 1rem;
-    padding-top: 2rem;
+    margin-top: 5rem;
+    padding-top: 0rem;
   }
 }
 
