@@ -17,8 +17,8 @@ const Modal = ({ exitModal, prodImages, prodName, prodDescription }) => {
             prodName={prodName}
           />
           <div className="Image__description">
-            {prodDescription.map((desc) => (
-              <span>{desc}</span>
+            {prodDescription.map((desc, index) => (
+              <span key={index}>{desc}</span>
             ))}
           </div>
         </Suspense>

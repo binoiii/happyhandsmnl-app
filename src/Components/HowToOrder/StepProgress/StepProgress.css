@@ -20,7 +20,6 @@
   line-height: 1.5rem;
   transition: background-color 0.4s ease-out;
   cursor: pointer;
-  z-index: 1;
 }
 
 .Step__cont .Step.active {

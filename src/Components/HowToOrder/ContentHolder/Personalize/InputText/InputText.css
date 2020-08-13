@@ -33,13 +33,15 @@
   color: #a1a1a1;
 }
 
-@media (max-width: 320px) {
-  .Personalize__cont .InputTextSelectFont__cont {
-    margin-bottom: 1rem;
-  }
-
+@media (max-width: 450px) {
   .InputText__cont input {
     width: 250px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Personalize__cont .InputTextSelectFont__cont {
+    margin-bottom: 1rem;
   }
 }

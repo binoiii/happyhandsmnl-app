@@ -22,6 +22,7 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
     };
   });
   const imageIndexNext = imageIndex < prodImages.length - 1;
+
   let xTouchStart = null;
   let yTouchStart = null;
 

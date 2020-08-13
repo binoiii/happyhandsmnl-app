@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
   .Select__cont {
     width: 250px;
   }
