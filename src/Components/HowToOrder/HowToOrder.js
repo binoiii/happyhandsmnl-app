@@ -7,6 +7,7 @@ const HowToOrder = () => {
   const howToOrder = useRef(null);
   const stepProgress = useRef(null);
   const [stepCount, setStepCount] = useState(1);
+  console.log(stepCount);
 
   useEffect(() => {
     const howToOrderRef = howToOrder.current;
@@ -20,8 +21,8 @@ const HowToOrder = () => {
     };
   });
 
-  let xTouchStart = null;
-  let yTouchStart = null;
+  let xTouchStart = 0;
+  let yTouchStart = 0;
 
   const handleTouchStart = (e) => {
     xTouchStart = e.touches[0].clientX;
@@ -33,8 +34,8 @@ const HowToOrder = () => {
       return;
     }
 
-    const xTouchEnd = e.touches[0].clientX;
-    const yTouchEnd = e.touches[0].clientY;
+    let xTouchEnd = e.touches[0].clientX;
+    let yTouchEnd = e.touches[0].clientY;
 
     const xDiff = xTouchStart - xTouchEnd;
     const yDiff = yTouchStart - yTouchEnd;
@@ -42,14 +43,19 @@ const HowToOrder = () => {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         if (stepCount > 0 && stepCount < 4) {
+          console.log("touch forward");
           setStepCount((prevStepCount) => prevStepCount + 1);
+          handleProgress(stepCount + 1);
         }
       } else {
         if (stepCount > 1) {
+          console.log("touch back");
           setStepCount((prevStepCount) => prevStepCount - 1);
         }
       }
     }
+    xTouchStart = 0;
+    yTouchStart = 0;
   };
 
   const handleStep = (e) => {
