@@ -32,11 +32,20 @@ const Personalize = () => {
   const fontSelections = [
     { id: "1", fontName: "Baybayin" },
     { id: "2", fontName: "Bernadette" },
-    { id: "3", fontName: "Modernist Milk" },
-    { id: "4", fontName: "riztteen" },
-    { id: "5", fontName: "Bebas Neue" },
-    { id: "6", fontName: "Damion" },
+    { id: "8", fontName: "MOON" },
+    { id: "4", fontName: "Hughs" },
+    { id: "4", fontName: "BEBAS NEUE" },
+    { id: "10", fontName: "Back to Black" },
     { id: "7", fontName: "Citrica" },
+    { id: "3", fontName: "riztteen" },
+    { id: "10", fontName: "WENSLEY" },
+    { id: "5", fontName: "Damion" },
+    { id: "9", fontName: "Modernist Milk" },
+    { id: "6", fontName: "The Heart of Everything" },
+    { id: "6", fontName: "Uranos" },
+    { id: "6", fontName: "Julietta" },
+    { id: "6", fontName: "Old English" },
+    { id: "6", fontName: "Amarillo" },
   ];
 
   return (

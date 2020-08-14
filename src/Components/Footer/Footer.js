@@ -10,7 +10,7 @@ const Footer = () => {
         <p onClick={handleContactForm}>contact us</p>
       </div> */}
       <div className="CopyRights__cont">
-        © 2020 <span>happyhandsmnl</span>
+        ©<span>happyhandsmnl</span>
       </div>
     </div>
   );

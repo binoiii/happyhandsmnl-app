@@ -23,8 +23,8 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
   });
   const imageIndexNext = imageIndex < prodImages.length - 1;
 
-  let xTouchStart = null;
-  let yTouchStart = null;
+  let xTouchStart = 0;
+  let yTouchStart = 0;
 
   const handleKeyDownEsc = (e) => {
     e.preventDefault();
@@ -59,6 +59,8 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
           setTranslateX((prevTranslateX) => prevTranslateX - 100);
         }
       }
+      xTouchStart = 0;
+      yTouchStart = 0;
     }
   };
 

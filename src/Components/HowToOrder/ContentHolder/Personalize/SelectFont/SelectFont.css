@@ -81,16 +81,7 @@
 }
 
 .Option__cont .Option {
-  padding: 10px;
-}
-
-.Option__cont .Option:first-child {
-  padding-top: 2rem;
-  cursor: pointer;
-}
-
-.Option__cont .Option:last-child {
-  padding-bottom: 2rem;
+  padding: 1rem;
   cursor: pointer;
 }
 

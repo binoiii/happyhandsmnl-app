@@ -36,7 +36,7 @@ body {
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BEBAS NEUE";
   src: local("bebas_neue"), url(./Fonts/bebas_neue.ttf) format("truetype");
 }
 
@@ -46,18 +46,54 @@ body {
 }
 
 @font-face {
+  font-family: "Amarillo";
+  src: local("amarillo"), url(./Fonts/amarillo.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "Citrica";
   src: local("citrica"), url(./Fonts/citrica.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Moon";
-  src: local("moon"), url(./Fonts/moon.otf) format("truetype");
+  font-family: "MOON";
+  src: local("moon_light"), url(./Fonts/moon_light.otf) format("truetype");
 }
 
 @font-face {
-  font-family: "Wensley";
+  font-family: "WENSLEY";
   src: local("wensley"), url(./Fonts/wensley.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Back to Black";
+  src: local("back_to_black"), url(./Fonts/back_to_black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Uranos";
+  src: local("uranos"), url(./Fonts/uranos.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hughs";
+  src: local("hughs.otf"), url(./Fonts/hughs.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "The Heart of Everything";
+  src: local("the_heart_of_everything.ttf"),
+    url(./Fonts/the_heart_of_everything.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Julietta";
+  src: local("julietta.ttf"), url(./Fonts/julietta.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Old English";
+  src: local("old_english.ttf"), url(./Fonts/old_english.ttf) format("truetype");
 }
 
 /* @font-face {

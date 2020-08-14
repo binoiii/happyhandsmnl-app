@@ -6,12 +6,17 @@ import "./HowToOrder.css";
 const HowToOrder = () => {
   const howToOrder = useRef(null);
   const stepProgress = useRef(null);
+
   const [stepCount, setStepCount] = useState(1);
-  console.log(stepCount);
+
+  let xTouchStart = 0;
+  let yTouchStart = 0;
+
+  const isNextStep = stepCount > 0 && stepCount < 4;
+  const isPrevStep = stepCount > 1;
 
   useEffect(() => {
     const howToOrderRef = howToOrder.current;
-
     howToOrderRef.addEventListener("touchstart", handleTouchStart);
     howToOrderRef.addEventListener("touchmove", handleTouchMove);
 
@@ -20,9 +25,6 @@ const HowToOrder = () => {
       howToOrderRef.removeEventListener("touchmove", handleTouchMove);
     };
   });
-
-  let xTouchStart = 0;
-  let yTouchStart = 0;
 
   const handleTouchStart = (e) => {
     xTouchStart = e.touches[0].clientX;
@@ -42,15 +44,14 @@ const HowToOrder = () => {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
-        if (stepCount > 0 && stepCount < 4) {
-          console.log("touch forward");
+        if (isNextStep) {
           setStepCount((prevStepCount) => prevStepCount + 1);
           handleProgress(stepCount + 1);
         }
       } else {
-        if (stepCount > 1) {
-          console.log("touch back");
+        if (isPrevStep) {
           setStepCount((prevStepCount) => prevStepCount - 1);
+          handleProgress(stepCount - 1);
         }
       }
     }
