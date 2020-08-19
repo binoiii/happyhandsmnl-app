@@ -135,181 +135,209 @@ import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 
 const imgCont = [
   {
-    prodName: "flask set",
+    prodName: "Flask Set",
     prodImgCont: [Flask1, Flask2, Flask3, Flask4],
-    prodDescription: ["GENTLEMEN'S FAVORITE", "FREE BOX ENGRAVE"],
+    prodDescription: ["9oz", "with Free Box Engrave"],
   },
 
   {
-    prodName: "bamboo tumbler",
+    prodName: "Bamboo Tumbler",
     prodImgCont: [
       BambooTumbler1,
       BambooTumbler2,
       BambooTumbler3,
       BambooTumbler4,
     ],
-    prodDescription: ["350ML / 450ML", "10-12 HOURS FOR HOT / COLD"],
+    prodDescription: ["350ml / 450ml", "10-12 Hours for Hot / Cold"],
   },
   {
-    prodName: "bambootensils",
+    prodName: "Bambootensils",
     prodImgCont: [
       BambooUtensils1,
       BambooUtensils2,
       BambooUtensils3,
       BambooUtensils4,
     ],
+    prodDescription: ["Spoon, Fork and Knife", "with Free White Pouch"],
   },
 
   {
-    prodName: "bamboo notebook",
+    prodName: "Bamboo Notebook",
     prodImgCont: [BambooNB1, BambooNB2, BambooNB3, BambooNB4],
-    prodDescription: ["70 LEAVES", "CRUMPLE-FREE NOTEBOOK"],
+    prodDescription: ["70 Leaves", "Crumple-Free Cover"],
   },
 
   {
-    prodName: "chopping board",
+    prodName: "Bamboo Chopping Board",
     prodImgCont: [
       ChoppingBoard1,
       ChoppingBoard2,
       ChoppingBoard3,
       ChoppingBoard4,
     ],
-    prodDescription: ['11" x 7" x 0.5"', "DURABLE"],
+    prodDescription: ['11" x 7" x 0.5"', "with Stainless Ring Hook on Top"],
   },
 
   {
-    prodName: "bamboo-unan",
+    prodName: "Bambaunan Bento Lunch Box",
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
+    prodDescription: [
+      '4.5" x 6.5" x 2.5"',
+      "made from Bamboo and Stainless Steel",
+    ],
   },
 
   {
-    prodName: "bamboo pen",
+    prodName: "Bamboo Pen",
     prodImgCont: [BambooPen1, BambooPen2, BambooPen3, BambooPen4],
+    prodDescription: ["Black Ink", "can be with Case"],
   },
 
   {
-    prodName: "bamboo shades",
+    prodName: "Bamboo Sun Glasses",
     prodImgCont: [Shades1, Shades2, Shades3, Shades4],
+    prodDescription: ["Bamboo Temples", "with Free Black Pouch"],
   },
 
   {
-    prodName: "bottle opener",
+    prodName: "Wooden Bottle Opener",
     prodImgCont: [BottleOpener1, BottleOpener2, BottleOpener3, BottleOpener4],
+    prodDescription: ['5.5" x 1"', "made of Solid Wood and Metal"],
   },
 
   {
-    prodName: "mirror",
+    prodName: "Wooden Mirror",
     prodImgCont: [Mirror1, Mirror2, Mirror3, Mirror4],
+    prodDescription: ['6" x 3"', "Handy and Portable Mirror"],
   },
 
   {
-    prodName: "wooden brush",
+    prodName: "Mini Brush",
     prodImgCont: [Brush1, Brush2, Brush3, Brush4],
+    prodDescription: ['6" x 2"', "with Soft Bristle"],
   },
 
   {
-    prodName: "cellphone stand",
+    prodName: "Wooden Phone Stand Keychain",
     prodImgCont: [
       CellphoneStand1,
       CellphoneStand2,
       CellphoneStand3,
       CellphoneStand4,
     ],
+    prodDescription: ['3.9" x 1"', "Handy and Portable Cellphone Stand"],
   },
 
   {
-    prodName: "wooden speakers",
+    prodName: "Wooden Speaker & Phone Holder",
     prodImgCont: [
       WoodenSpeakers1,
       WoodenSpeakers2,
       WoodenSpeakers3,
       WoodenSpeakers4,
     ],
+    prodDescription: ['2.8" x 4" x 2"', "on the go Speakers"],
   },
 
   {
-    prodName: "bamboo toothbrush",
+    prodName: "Bamboo Toothbrush",
     prodImgCont: [
       BambooToothBrush1,
       BambooToothBrush2,
       BambooToothBrush3,
       BambooToothBrush4,
     ],
+    prodDescription: ["Soft Bristle ", "Charcoal Infused"],
   },
 
   {
-    prodName: "comb-men",
+    prodName: "Comb for Gents",
     prodImgCont: [CombMen1, CombMen2, CombMen3, CombMen4],
+    prodDescription: ['7" x 2"', "Groom's Men Favorite"],
   },
 
   {
-    prodName: "comb-women",
+    prodName: "Comb with Handle",
     prodImgCont: [CombWomen1, CombWomen2, CombWomen3, CombWomen4],
+    prodDescription: ['6"', "Bride's Maid Favorite"],
   },
 
   {
-    prodName: "paddle brush",
+    prodName: "Paddle Brush",
     prodImgCont: [PaddleBrush1, PaddleBrush2, PaddleBrush3, PaddleBrush4],
+    prodDescription: ['10"x 3"'],
   },
 
   {
-    prodName: "Metal Straw",
+    prodName: "Stainless Straw Set",
     prodImgCont: [Straw1, Straw2, Straw3, Straw4],
+    prodDescription: [
+      "Multipurpose Straws, Brush Cleaner ",
+      "with Free White Pouch",
+    ],
   },
 
   {
-    prodName: "tumbler",
-    prodImgCont: [Tumbler1, Tumbler2, Tumbler3, Tumbler4],
+    prodName: "Metal Vaccum Tumbler",
+    prodImgCont: [Tumbler2, Tumbler4, Tumbler3, Tumbler1],
+    prodDescription: ["450ml", "Matte Color Exterior"],
   },
 
   {
-    prodName: "leather key chain",
+    prodName: "Leather Keyholder",
     prodImgCont: [Tag1, Tag2, Tag3, Tag4],
+    prodDescription: ['4.5"', "Stlyish Leather"],
   },
 
   {
-    prodName: "passport holder",
+    prodName: "Leather Passport Holder",
     prodImgCont: [
       PassportHolder1,
       PassportHolder2,
       PassportHolder3,
       PassportHolder4,
     ],
+    prodDescription: ['5.9" x 4"', "with Pocket Provision for Cash and Cards"],
   },
 
   {
-    prodName: "chord organizer - a",
+    prodName: "Cord Organizer",
     prodImgCont: [
       ChordOrganizerA1,
       ChordOrganizerA2,
       ChordOrganizerA3,
       ChordOrganizerA4,
     ],
+    prodDescription: ['2.4" x 1.8"', "Traveller's Essential"],
   },
 
   {
-    prodName: "chord organizer - b",
+    prodName: "Cord Organizer",
     prodImgCont: [
       ChordOrganizerB1,
       ChordOrganizerB2,
       ChordOrganizerB3,
       ChordOrganizerB4,
     ],
+    prodDescription: ['2.4" x 1.8"', "Traveller's Essential"],
   },
 
   {
-    prodName: "long wallet",
+    prodName: "Long Wallet",
     prodImgCont: [Wallet21, Wallet22, Wallet23, Wallet24],
+    prodDescription: ['4" x 7.9"', "can hold Phone, Cash, Cards, and Coins"],
   },
 
   {
-    prodName: "wallet",
+    prodName: "Handy Wallet",
     prodImgCont: [Wallet1, Wallet2, Wallet3, Wallet4],
+    prodDescription: ['3.5" x 4.5"', "with Pockets for Cash/Cards"],
   },
 
   {
-    prodName: "coin purse",
+    prodName: "Coin Purse",
     prodImgCont: [CoinPurse1, CoinPurse2, CoinPurse3, CoinPurse4],
+    prodDescription: ['3.2" x 3.6"'],
   },
 ];
 

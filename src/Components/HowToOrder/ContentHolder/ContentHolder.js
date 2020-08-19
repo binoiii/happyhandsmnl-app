@@ -1,5 +1,8 @@
 import React from "react";
 import Personalize from "./Personalize/Personalize";
+import SendDetails from "./SendDetails/SendDetails";
+import Payment from "./Payment/Payment";
+import ShipmentReminders from "./ShipmentReminders/ShipmentReminders";
 import "./ContentHolder.css";
 
 const ContentHolder = ({ stepCount }) => {
@@ -13,18 +16,18 @@ const ContentHolder = ({ stepCount }) => {
     },
     {
       step: 2,
-      procedure: "provide product information",
-      content: <h1>test</h1>,
+      procedure: "Send Us Your Order Details",
+      content: <SendDetails />,
     },
     {
       step: 3,
-      procedure: "identify payment scheme",
-      content: <h1>tes2</h1>,
+      procedure: "Send the Proof of Payment",
+      content: <Payment />,
     },
     {
       step: 4,
-      procedure: "Choose your Product and Pont",
-      content: <h1>test3</h1>,
+      procedure: "Shipping Reminders",
+      content: <ShipmentReminders />,
     },
   ];
 

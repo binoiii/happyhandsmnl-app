@@ -1,0 +1,68 @@
+.ShipmentReminders__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5e5e5e;
+  font-family: "Montserrat";
+}
+
+.ShipmentReminders__cont * {
+  list-style-type: none;
+}
+
+.ShipmentReminders__cont .Reminders__cont {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.ShipmentReminders__cont span {
+  display: block;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+.ShipmentReminders__cont li {
+  margin-bottom: 1rem;
+}
+
+.DeliveryMessage__cont span {
+  color: #5e5e5e;
+}
+
+.ShipmentReminders__cont .Message1 {
+  padding-top: 2.5rem;
+}
+
+.ShipmentReminders__cont .Message2 {
+  padding-top: 3.5rem;
+}
+
+@media (max-width: 470px) {
+  .ShipmentReminders__cont * {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .ShipmentReminders__cont .Reminders__cont {
+    margin-top: 1rem;
+  }
+
+  .ShipmentReminders__cont span {
+    line-height: 1rem;
+  }
+
+  .ShipmentReminders__cont .Message1 {
+    padding-top: 1rem;
+  }
+
+  .ShipmentReminders__cont .Message2 {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .ShipmentReminders__cont * {
+    font-size: 0.75rem;
+  }
+}

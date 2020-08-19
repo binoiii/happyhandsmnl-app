@@ -8,7 +8,6 @@
 
 .Content__cont .Content {
   width: 100%;
-  min-height: 20rem;
   flex-shrink: 0;
   transition: transform 0.2s ease-out;
 }

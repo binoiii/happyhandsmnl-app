@@ -76,15 +76,7 @@
     font-size: 25px;
     font-style: italic;
     margin-left: 30px;
-    text-shadow: 1px 0.5px 4px #ca7919;
-    color: #000000;
-  }
-
-  .SocialLinks__cont .Brand__mobile:hover {
-    text-shadow: none;
-    transition: all 0.3s ease-out;
-    color: #eaa653;
-    cursor: default;
+    color: #ca7919;
   }
 }
 

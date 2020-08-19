@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import InputText from "./InputText/InputText";
 import SelectFont from "./SelectFont/SelectFont";
 import OutputText from "./OutputText/OutputText";
+import { UserContext } from "../../../HowToOrder/HowToOrder";
 import "./Personalize.css";
 
 const Personalize = () => {
@@ -11,6 +12,24 @@ const Personalize = () => {
     fontFamily: "Montserrat",
     fontSize: "100px",
   });
+
+  const outputText = useRef(null);
+
+  const { howToOrder, handleTouchStart } = useContext(UserContext);
+
+  useEffect(() => {
+    const outputTextRef = outputText.current;
+    outputTextRef.addEventListener("touchstart", handleTouch);
+
+    return () => {
+      outputTextRef.removeEventListener("touchstart", handleTouch);
+    };
+  });
+
+  const handleTouch = () => {
+    const howToOrderRef = howToOrder.current;
+    howToOrderRef.removeEventListener("touchstart", handleTouchStart);
+  };
 
   const handleUserText = (e) => {
     setuserText(e.target.value);
@@ -22,30 +41,30 @@ const Personalize = () => {
   };
 
   const handleSliderValue = (e) => {
+    console.log("move");
     const fontSizeUser = e.target.value;
     const fontSizePx = fontSizeUser + "px";
     setSliderValue(fontSizeUser);
     setOutputStyle({ ...outputStyle, fontSize: fontSizePx });
   };
 
-  //TO BE FETCHED
   const fontSelections = [
     { id: "1", fontName: "Baybayin" },
     { id: "2", fontName: "Bernadette" },
-    { id: "8", fontName: "MOON" },
+    { id: "3", fontName: "MOON" },
     { id: "4", fontName: "Hughs" },
-    { id: "4", fontName: "BEBAS NEUE" },
-    { id: "10", fontName: "Back to Black" },
+    { id: "5", fontName: "BEBAS NEUE" },
+    { id: "6", fontName: "Back to Black" },
     { id: "7", fontName: "Citrica" },
-    { id: "3", fontName: "riztteen" },
-    { id: "10", fontName: "WENSLEY" },
-    { id: "5", fontName: "Damion" },
-    { id: "9", fontName: "Modernist Milk" },
-    { id: "6", fontName: "The Heart of Everything" },
-    { id: "6", fontName: "Uranos" },
-    { id: "6", fontName: "Julietta" },
-    { id: "6", fontName: "Old English" },
-    { id: "6", fontName: "Amarillo" },
+    { id: "8", fontName: "riztteen" },
+    { id: "9", fontName: "WENSLEY" },
+    { id: "10", fontName: "Damion" },
+    { id: "11", fontName: "Modernist Milk" },
+    { id: "12", fontName: "The Heart of Everything" },
+    { id: "13", fontName: "Uranos" },
+    { id: "14", fontName: "Julietta" },
+    { id: "15", fontName: "Old English" },
+    { id: "16", fontName: "Amarillo" },
   ];
 
   return (
@@ -63,6 +82,7 @@ const Personalize = () => {
         userText={userText}
         sliderValue={sliderValue}
         handleSliderValue={handleSliderValue}
+        ref={outputText}
       />
     </div>
   );

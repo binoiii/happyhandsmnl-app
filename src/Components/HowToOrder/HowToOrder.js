@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, createContext } from "react";
 import ContentHolder from "./ContentHolder/ContentHolder";
 import StepProgress from "./StepProgress/StepProgress";
 import "./HowToOrder.css";
+export const UserContext = createContext(null);
 
 const HowToOrder = () => {
   const howToOrder = useRef(null);
@@ -17,14 +18,21 @@ const HowToOrder = () => {
 
   useEffect(() => {
     const howToOrderRef = howToOrder.current;
+    howToOrderRef.addEventListener("touchstart", handleTouch);
     howToOrderRef.addEventListener("touchstart", handleTouchStart);
     howToOrderRef.addEventListener("touchmove", handleTouchMove);
 
     return () => {
+      howToOrderRef.addEventListener("touchstart", handleTouch);
       howToOrderRef.removeEventListener("touchstart", handleTouchStart);
       howToOrderRef.removeEventListener("touchmove", handleTouchMove);
     };
   });
+
+  const handleTouch = () => {
+    const howToOrderRef = howToOrder.current;
+    howToOrderRef.addEventListener("touchstart", handleTouchStart);
+  };
 
   const handleTouchStart = (e) => {
     xTouchStart = e.touches[0].clientX;
@@ -45,6 +53,7 @@ const HowToOrder = () => {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         if (isNextStep) {
+          console.log("moving");
           setStepCount((prevStepCount) => prevStepCount + 1);
           handleProgress(stepCount + 1);
         }
@@ -78,11 +87,13 @@ const HowToOrder = () => {
   };
 
   return (
-    <div id="how-to-order" className="HowToOrder__cont" ref={howToOrder}>
-      <span className="HowToOrder__title">How to Order</span>
-      <StepProgress handleStep={handleStep} ref={stepProgress} />
-      <ContentHolder stepCount={stepCount} />
-    </div>
+    <UserContext.Provider value={{ howToOrder, handleTouchStart }}>
+      <div id="how-to-order" className="HowToOrder__cont" ref={howToOrder}>
+        <span className="HowToOrder__title">How to Order</span>
+        <StepProgress handleStep={handleStep} ref={stepProgress} />
+        <ContentHolder stepCount={stepCount} />
+      </div>
+    </UserContext.Provider>
   );
 };
 

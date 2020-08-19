@@ -1,7 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./StepProgress.css";
 
-const StepProgress = React.forwardRef(({ handleStep }, ref) => {
+const StepProgress = forwardRef(({ handleStep }, ref) => {
   const steps = [1, 2, 3, 4];
 
   return (

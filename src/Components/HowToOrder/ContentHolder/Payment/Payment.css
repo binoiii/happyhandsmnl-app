@@ -1,0 +1,94 @@
+.Payment__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  list-style-type: none;
+  font-family: "Montserrat";
+}
+
+.Payment__cont * {
+  list-style-type: none;
+}
+
+.Payment__cont span {
+  color: #5e5e5e;
+}
+
+.Payment__cont .Merchants__cont {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin-top: 1.2rem;
+  line-height: 1.9rem;
+}
+
+.Merchants__cont .Merchant__cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Merchant__cont .Merchant__logo {
+  width: 35%;
+}
+
+.Details__cont .Detail__cont {
+  text-align: center;
+}
+
+.Payment__cont .SampleDetails__cont {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1.6rem;
+}
+
+.SampleDetails__cont .Example__cont {
+  display: flex;
+}
+
+.Example__cont .Example1__cont,
+.Example__cont .Example12__cont {
+  margin-right: 3rem;
+}
+
+.SampleDetails__cont .ShippingDetails__cont {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+@media (max-width: 470px) {
+  .Payment__cont * {
+    font-size: 0.9rem;
+  }
+
+  .Payment__cont .Payment__cont {
+    line-height: 1.7rem;
+  }
+
+  .Payment__cont .SampleDetails__cont {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .Payment__cont .SampleDetails__cont {
+    margin-top: 1rem;
+  }
+
+  .Payment__cont .Steps__cont {
+    margin-top: 1rem;
+  }
+
+  .SampleDetails__cont .ShippingDetails__cont {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .PaymentShipping__cont * {
+    font-size: 0.75rem;
+  }
+}

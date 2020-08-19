@@ -50,7 +50,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .StepProgress__cont .Step__cont {
     width: 20rem;
   }
@@ -59,11 +59,11 @@
     left: 1.4rem;
     width: 5rem;
   }
-}
+} */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .StepProgress__cont .Step__cont {
-    width: 18rem;
+    width: 25rem;
   }
 
   .Step__cont .Step {
@@ -75,12 +75,27 @@
 
   .Step__cont .Step::before {
     left: 1.2rem;
-    width: 5rem;
+    width: 7rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 410px) {
   .StepProgress__cont .Step__cont {
+    width: 21rem;
+  }
+
+  .Step__cont .Step::before {
+    width: 6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .StepProgress__cont .Step__cont {
+    width: 18rem;
     margin-top: -0.01rem;
+  }
+
+  .Step__cont .Step::before {
+    width: 5.5rem;
   }
 }

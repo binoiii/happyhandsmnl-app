@@ -1,0 +1,77 @@
+.SendDetails__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  list-style-type: none;
+  font-family: "Montserrat";
+}
+
+.SendDetails__cont * {
+  list-style-type: none;
+}
+
+.SendDetails__cont span {
+  color: #5e5e5e;
+}
+
+.SendDetails__cont .Steps__cont {
+  margin-top: 1.5rem;
+  line-height: 1.9rem;
+}
+
+.SendDetails__cont .SampleDetails__cont {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1.6rem;
+}
+
+.SampleDetails__cont .Example__cont {
+  display: flex;
+}
+
+.Example__cont .Example1__cont,
+.Example__cont .Example12__cont {
+  margin-right: 3rem;
+}
+
+.SampleDetails__cont .ShippingDetails__cont {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+@media (max-width: 470px) {
+  .SendDetails__cont * {
+    font-size: 0.9rem;
+  }
+
+  .SendDetails__cont .Steps__cont {
+    line-height: 1.7rem;
+  }
+
+  .SendDetails__cont .SampleDetails__cont {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .SendDetails__cont .SampleDetails__cont {
+    margin-top: 1rem;
+  }
+
+  .SendDetails__cont .Steps__cont {
+    margin-top: 1rem;
+  }
+
+  .SampleDetails__cont .ShippingDetails__cont {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .SendDetails__cont * {
+    font-size: 0.75rem;
+  }
+}

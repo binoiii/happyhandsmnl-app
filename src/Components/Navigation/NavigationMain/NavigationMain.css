@@ -25,18 +25,17 @@
 
 .NavLogo__cont .Brand__web {
   font-family: "Sacramento";
-  font-size: 25px;
+  font-size: 27px;
   font-style: italic;
-  text-shadow: 1px 0.5px 4px #ca7919;
-  color: #000000;
+  color: #ca7919;
 }
 
-.NavLogo__cont .Brand__web:hover {
+/* .NavLogo__cont .Brand__web:hover {
   text-shadow: none;
   transition: all 0.3s ease-out;
   color: #ca7919;
   cursor: default;
-}
+} */
 
 .NavMainLinks__cont li {
   display: inline-block;
