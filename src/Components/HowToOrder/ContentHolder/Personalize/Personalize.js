@@ -19,7 +19,9 @@ const Personalize = () => {
 
   useEffect(() => {
     const outputTextRef = outputText.current;
-    outputTextRef.addEventListener("touchstart", handleTouch);
+    outputTextRef.addEventListener("touchstart", handleTouch, {
+      passive: true,
+    });
 
     return () => {
       outputTextRef.removeEventListener("touchstart", handleTouch);
@@ -28,7 +30,9 @@ const Personalize = () => {
 
   const handleTouch = () => {
     const howToOrderRef = howToOrder.current;
-    howToOrderRef.removeEventListener("touchstart", handleTouchStart);
+    howToOrderRef.removeEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
   };
 
   const handleUserText = (e) => {

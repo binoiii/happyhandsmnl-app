@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import Navigation from "./Components/Navigation//Navigation";
+import Navigation from "./Components/Navigation//Navigation";
 import Home from "./Components/Home/Home";
 import SocialLinks from "./Components/SocialLinks/SocialLinks";
 import Products from "./Components/Products/Products";
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navigation /> */}
+      <Navigation />
       <Home />
       <SocialLinks hhData={hhData} />
       <Products />

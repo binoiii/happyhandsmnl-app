@@ -2,40 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/h-icon2.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="happyhandsmnl eco-friendly souvenirs"
-      content="Welcome to happyhandsmnl!"
+      name="description"
+      content="Official Website of Happyhandsmnl (Personalized, eco-friendly and laser engraved souvenirs)"
     />
+    <meta name="author" content="Albino C. Cordova III" />
+
+    <link rel="icon" href="%PUBLIC_URL%/h-icon2.jpg" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Sacramento&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/20534f6043.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>happyhandsmnl</title>
+
+    <title>Happyhandsmnl</title>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
+
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
+
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
   </form>
+
   <script>
     window.fbAsyncInit = function () {
       FB.init({

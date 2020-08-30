@@ -4,17 +4,17 @@
       {
         "name": "facebook",
         "url": "https://www.facebook.com/happyhandsmnl",
-        "className": "fa fa-facebook-official"
+        "className": "fi-cnluxl-facebook-circle"
       },
       {
         "name": "instagram",
         "url": "https://www.instagram.com/happyhandsmnl/",
-        "className": "fa fa-instagram"
+        "className": "fi-xnsuxl-instagram"
       },
       {
         "name": "email",
         "url": "mailto:www.happyhandsmnl@gmail.com",
-        "className": "fa fa-envelope-o"
+        "className": "fi-xwluxl-envelope-wide"
       }
     ]
   }

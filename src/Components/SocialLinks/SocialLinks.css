@@ -24,7 +24,7 @@
 
 .SocialLinks__cont .Social li {
   margin: 0 0 2rem 30px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .SocialLinks__cont .Social li a {
@@ -63,7 +63,6 @@
 
   .SocialLinks__cont .Social li {
     margin: 0 0 0 30px;
-    font-size: 1.7rem;
   }
 
   .SocialLinks__cont .Social li:last-child {

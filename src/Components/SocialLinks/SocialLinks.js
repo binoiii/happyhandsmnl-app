@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 import ContactForm from "./ContactForm/ContactForm";
 import "./SocialLinks.css";
 
 const SocialLinks = ({ hhData }) => {
   const [isContactForm, setContactForm] = useState(false);
   const [isSent, setIsSent] = useState(null);
+  const contactRef = useRef();
 
   const handleContactForm = (e) => {
     e.preventDefault();
     setContactForm(!isContactForm);
+    handleScroll();
   };
 
   const exitContactForm = (e) => {
@@ -18,12 +21,20 @@ const SocialLinks = ({ hhData }) => {
       if (isSent) {
         setContactForm(false);
         setIsSent(null);
+        handleScroll();
       } else {
         if (window.confirm("Are you sure to cancel?")) {
           setContactForm(false);
+          handleScroll();
         }
       }
     }
+  };
+
+  const handleScroll = () => {
+    !isContactForm
+      ? disableBodyScroll(contactRef)
+      : clearAllBodyScrollLocks(contactRef);
   };
 
   return (
@@ -52,6 +63,7 @@ const SocialLinks = ({ hhData }) => {
           exitContactForm={exitContactForm}
           isSent={isSent}
           setIsSent={setIsSent}
+          contactRef={contactRef}
         />
       )}
     </>

@@ -18,12 +18,20 @@ const HowToOrder = () => {
 
   useEffect(() => {
     const howToOrderRef = howToOrder.current;
-    howToOrderRef.addEventListener("touchstart", handleTouch);
-    howToOrderRef.addEventListener("touchstart", handleTouchStart);
-    howToOrderRef.addEventListener("touchmove", handleTouchMove);
+    howToOrderRef.addEventListener("touchstart", handleTouch, {
+      passive: true,
+    });
+    howToOrderRef.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
+    howToOrderRef.addEventListener("touchmove", handleTouchMove, {
+      passive: true,
+    });
 
     return () => {
-      howToOrderRef.addEventListener("touchstart", handleTouch);
+      howToOrderRef.addEventListener("touchstart", handleTouch, {
+        passive: true,
+      });
       howToOrderRef.removeEventListener("touchstart", handleTouchStart);
       howToOrderRef.removeEventListener("touchmove", handleTouchMove);
     };
@@ -31,7 +39,9 @@ const HowToOrder = () => {
 
   const handleTouch = () => {
     const howToOrderRef = howToOrder.current;
-    howToOrderRef.addEventListener("touchstart", handleTouchStart);
+    howToOrderRef.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
   };
 
   const handleTouchStart = (e) => {

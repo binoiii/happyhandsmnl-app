@@ -7,9 +7,9 @@ const ImageHolder = ({ exitModal, prodImages, prodName }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    document.addEventListener("keydown", handleKeyDownEsc);
-    document.addEventListener("keydown", handleKeyDownPrev);
-    document.addEventListener("keydown", handleKeyDownNext);
+    document.addEventListener("keydown", handleKeyDownEsc, { passive: true });
+    document.addEventListener("keydown", handleKeyDownPrev, { passive: true });
+    document.addEventListener("keydown", handleKeyDownNext, { passive: true });
     document.addEventListener("touchstart", handleTouchStart);
     document.addEventListener("touchmove", handleTouchMove);
 
