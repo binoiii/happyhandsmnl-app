@@ -45,15 +45,15 @@
 
 @media (max-width: 450px) {
   .ShipmentReminders__cont .Reminders__cont {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .ShipmentReminders__cont span {
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 
   .ShipmentReminders__cont .Message1 {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
   }
 
   .ShipmentReminders__cont .Message2 {

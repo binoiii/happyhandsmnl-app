@@ -1,60 +1,48 @@
 .Payment__cont {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  color: #000000;
-  list-style-type: none;
+  color: #5e5e5e;
   font-family: "Montserrat";
 }
 
-.Payment__cont * {
-  list-style-type: none;
-}
-
-.Payment__cont span {
-  color: #5e5e5e;
+.HowToOrder__cont .Payment__cont {
+  margin-top: 1.5rem;
 }
 
 .Payment__cont .Merchants__cont {
   display: flex;
-  justify-content: center;
-  flex-flow: wrap;
-  margin-top: 1.2rem;
-  line-height: 1.9rem;
-}
-
-.Merchants__cont .Merchant__cont {
-  display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style-type: none;
 }
 
-.Merchant__cont .Merchant__logo {
-  width: 35%;
+.Merchants__cont .bpi_logo {
+  width: 45%;
+  margin-bottom: 1rem;
 }
 
-.Details__cont .Detail__cont {
+.Merchants__cont .Merchant_qr {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.Merchants__cont .multi_logo {
+  width: 38%;
+  margin-bottom: -0.3rem;
+}
+
+.Merchants__cont ul {
+  list-style-type: none;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
-.Payment__cont .SampleDetails__cont {
-  margin-top: 2rem;
-  margin-left: 1rem;
-  line-height: 1.6rem;
-}
-
-.SampleDetails__cont .Example__cont {
-  display: flex;
-}
-
-.Example__cont .Example1__cont,
-.Example__cont .Example12__cont {
-  margin-right: 3rem;
-}
-
-.SampleDetails__cont .ShippingDetails__cont {
-  margin-top: 2rem;
-  list-style-type: none;
+.Merchants__cont li {
+  margin: 0.4rem;
 }
 
 @media (max-width: 470px) {
@@ -62,28 +50,9 @@
     font-size: 0.9rem;
   }
 
-  .Payment__cont .Payment__cont {
-    line-height: 1.7rem;
-  }
-
-  .Payment__cont .SampleDetails__cont {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .Payment__cont .SampleDetails__cont {
-    margin-top: 1rem;
-  }
-
-  .Payment__cont .Steps__cont {
-    margin-top: 1rem;
-  }
-
-  .SampleDetails__cont .ShippingDetails__cont {
-    margin-top: 1rem;
+  .Merchants__cont .multi_logo {
+    width: 60%;
+    margin-bottom: -0.3rem;
   }
 }
 

@@ -132,13 +132,13 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (max-width: 375px) {
   .OutputText__cont .Output__cont {
     width: 80vw;
-    height: 40vh;
+    height: 50vh;
   }
 }
 
 @media (max-width: 320px) {
   .OutputText__cont .Output__cont {
     width: 80vw;
-    height: 34vh;
+    height: 50vh;
   }
 }

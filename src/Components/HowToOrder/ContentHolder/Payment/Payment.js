@@ -1,60 +1,36 @@
 import React from "react";
 import "./Payment.css";
 
-import bpi from "./img/bpi.jpg";
-import bpi_qr from "./img/bpi-qr.png";
-import gcash from "./img/gcash.jpg";
-import we_palawan_cebuana from "./img/we_palawan_cebuana.jpg";
+import bpi_logo from "./img/bpi.jpg";
+import bpi_qr from "./img/bpi-qr.jpg";
+import gcash_pal_wu_ceb_logo from "./img/gcash-pal-wu-ceb.jpg";
 
 const Payment = () => {
-  const partnerMerchants = [
-    {
-      merchant: "bpi",
-      logo: bpi,
-      details: { description: "bpi_qr", qr: bpi_qr, profile: "3399-3908-33" },
-    },
-    {
-      merchant: "gcash",
-      logo: gcash,
-      details: { qr: "", profile: "0915-344-9219" },
-    },
-    {
-      merchant: "wu-cebuana-palawan",
-      logo: we_palawan_cebuana,
-      details: {
-        profile: {
-          name: "June Anne Nepomuceno",
-          address: "1341 M. Naval St., San Roque, Navotas",
-          number: "0915-344-9219",
-        },
-      },
-    },
-  ];
+  //       profile: {
+  //         name: "June Anne Nepomuceno",
+  //         address: "1341 M. Naval St., San Roque, Navotas",
+  //         number: "0915-344-9219",
+  //       },
 
   return (
     <div className="Payment__cont">
       <div className="Merchants__cont">
-        {partnerMerchants.map(
-          ({ merchant, logo, details: { qr, profile, description } }) => (
-            <div className="Merchant__cont" key={merchant}>
-              <img className="Merchant__logo" src={logo} alt={merchant} />
-              <div className="Details__cont">
-                {merchant === "bpi" || merchant === "gcash" ? (
-                  <>
-                    <img src={qr} alt={description} />
-                    <div className="Detail__cont">{profile}</div>
-                  </>
-                ) : (
-                  <>
-                    <div className="Detail__cont">{profile.name}</div>
-                    <div className="Detail__cont">{profile.address}</div>
-                    <div className="Detail__cont">{profile.number}</div>
-                  </>
-                )}
-              </div>
-            </div>
-          )
-        )}
+        <img src={bpi_logo} alt="bpi_logo" className="bpi_logo" />
+        <img src={bpi_qr} alt="bpi_logo" className="Merchant_qr" />
+      </div>
+      <div className="Merchants__cont">
+        <img
+          src={gcash_pal_wu_ceb_logo}
+          alt="gcash_pal_wu_ceb_logo"
+          className="multi_logo"
+        />
+        <div className="Merchant_details">
+          <ul>
+            <li>June Anne Nepomuceno</li>
+            <li>0915-344-9219</li>
+            <li>1341 M. Naval St., San Roque, Navotas</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
