@@ -60,7 +60,7 @@ const About = () => {
             encourage people <br />
             to make the switch into <br />
             the green side to help <br />
-            our one and only planet.
+            our environment.
           </div>
         </div>
         <div className="Vision__cont">

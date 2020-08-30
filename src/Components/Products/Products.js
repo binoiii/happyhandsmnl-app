@@ -148,14 +148,17 @@ const imgCont = [
       BambooTumbler3,
       BambooTumbler4,
     ],
-    prodDescription: ["350ml / 450ml", "10-12 Hours for Hot / Cold"],
+    prodDescription: [
+      "350ml / 450ml with Tea Infuser",
+      "10-12 Hours for Hot / Cold",
+    ],
   },
   {
     prodName: "Bambootensils",
     prodImgCont: [
-      BambooUtensils1,
-      BambooUtensils2,
       BambooUtensils3,
+      BambooUtensils2,
+      BambooUtensils1,
       BambooUtensils4,
     ],
     prodDescription: ["Spoon, Fork and Knife", "with Free White Pouch"],
@@ -183,7 +186,7 @@ const imgCont = [
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
     prodDescription: [
       '4.5" x 6.5" x 2.5"',
-      "made from Bamboo and Stainless Steel",
+      "Made from Bamboo and Stainless Steel",
     ],
   },
 
@@ -194,7 +197,7 @@ const imgCont = [
   },
 
   {
-    prodName: "Bamboo Sun Glasses",
+    prodName: "Bamboo Sunglasses",
     prodImgCont: [Shades1, Shades2, Shades3, Shades4],
     prodDescription: ["Bamboo Temples", "with Free Black Pouch"],
   },
@@ -265,7 +268,7 @@ const imgCont = [
   {
     prodName: "Paddle Brush",
     prodImgCont: [PaddleBrush1, PaddleBrush2, PaddleBrush3, PaddleBrush4],
-    prodDescription: ['10"x 3"'],
+    prodDescription: ['10"x 3"', "Gentle to the Scalp"],
   },
 
   {
@@ -280,7 +283,7 @@ const imgCont = [
   {
     prodName: "Metal Vaccum Tumbler",
     prodImgCont: [Tumbler2, Tumbler4, Tumbler3, Tumbler1],
-    prodDescription: ["450ml", "Matte Color Exterior"],
+    prodDescription: ["450ml with Tea Infuser", "8-10 Hours for Hot / Cold"],
   },
 
   {
@@ -312,32 +315,32 @@ const imgCont = [
   },
 
   {
-    prodName: "Cord Organizer",
+    prodName: "Cable Keeper",
     prodImgCont: [
       ChordOrganizerB1,
       ChordOrganizerB2,
       ChordOrganizerB3,
       ChordOrganizerB4,
     ],
-    prodDescription: ['2.4" x 1.8"', "Traveller's Essential"],
+    prodDescription: ['2.4" x 1.8"', "Reduces Cable Clutter"],
   },
 
   {
     prodName: "Long Wallet",
     prodImgCont: [Wallet21, Wallet22, Wallet23, Wallet24],
-    prodDescription: ['4" x 7.9"', "can hold Phone, Cash, Cards, and Coins"],
+    prodDescription: ['4" x 7.9"', "can hold Phone, Cash, Cards and Coins"],
   },
 
   {
     prodName: "Handy Wallet",
     prodImgCont: [Wallet1, Wallet2, Wallet3, Wallet4],
-    prodDescription: ['3.5" x 4.5"', "with Pockets for Cash/Cards"],
+    prodDescription: ['3.5" x 4.5"', "with Pockets for Cash / Cards"],
   },
 
   {
     prodName: "Coin Purse",
     prodImgCont: [CoinPurse1, CoinPurse2, CoinPurse3, CoinPurse4],
-    prodDescription: ['3.2" x 3.6"'],
+    prodDescription: ['3.2" x 3.6"', "Handy and Slick"],
   },
 ];
 

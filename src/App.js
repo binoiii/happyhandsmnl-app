@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Navigation from "./Components/Navigation//Navigation";
+// import Navigation from "./Components/Navigation//Navigation";
 import Home from "./Components/Home/Home";
 import SocialLinks from "./Components/SocialLinks/SocialLinks";
-
 import Products from "./Components/Products/Products";
 import HowToOrder from "./Components/HowToOrder/HowToOrder";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
+import Prompt from "./Components/Prompt/Prompt";
 
 function App() {
   const [hhData, sethhData] = useState({});
@@ -23,13 +23,14 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
+      {/* <Navigation /> */}
       <Home />
       <SocialLinks hhData={hhData} />
       <Products />
       <HowToOrder />
       <About />
       <Footer />
+      <Prompt />
     </div>
   );
 }

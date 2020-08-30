@@ -60,7 +60,7 @@ const ContactForm = ({ exitContactForm, isSent, setIsSent }) => {
   return (
     <div className="Contact__cont">
       <form onSubmit={handleSubmit}>
-        <h3>Let's Talk</h3>
+        <h3>Connect with Us!</h3>
         <div className="NameEmail__cont">
           <input
             type="text"

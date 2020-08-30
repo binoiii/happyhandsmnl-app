@@ -10,11 +10,12 @@ const ConfirmDelivery = () => {
             <span>Lead Time</span>1 - 2 weeks
           </li>
           <li>
-            <span>Metro Manila (via MCFA Express)</span>1 - 2 days
+            <span>Metro Manila (via MCFA Express)</span>2 - 3 days
           </li>
           <li>
-            <span>Cavite / Laguna / Rizal / Bulacan (via MCFA Express)</span>2 -
-            4 days
+            <span>Cavite / Laguna / Rizal / Bulacan (via MCFA Express)</span>
+            <span style={{ color: "#5e5e5e" }}>*Selected areas only</span>2 - 4
+            days
           </li>
           <li>
             <span>Provincial</span>
@@ -25,7 +26,7 @@ const ConfirmDelivery = () => {
           <div className="Message1">
             <span>Kindly inform us once you received your orders</span>
             <span>so we can monitor delayed parcels and</span>
-            <span> coordinate with our partner courier.</span>
+            <span> coordinate with our partner couriers.</span>
           </div>
           <div className="Message2">
             <span>Thank you for shopping with us!</span>
