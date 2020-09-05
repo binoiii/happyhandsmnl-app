@@ -11,7 +11,10 @@ const ImageHandler = ({ prodName, prodImgCont, index, handleModal }) => {
       <div className="Gridlabels__cont">
         <div className="GridLabelsItem__cont">
           <div className={index} onClick={handleModal}>
-            <span>. . .</span>
+            <span>
+              More Photos
+              {/* <i class="fi-xnluxl-magnifying-glass"></i> */}
+            </span>
           </div>
         </div>
       </div>

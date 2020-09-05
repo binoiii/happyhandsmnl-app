@@ -45,7 +45,6 @@ const Personalize = () => {
   };
 
   const handleSliderValue = (e) => {
-    console.log("move");
     const fontSizeUser = e.target.value;
     const fontSizePx = fontSizeUser + "px";
     setSliderValue(fontSizeUser);

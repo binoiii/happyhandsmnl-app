@@ -1,3 +1,13 @@
+import GlassCup1 from "./img/Products/GlassCup/GlassCup1.jpg";
+import GlassCup2 from "./img/Products/GlassCup/GlassCup2.jpg";
+import GlassCup3 from "./img/Products/GlassCup/GlassCup3.jpg";
+import GlassCup4 from "./img/Products/GlassCup/GlassCup4.jpg";
+
+import BambooMug1 from "./img/Products/BambooMug/BambooMug1.jpg";
+import BambooMug2 from "./img/Products/BambooMug/BambooMug2.jpg";
+import BambooMug3 from "./img/Products/BambooMug/BambooMug3.jpg";
+import BambooMug4 from "./img/Products/BambooMug/BambooMug4.jpg";
+
 import Flask1 from "./img/Products/Flask/Flask1.jpg";
 import Flask2 from "./img/Products/Flask/Flask2.jpg";
 import Flask3 from "./img/Products/Flask/Flask3.jpg";
@@ -130,9 +140,18 @@ import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 
 export const imgCont = [
   {
-    prodName: "Flask Set",
-    prodImgCont: [Flask1, Flask2, Flask3, Flask4],
-    prodDescription: ["9oz", "with Free Box Engrave"],
+    prodName: "Bamboo Mug w/ Bamboo Lid",
+    prodImgCont: [BambooMug1, BambooMug2, BambooMug3, BambooMug4],
+    prodDescription: ["400ml", "Natural Bamboo and Stainless Steel Interior"],
+  },
+
+  {
+    prodName: "Glass Cup",
+    prodImgCont: [GlassCup1, GlassCup2, GlassCup3, GlassCup4],
+    prodDescription: [
+      "250ml and 350ml",
+      "Insulated Double Layer Wall & Lightweight",
+    ],
   },
 
   {
@@ -148,6 +167,13 @@ export const imgCont = [
       "10-12 Hours for Hot / Cold",
     ],
   },
+
+  {
+    prodName: "Flask Set",
+    prodImgCont: [Flask1, Flask2, Flask3, Flask4],
+    prodDescription: ["9oz", "with Free Box Engrave"],
+  },
+
   {
     prodName: "Bambootensils",
     prodImgCont: [

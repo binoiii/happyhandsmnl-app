@@ -65,6 +65,10 @@
   color: white;
 }
 
+.GridLabelsItem__cont span {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 420px) {
   .Prod__name {
     height: 2rem;
