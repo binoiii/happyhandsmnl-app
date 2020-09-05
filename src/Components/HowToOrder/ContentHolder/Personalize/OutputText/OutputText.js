@@ -8,14 +8,16 @@ const OutputText = forwardRef(
 
     return (
       <div className="OutputText__cont">
-        <div className="Output__cont" style={outputStyle}>
-          {userText}
+        <div className="Output__cont">
+          <div className="OutputFont__cont" style={outputStyle}>
+            {userText}
+          </div>
         </div>
         <div className="Slider__cont" ref={ref}>
           <input
             type="range"
             name="slider"
-            min="20"
+            min="50"
             max="150"
             step="1"
             value={sliderValue}
