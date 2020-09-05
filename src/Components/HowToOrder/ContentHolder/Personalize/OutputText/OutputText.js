@@ -12,12 +12,13 @@ const OutputText = forwardRef(
           className="Output__cont"
           style={outputStyle}
           value={userText}
+          readOnly
         ></textarea>
         <div className="Slider__cont" ref={ref}>
           <input
             type="range"
             name="slider"
-            min="50"
+            min="20"
             max="150"
             step="1"
             value={sliderValue}
