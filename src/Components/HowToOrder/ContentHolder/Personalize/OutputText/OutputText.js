@@ -9,7 +9,9 @@ const OutputText = forwardRef(
     return (
       <div className="OutputText__cont">
         <div className="Output__cont">
-          <div style={outputStyle}>{userText}</div>
+          <div style={outputStyle}>
+            <span>{userText}</span>
+          </div>
         </div>
         <div className="Slider__cont" ref={ref}>
           <input

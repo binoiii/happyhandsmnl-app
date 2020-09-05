@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   width: 628px;
-  height: 50vh;
+  height: 300px;
   border: 1px solid #a1a1a1;
   border-radius: 0.3rem;
   font-size: 100px;
@@ -126,20 +126,20 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (max-width: 768px) {
   .OutputText__cont .Output__cont {
     width: 80vw;
-    height: 45vh;
+    height: 350px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .OutputText__cont .Output__cont {
     width: 80vw;
-    height: 50vh;
+    height: 250px;
   }
 }
 
 @media (max-width: 320px) {
   .OutputText__cont .Output__cont {
     width: 80vw;
-    height: 50vh;
+    height: 200px;
   }
 }
