@@ -1,7 +1,6 @@
 .OutputText__cont {
   position: relative;
   margin-bottom: 4rem;
-  background: #ffffff;
 }
 
 .OutputText__cont .Output__cont {
@@ -19,6 +18,7 @@
 }
 
 .Output__cont div {
+  background: #ffffff;
   text-align: center;
   word-break: break-word;
 }
