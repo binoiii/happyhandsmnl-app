@@ -10,6 +10,7 @@
   justify-content: center;
   width: 628px;
   height: 300px;
+  background: #ffffff;
   border: 1px solid #a1a1a1;
   border-radius: 0.3rem;
   font-size: 100px;
@@ -18,7 +19,6 @@
 }
 
 .Output__cont div {
-  background: #ffffff;
   text-align: center;
   word-break: break-word;
 }
