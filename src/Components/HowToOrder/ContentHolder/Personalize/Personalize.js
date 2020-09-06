@@ -7,10 +7,10 @@ import "./Personalize.css";
 
 const Personalize = () => {
   const [userText, setuserText] = useState("");
-  const [sliderValue, setSliderValue] = useState("100");
+  const [sliderValue, setSliderValue] = useState("90");
   const [outputStyle, setOutputStyle] = useState({
     fontFamily: "Montserrat",
-    fontSize: "100px",
+    fontSize: "90px",
   });
 
   const outputText = useRef(null);

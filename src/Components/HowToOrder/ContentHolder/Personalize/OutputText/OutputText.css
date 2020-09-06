@@ -5,16 +5,11 @@
 }
 
 .OutputText__cont .Output__cont {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 628px;
   height: 300px;
+  padding-top: 50px;
   border: 1px solid #a1a1a1;
   border-radius: 0.3rem;
-  font-size: 100px;
-  padding-bottom: 30px;
   overflow: auto;
 }
 

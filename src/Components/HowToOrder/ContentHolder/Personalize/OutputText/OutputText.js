@@ -17,7 +17,7 @@ const OutputText = forwardRef(
           <input
             type="range"
             name="slider"
-            min="50"
+            min="30"
             max="150"
             step="1"
             value={sliderValue}
