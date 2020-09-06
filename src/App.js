@@ -6,7 +6,6 @@ import Products from "./Components/Products/Products";
 import HowToOrder from "./Components/HowToOrder/HowToOrder";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
-import Prompt from "./Components/Prompt/Prompt";
 
 function App() {
   const [hhData, sethhData] = useState({});
@@ -30,7 +29,6 @@ function App() {
       <HowToOrder />
       <About />
       <Footer />
-      <Prompt />
     </div>
   );
 }

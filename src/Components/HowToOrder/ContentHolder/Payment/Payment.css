@@ -25,6 +25,10 @@
   margin-bottom: 1rem;
 }
 
+.Merchants__cont .account_number {
+  letter-spacing: 0.05rem;
+}
+
 .Merchants__cont .Merchant_qr {
   width: 80%;
   margin-bottom: 0.5rem;
@@ -37,12 +41,18 @@
 
 .Merchants__cont ul {
   list-style-type: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   text-align: center;
 }
 
 .Merchants__cont li {
   margin: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .Merchants__cont .multi_logo {
+    width: 60%;
+  }
 }
 
 @media (max-width: 470px) {
@@ -51,13 +61,13 @@
   }
 
   .Merchants__cont .multi_logo {
-    width: 60%;
+    width: 70%;
     margin-bottom: -0.3rem;
   }
 }
 
 @media (max-width: 350px) {
-  .PaymentShipping__cont * {
+  .Payment__cont * {
     font-size: 0.75rem;
   }
 }

@@ -4,8 +4,6 @@ import "./OutputText.css";
 
 const OutputText = forwardRef(
   ({ outputStyle, userText, sliderValue, handleSliderValue }, ref) => {
-    console.log("Re-render");
-
     return (
       <div className="OutputText__cont">
         <textarea

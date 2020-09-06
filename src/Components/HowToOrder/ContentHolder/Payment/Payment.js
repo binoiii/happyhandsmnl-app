@@ -16,6 +16,7 @@ const Payment = () => {
     <div className="Payment__cont">
       <div className="Merchants__cont">
         <img src={bpi_logo} alt="bpi_logo" className="bpi_logo" />
+        <div className="account_number">4349-1085-13</div>
         <img src={bpi_qr} alt="bpi_logo" className="Merchant_qr" />
       </div>
       <div className="Merchants__cont">
@@ -26,9 +27,9 @@ const Payment = () => {
         />
         <div className="Merchant_details">
           <ul>
-            <li>June Anne Nepomuceno</li>
+            <li>JUNE ANNE NEPOMUCENO</li>
             <li>0915-344-9219</li>
-            <li>1341 M. Naval St., San Roque, Navotas</li>
+            <li>1341 M. NAVAL ST. SAN ROQUE NAVOTAS</li>
           </ul>
         </div>
       </div>

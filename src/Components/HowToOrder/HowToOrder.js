@@ -63,7 +63,6 @@ const HowToOrder = () => {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         if (isNextStep) {
-          console.log("moving");
           setStepCount((prevStepCount) => prevStepCount + 1);
           handleProgress(stepCount + 1);
         }
