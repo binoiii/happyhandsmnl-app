@@ -8,11 +8,12 @@ const OutputText = forwardRef(
 
     return (
       <div className="OutputText__cont">
-        <div className="Output__cont">
-          <div className="OutputFont__cont" style={outputStyle}>
-            {userText}
-          </div>
-        </div>
+        <textarea
+          className="Output__cont"
+          style={outputStyle}
+          value={userText}
+          readOnly
+        ></textarea>
         <div className="Slider__cont" ref={ref}>
           <input
             type="range"
