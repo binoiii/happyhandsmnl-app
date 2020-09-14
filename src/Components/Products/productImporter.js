@@ -140,7 +140,7 @@ import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 
 export const imgCont = [
   {
-    prodName: "Bamboo Mug w/ Bamboo Lid",
+    prodName: "Bamboo Mug",
     prodImgCont: [BambooMug1, BambooMug2, BambooMug3, BambooMug4],
     prodDescription: ["400ml", "Natural Bamboo and Stainless Steel Interior"],
   },
@@ -175,7 +175,7 @@ export const imgCont = [
   },
 
   {
-    prodName: "Bambootensils",
+    prodName: "Bambutensils",
     prodImgCont: [
       BambooUtensils3,
       BambooUtensils2,
@@ -203,7 +203,7 @@ export const imgCont = [
   },
 
   {
-    prodName: "Bambaunan Bento Lunch Box",
+    prodName: "Bamboonan",
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
     prodDescription: [
       '4.5" x 6.5" x 2.5"',
@@ -242,7 +242,7 @@ export const imgCont = [
   },
 
   {
-    prodName: "Wooden Phone Stand Keychain",
+    prodName: "Wooden Phone Stand",
     prodImgCont: [
       CellphoneStand1,
       CellphoneStand2,
@@ -253,7 +253,7 @@ export const imgCont = [
   },
 
   {
-    prodName: "Wooden Speaker & Phone Holder",
+    prodName: "Wooden Speaker",
     prodImgCont: [
       WoodenSpeakers1,
       WoodenSpeakers2,
