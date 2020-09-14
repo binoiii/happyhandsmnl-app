@@ -1,5 +1,5 @@
 .Home__cont {
-  height: 700px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   background: url("./img/HOME_BG.jpg");
@@ -97,6 +97,12 @@
 /* box-shadow: inset -2px 2px 5px 2px rgba(0, 0, 0, 0.4),
     -3px 3px 5px 2px rgba(0, 0, 0, 0.4); */
 /* border-radius: 0.5rem; */
+
+@media (max-width: 768px) {
+  .Home__cont {
+    height: 700px;
+  }
+}
 
 @media (max-width: 670px) {
   .HomeMain__cont .Shop__cont {
