@@ -18,6 +18,7 @@
   font-size: 0.9rem;
   color: #ffffff;
   letter-spacing: 0.1rem;
+  line-height: 1.2rem;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@
 @media (max-width: 768px) {
   .toast-body {
     font-size: 0.7rem;
+    line-height: 1rem;
   }
 
   .toast-control {
