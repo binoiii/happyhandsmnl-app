@@ -27,9 +27,9 @@ const Payment = () => {
         />
         <div className="Merchant_details">
           <ul>
-            <li>JUNE ANNE NEPOMUCENO</li>
+            <li>June Anne Nepomuceno</li>
             <li>0915-344-9219</li>
-            <li>1341 M. NAVAL ST. SAN ROQUE NAVOTAS</li>
+            <li>1341 M. Naval St. San Roque Navotas</li>
           </ul>
         </div>
       </div>

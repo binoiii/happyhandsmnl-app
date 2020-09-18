@@ -141,12 +141,14 @@ import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 export const imgCont = [
   {
     prodName: "Bamboo Mug",
+    prodPrice: "469 PHP",
     prodImgCont: [BambooMug1, BambooMug2, BambooMug3, BambooMug4],
     prodDescription: ["400ml", "Natural Bamboo and Stainless Steel Interior"],
   },
 
   {
     prodName: "Glass Cup",
+    prodPrice: "429 PHP",
     prodImgCont: [GlassCup1, GlassCup2, GlassCup3, GlassCup4],
     prodDescription: [
       "250ml and 350ml",
@@ -156,6 +158,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Tumbler",
+    prodPrice: "449 / 499 PHP",
     prodImgCont: [
       BambooTumbler1,
       BambooTumbler2,
@@ -170,12 +173,14 @@ export const imgCont = [
 
   {
     prodName: "Flask Set",
+    prodPrice: "499 PHP",
     prodImgCont: [Flask1, Flask2, Flask3, Flask4],
     prodDescription: ["9oz", "with Free Box Engrave"],
   },
 
   {
     prodName: "Bambutensils",
+    prodPrice: "129 PHP",
     prodImgCont: [
       BambooUtensils3,
       BambooUtensils2,
@@ -187,12 +192,14 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Notebook",
+    prodPrice: "129 PHP",
     prodImgCont: [BambooNB1, BambooNB2, BambooNB3, BambooNB4],
     prodDescription: ["70 Leaves", "Crumple-Free Cover"],
   },
 
   {
     prodName: "Bamboo Chopping Board",
+    prodPrice: "249 PHP",
     prodImgCont: [
       ChoppingBoard1,
       ChoppingBoard2,
@@ -204,6 +211,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboonan",
+    prodPrice: "499 PHP",
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
     prodDescription: [
       '4.5" x 6.5" x 2.5"',
@@ -213,36 +221,42 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Pen",
+    prodPrice: "109 / 129 PHP",
     prodImgCont: [BambooPen1, BambooPen2, BambooPen3, BambooPen4],
     prodDescription: ["Black Ink", "can be with Case"],
   },
 
   {
     prodName: "Bamboo Sunglasses",
+    prodPrice: "279 PHP",
     prodImgCont: [Shades1, Shades2, Shades3, Shades4],
     prodDescription: ["Bamboo Temples", "with Free Black Pouch"],
   },
 
   {
     prodName: "Wooden Bottle Opener",
+    prodPrice: "149 PHP",
     prodImgCont: [BottleOpener1, BottleOpener2, BottleOpener3, BottleOpener4],
     prodDescription: ['5.5" x 1"', "made of Solid Wood and Metal"],
   },
 
   {
     prodName: "Wooden Mirror",
+    prodPrice: "99 PHP",
     prodImgCont: [Mirror1, Mirror2, Mirror3, Mirror4],
     prodDescription: ['6" x 3"', "Handy and Portable Mirror"],
   },
 
   {
     prodName: "Mini Brush",
+    prodPrice: "99 PHP",
     prodImgCont: [Brush1, Brush2, Brush3, Brush4],
     prodDescription: ['6" x 2"', "with Soft Bristle"],
   },
 
   {
     prodName: "Wooden Phone Stand",
+    prodPrice: "99 PHP",
     prodImgCont: [
       CellphoneStand1,
       CellphoneStand2,
@@ -254,6 +268,7 @@ export const imgCont = [
 
   {
     prodName: "Wooden Speaker",
+    prodPrice: "249 PHP",
     prodImgCont: [
       WoodenSpeakers1,
       WoodenSpeakers2,
@@ -265,6 +280,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Toothbrush",
+    prodPrice: "89 PHP",
     prodImgCont: [
       BambooToothBrush1,
       BambooToothBrush2,
@@ -276,24 +292,28 @@ export const imgCont = [
 
   {
     prodName: "Comb for Gents",
+    prodPrice: "99 PHP",
     prodImgCont: [CombMen1, CombMen2, CombMen3, CombMen4],
     prodDescription: ['7" x 2"', "Groom's Men Favorite"],
   },
 
   {
     prodName: "Comb with Handle",
+    prodPrice: "99 PHP",
     prodImgCont: [CombWomen1, CombWomen2, CombWomen3, CombWomen4],
     prodDescription: ['6"', "Bride's Maid Favorite"],
   },
 
   {
     prodName: "Paddle Brush",
+    prodPrice: "179 PHP",
     prodImgCont: [PaddleBrush1, PaddleBrush2, PaddleBrush3, PaddleBrush4],
     prodDescription: ['10"x 3"', "Gentle to the Scalp"],
   },
 
   {
     prodName: "Stainless Straw Set",
+    prodPrice: "89 PHP",
     prodImgCont: [Straw1, Straw2, Straw3, Straw4],
     prodDescription: [
       "Multipurpose Straws, Brush Cleaner ",
@@ -303,18 +323,21 @@ export const imgCont = [
 
   {
     prodName: "Metal Vaccum Tumbler",
+    prodPrice: "449 PHP",
     prodImgCont: [Tumbler2, Tumbler4, Tumbler3, Tumbler1],
     prodDescription: ["450ml with Tea Infuser", "8-10 Hours for Hot / Cold"],
   },
 
   {
     prodName: "Leather Keyholder",
+    prodPrice: "99 PHP",
     prodImgCont: [Tag1, Tag2, Tag3, Tag4],
     prodDescription: ['4.5"', "Stlyish Leather"],
   },
 
   {
     prodName: "Leather Passport Holder",
+    prodPrice: "149 PHP",
     prodImgCont: [
       PassportHolder1,
       PassportHolder2,
@@ -326,6 +349,7 @@ export const imgCont = [
 
   {
     prodName: "Cord Organizer",
+    prodPrice: "89 PHP",
     prodImgCont: [
       ChordOrganizerA1,
       ChordOrganizerA2,
@@ -337,6 +361,7 @@ export const imgCont = [
 
   {
     prodName: "Cable Keeper",
+    prodPrice: "89 PHP",
     prodImgCont: [
       ChordOrganizerB1,
       ChordOrganizerB2,
@@ -348,18 +373,21 @@ export const imgCont = [
 
   {
     prodName: "Long Wallet",
+    prodPrice: "169 PHP",
     prodImgCont: [Wallet21, Wallet22, Wallet23, Wallet24],
     prodDescription: ['4" x 7.9"', "can hold Phone, Cash, Cards and Coins"],
   },
 
   {
     prodName: "Handy Wallet",
+    prodPrice: "149 PHP",
     prodImgCont: [Wallet1, Wallet2, Wallet3, Wallet4],
     prodDescription: ['3.5" x 4.5"', "with Pockets for Cash / Cards"],
   },
 
   {
     prodName: "Coin Purse",
+    prodPrice: "99 PHP",
     prodImgCont: [CoinPurse1, CoinPurse2, CoinPurse3, CoinPurse4],
     prodDescription: ['3.2" x 3.6"', "Handy and Slick"],
   },

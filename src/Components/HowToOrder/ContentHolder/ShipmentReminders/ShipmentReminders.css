@@ -17,12 +17,13 @@
 
 .ShipmentReminders__cont span {
   display: block;
+  margin-bottom: 0.3rem;
   line-height: 1.5rem;
   color: #000000;
 }
 
 .ShipmentReminders__cont li {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .DeliveryMessage__cont span {
@@ -33,10 +34,6 @@
   padding-top: 2.5rem;
 }
 
-.ShipmentReminders__cont .Message2 {
-  padding-top: 3.5rem;
-}
-
 @media (max-width: 470px) {
   .ShipmentReminders__cont * {
     font-size: 0.9rem;
@@ -44,20 +41,12 @@
 }
 
 @media (max-width: 450px) {
-  .ShipmentReminders__cont .Reminders__cont {
-    margin-top: 1.5rem;
-  }
-
   .ShipmentReminders__cont span {
     line-height: 1.5rem;
   }
 
   .ShipmentReminders__cont .Message1 {
     padding-top: 1.5rem;
-  }
-
-  .ShipmentReminders__cont .Message2 {
-    padding-top: 2rem;
   }
 }
 

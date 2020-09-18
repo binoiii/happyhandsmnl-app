@@ -15,22 +15,24 @@
   filter: blur(2px);
 }
 
-.Prod__name {
+.Prod__name,
+.Prod__price {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
-  height: 2.5rem;
+  margin: 1.2rem 0;
   background-color: #ffffff;
 }
 
-.Prod__name span {
+.Prod__name span,
+.Prod__price span {
   font-family: "Montserrat";
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   color: #ca7a19;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .Grid__box .Gridlabels__cont {
@@ -69,14 +71,15 @@
   font-size: 0.8rem;
 }
 
-@media (max-width: 420px) {
-  .Prod__name {
-    height: 2rem;
-    margin: 0.8rem 0;
+@media (max-width: 576px) {
+  .Prod__name,
+  .Prod__price {
+    margin: 1rem 0;
   }
 
-  .Prod__name span {
+  .Prod__name span,
+  .Prod__price span {
     font-size: 0.8rem;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
   }
 }

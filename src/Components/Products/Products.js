@@ -32,10 +32,11 @@ function Products() {
   return (
     <div id="products" className="Prod__Wrap">
       <div className="Grid__cont">
-        {imgCont.map(({ prodName, prodImgCont }, index) => (
+        {imgCont.map(({ prodName, prodImgCont, prodPrice }, index) => (
           <ImageHandler
             key={index}
             prodName={prodName}
+            prodPrice={prodPrice}
             prodImgCont={prodImgCont}
             handleModal={handleModal}
             index={index}
