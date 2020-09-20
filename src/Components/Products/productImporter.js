@@ -227,7 +227,7 @@ export const imgCont = [
   },
 
   {
-    prodName: "Bamboonan",
+    prodName: "Bamboo Lunch Box",
     prodPrice: "549 PHP",
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
     prodDescription: [
