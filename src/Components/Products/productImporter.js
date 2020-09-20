@@ -138,6 +138,16 @@ import CoinPurse2 from "./img/Products/CoinPurse/CoinPurse2.jpg";
 import CoinPurse3 from "./img/Products/CoinPurse/CoinPurse3.jpg";
 import CoinPurse4 from "./img/Products/CoinPurse/CoinPurse4.jpg";
 
+import Fan1 from "./img/Products/Fan/Fan1.jpg";
+import Fan2 from "./img/Products/Fan/Fan2.jpg";
+import Fan3 from "./img/Products/Fan/Fan3.jpg";
+import Fan4 from "./img/Products/Fan/Fan4.jpg";
+
+import Bambaso1 from "./img/Products/Bambaso/Bambaso1.jpg";
+import Bambaso2 from "./img/Products/Bambaso/Bambaso2.jpg";
+import Bambaso3 from "./img/Products/Bambaso/Bambaso3.jpg";
+import Bambaso4 from "./img/Products/Bambaso/Bambaso4.jpg";
+
 export const imgCont = [
   {
     prodName: "Bamboo Mug",
@@ -172,6 +182,13 @@ export const imgCont = [
   },
 
   {
+    prodName: "Bamboo Cup",
+    prodPrice: "469 PHP",
+    prodImgCont: [Bambaso1, Bambaso2, Bambaso3, Bambaso4],
+    prodDescription: ["450ml", "8-10 Hours for Hot / Cold"],
+  },
+
+  {
     prodName: "Flask Set",
     prodPrice: "499 PHP",
     prodImgCont: [Flask1, Flask2, Flask3, Flask4],
@@ -199,7 +216,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Chopping Board",
-    prodPrice: "249 PHP",
+    prodPrice: "269 PHP",
     prodImgCont: [
       ChoppingBoard1,
       ChoppingBoard2,
@@ -211,7 +228,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboonan",
-    prodPrice: "499 PHP",
+    prodPrice: "549 PHP",
     prodImgCont: [Bambaunan1, Bambaunan2, Bambaunan3, Bambaunan4],
     prodDescription: [
       '4.5" x 6.5" x 2.5"',
@@ -221,7 +238,7 @@ export const imgCont = [
 
   {
     prodName: "Bamboo Pen",
-    prodPrice: "109 / 129 PHP",
+    prodPrice: "95 / 129 PHP",
     prodImgCont: [BambooPen1, BambooPen2, BambooPen3, BambooPen4],
     prodDescription: ["Black Ink", "can be with Case"],
   },
@@ -235,28 +252,35 @@ export const imgCont = [
 
   {
     prodName: "Wooden Bottle Opener",
-    prodPrice: "149 PHP",
+    prodPrice: "169 PHP",
     prodImgCont: [BottleOpener1, BottleOpener2, BottleOpener3, BottleOpener4],
     prodDescription: ['5.5" x 1"', "made of Solid Wood and Metal"],
   },
 
   {
     prodName: "Wooden Mirror",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [Mirror1, Mirror2, Mirror3, Mirror4],
     prodDescription: ['6" x 3"', "Handy and Portable Mirror"],
   },
 
   {
     prodName: "Mini Brush",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [Brush1, Brush2, Brush3, Brush4],
     prodDescription: ['6" x 2"', "with Soft Bristle"],
   },
 
   {
+    prodName: "Sandal Wood Fan",
+    prodPrice: "89 PHP",
+    prodImgCont: [Fan1, Fan2, Fan3, Fan4],
+    prodDescription: ['8"', "Ninang's Favorite"],
+  },
+
+  {
     prodName: "Wooden Phone Stand",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [
       CellphoneStand1,
       CellphoneStand2,
@@ -292,14 +316,14 @@ export const imgCont = [
 
   {
     prodName: "Comb for Gents",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [CombMen1, CombMen2, CombMen3, CombMen4],
     prodDescription: ['7" x 2"', "Groom's Men Favorite"],
   },
 
   {
     prodName: "Comb with Handle",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [CombWomen1, CombWomen2, CombWomen3, CombWomen4],
     prodDescription: ['6"', "Bride's Maid Favorite"],
   },
@@ -330,14 +354,14 @@ export const imgCont = [
 
   {
     prodName: "Leather Keyholder",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [Tag1, Tag2, Tag3, Tag4],
     prodDescription: ['4.5"', "Stlyish Leather"],
   },
 
   {
     prodName: "Leather Passport Holder",
-    prodPrice: "149 PHP",
+    prodPrice: "169 PHP",
     prodImgCont: [
       PassportHolder1,
       PassportHolder2,
@@ -349,7 +373,7 @@ export const imgCont = [
 
   {
     prodName: "Cord Organizer",
-    prodPrice: "89 PHP",
+    prodPrice: "85 PHP",
     prodImgCont: [
       ChordOrganizerA1,
       ChordOrganizerA2,
@@ -361,7 +385,7 @@ export const imgCont = [
 
   {
     prodName: "Cable Keeper",
-    prodPrice: "89 PHP",
+    prodPrice: "85 PHP",
     prodImgCont: [
       ChordOrganizerB1,
       ChordOrganizerB2,
@@ -387,7 +411,7 @@ export const imgCont = [
 
   {
     prodName: "Coin Purse",
-    prodPrice: "99 PHP",
+    prodPrice: "95 PHP",
     prodImgCont: [CoinPurse1, CoinPurse2, CoinPurse3, CoinPurse4],
     prodDescription: ['3.2" x 3.6"', "Handy and Slick"],
   },
