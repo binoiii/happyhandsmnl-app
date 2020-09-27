@@ -10,16 +10,21 @@ const ConfirmDelivery = () => {
             <span>Lead Time</span>1 - 2 weeks
           </li> */}
           <li>
-            <span>Metro Manila (via MCFA Express)</span>2 - 3 days
+            <span>Metro Manila</span>
+            <span>2 - 3 days (via MCFA Express)</span>
+            <span>50 - Small | 55 - Medium | 70 - Large</span>
           </li>
           <li>
-            <span>Cavite / Laguna / Rizal / Bulacan (via MCFA Express)</span>
-            <span style={{ color: "#5e5e5e" }}>*Selected areas only</span>2 - 4
-            days
+            <span>Cavite / Laguna / Rizal / Bulacan (Selected Areas)</span>2 - 4
+            days via (MCFA Express)
           </li>
           <li>
             <span>Provincial</span>
-            Delivers via LBC
+            <span>Delivers via LBC</span>
+            <span>95 via COP (Cash on Pick-Up)</span>
+          </li>
+          <li>
+            <span>Order Lead Time</span>1 week
           </li>
         </ul>
         <div className="DeliveryMessage__cont">
@@ -29,7 +34,7 @@ const ConfirmDelivery = () => {
             <span> coordinate with our partner couriers.</span>
           </div> */}
           <div className="Message2">
-            <span>Thank you for shopping with us!</span>
+            <span>We also do shipping via Grab and LalaMove.</span>
           </div>
         </div>
       </div>
