@@ -1,4 +1,4 @@
-# Official Repository of HappyhandsMnl Web Application
+# Official Repository of HappyhandsMnl
 
 Live Link: https://thehappyhandsmnl.com
 
